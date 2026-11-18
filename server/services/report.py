@@ -18,6 +18,7 @@ FONT_CANDIDATES = [
     Path("C:/Windows/Fonts/simhei.ttf"),
     Path("C:/Windows/Fonts/msyh.ttc"),
     Path("C:/Windows/Fonts/simsun.ttc"),
+    Path("/usr/share/fonts/truetype/wqy/wqy-microhei.ttc"),
     Path("/usr/share/fonts/truetype/droid/DroidSansFallbackFull.ttf"),
     Path("/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc"),
     Path("/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc"),
@@ -360,11 +361,19 @@ def export_result_pdf(
     font_file = _font_path()
     if font_file is None:
         raise ValueError("系统中未找到中文字体，无法生成 PDF 报告")
-    try:
-        pdfmetrics.registerFont(TTFont("SimHei", str(font_file)))
-    except Exception:
-        # TTC 等格式的回退
-        pdfmetrics.registerFont(TTFont("SimHei", "C:/Windows/Fonts/simhei.ttf"))
+    registered = False
+    for candidate in FONT_CANDIDATES:
+        if not candidate.exists():
+            continue
+        try:
+            # TTF 与 TTC（默认取第一个子字体）都可注册
+            pdfmetrics.registerFont(TTFont("SimHei", str(candidate)))
+            registered = True
+            break
+        except Exception:
+            continue
+    if not registered:
+        raise ValueError(f"中文字体加载失败：{font_file}")
 
     styles = _pdf_styles()
     dark_green = colors.HexColor("#1b5e2a")

@@ -10,3 +10,5 @@
 {"time": "2026-11-17T22:20:43+08:00", "level": "info", "source": "inversion", "message": "反演完成「20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif」：均值 20.944 mg/g，变异系数 23.45%，模型「PlanetScope Nmass 流程演示模型」"}
 {"time": "2026-11-17T22:20:45+08:00", "level": "info", "source": "result", "message": "导出结果（PDF）「20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif」"}
 {"time": "2026-11-17T22:20:45+08:00", "level": "info", "source": "result", "message": "导出结果（PNG）「20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif」"}
+{"time": "2026-11-18T16:29:12+08:00", "level": "info", "source": "result", "message": "导出结果（PNG）「20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif」"}
+{"time": "2026-11-18T16:29:12+08:00", "level": "info", "source": "result", "message": "导出结果（PDF）「20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif」"}

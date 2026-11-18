@@ -9,6 +9,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 # GDAL 由 rasterio wheel 自带；这里只补中文字体（PNG/PDF 导出需要）与运行库
 RUN apt-get update && apt-get install -y --no-install-recommends \
+        fonts-wqy-microhei \
         fonts-droid-fallback \
         libexpat1 \
         libglib2.0-0 \
