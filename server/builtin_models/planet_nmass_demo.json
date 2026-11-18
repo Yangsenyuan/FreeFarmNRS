@@ -1,0 +1,36 @@
+{
+  "id": "planet_nmass_demo",
+  "name": "PlanetScope Nmass 流程演示模型",
+  "type": "ml",
+  "algorithm": "DNN / MLP（PlanetScope 流程演示）",
+  "builtin": true,
+  "demo": true,
+  "synthetic": true,
+  "version": "1.0",
+  "unit": "mg/g",
+  "crops": ["蔬菜", "玉米"],
+  "sensors": ["PlanetScope 8波段", "PlanetScope"],
+  "training_data": "合成冠层光谱示例权重；未使用惠州恒福菜场实测氮素数据训练。",
+  "description": "仅用于流程演示，不代表真实田间标定精度。该元数据用于 PlanetScope 案例的传感器相容性预检，复用 51 波段 DNN 合成示例权重；PlanetScope 8 波段会先重采样到 400–900 nm/10 nm。",
+  "input": {
+    "type": "spectra",
+    "wavelengths": [
+      400, 410, 420, 430, 440, 450, 460, 470, 480, 490,
+      500, 510, 520, 530, 540, 550, 560, 570, 580, 590,
+      600, 610, 620, 630, 640, 650, 660, 670, 680, 690,
+      700, 710, 720, 730, 740, 750, 760, 770, 780, 790,
+      800, 810, 820, 830, 840, 850, 860, 870, 880, 890, 900
+    ]
+  },
+  "thresholds": {"low": 22.0, "high": 28.0},
+  "tags": ["PlanetScope", "合成数据示例", "流程演示", "DNN", "MLP"],
+  "metric_type": "not_applicable_demo_alias",
+  "limitations": [
+    "未使用 PlanetScope 影像对应的田间实测氮素数据训练或验证。",
+    "输出仅用于验证重采样、反演、统计和报告流程。",
+    "不得将结果作为真实田间施肥或科研精度结论。"
+  ],
+  "file": "dnn_nmass_demo.pkl",
+  "file_sha256": "0569cfd0fc9f5b4c90a3339eb51959993e3dc4a2c5e953f149b98c3e79f617a2",
+  "file_size_bytes": 233066
+}

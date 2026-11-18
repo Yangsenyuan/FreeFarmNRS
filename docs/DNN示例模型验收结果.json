@@ -1,0 +1,202 @@
+﻿[
+  {
+    "model_id": "dnn_multispectral_demo",
+    "model_name": "五波段 Nmass-DNN 示例模型",
+    "image_id": "demo_corn_img1",
+    "bands": 5,
+    "mean": 23.709,
+    "std": 3.63,
+    "unit": "mg/g",
+    "class_ratio": {
+      "low": 0.374,
+      "suitable": 0.49127,
+      "high": 0.13473
+    },
+    "alignment": {
+      "source_range": [
+        475.0,
+        840.0
+      ],
+      "target_range": [
+        475.0,
+        840.0
+      ],
+      "exact_bands": 5,
+      "interpolated_bands": 0,
+      "edge_filled_bands": 0,
+      "edge_fill_ratio": 0.0,
+      "resampled": false,
+      "method": "exact",
+      "prediction_alignment": {
+        "resampled": true,
+        "bands": 5,
+        "source_range": [
+          400.0,
+          900.0
+        ],
+        "target_range": [
+          475.0,
+          840.0
+        ],
+        "edge_filled": false,
+        "exact_bands": 2,
+        "interpolated_bands": 3,
+        "edge_filled_bands": 0,
+        "edge_fill_ratio": 0.0,
+        "source_band_count": 51,
+        "method": "linear_interpolation_with_nearest_edge_fill"
+      }
+    },
+    "file_sha256": "66d85b833ae87fb7dea3819f33e0c0d1cc6eee93a188f4b572f2001ffaf86cbe"
+  },
+  {
+    "model_id": "rf_multispectral_demo",
+    "model_name": "多光谱 Nmass-RF 模型",
+    "image_id": "demo_corn_img1",
+    "bands": 5,
+    "mean": 23.71,
+    "std": 3.479,
+    "unit": "mg/g",
+    "class_ratio": {
+      "low": 0.31382,
+      "suitable": 0.54637,
+      "high": 0.13981
+    },
+    "alignment": {
+      "source_range": [
+        475.0,
+        840.0
+      ],
+      "target_range": [
+        475.0,
+        840.0
+      ],
+      "exact_bands": 5,
+      "interpolated_bands": 0,
+      "edge_filled_bands": 0,
+      "edge_fill_ratio": 0.0,
+      "resampled": false,
+      "method": "exact",
+      "prediction_alignment": {
+        "resampled": true,
+        "bands": 5,
+        "source_range": [
+          400.0,
+          900.0
+        ],
+        "target_range": [
+          475.0,
+          840.0
+        ],
+        "edge_filled": false,
+        "exact_bands": 2,
+        "interpolated_bands": 3,
+        "edge_filled_bands": 0,
+        "edge_fill_ratio": 0.0,
+        "source_band_count": 51,
+        "method": "linear_interpolation_with_nearest_edge_fill"
+      }
+    },
+    "file_sha256": "262051853f061723a9e0ede642fdd8af39dca28f92ce32fb75a805b0a497dc53"
+  },
+  {
+    "model_id": "dnn_nmass_demo",
+    "model_name": "全谱 51 波段 Nmass-DNN 示例模型",
+    "image_id": "demo_hyper_img1",
+    "bands": 101,
+    "mean": 25.71,
+    "std": 2.69,
+    "unit": "mg/g",
+    "class_ratio": {
+      "low": 0.07502,
+      "suitable": 0.71866,
+      "high": 0.20633
+    },
+    "alignment": {
+      "source_range": [
+        400.0,
+        900.0
+      ],
+      "target_range": [
+        400.0,
+        900.0
+      ],
+      "exact_bands": 51,
+      "interpolated_bands": 0,
+      "edge_filled_bands": 0,
+      "edge_fill_ratio": 0.0,
+      "resampled": false,
+      "method": "exact",
+      "prediction_alignment": {
+        "resampled": false,
+        "bands": 51,
+        "source_band_count": 51,
+        "exact_bands": 51,
+        "interpolated_bands": 0,
+        "edge_filled_bands": 0,
+        "edge_fill_ratio": 0.0,
+        "edge_filled": false,
+        "source_range": [
+          400.0,
+          900.0
+        ],
+        "target_range": [
+          400.0,
+          900.0
+        ],
+        "method": "exact"
+      }
+    },
+    "file_sha256": "0569cfd0fc9f5b4c90a3339eb51959993e3dc4a2c5e953f149b98c3e79f617a2"
+  },
+  {
+    "model_id": "plsr_nmass_demo",
+    "model_name": "玉米 Nmass-PLSR 模型",
+    "image_id": "demo_hyper_img1",
+    "bands": 101,
+    "mean": 26.06,
+    "std": 3.312,
+    "unit": "mg/g",
+    "class_ratio": {
+      "low": 0.10223,
+      "suitable": 0.63311,
+      "high": 0.26467
+    },
+    "alignment": {
+      "source_range": [
+        400.0,
+        900.0
+      ],
+      "target_range": [
+        400.0,
+        900.0
+      ],
+      "exact_bands": 51,
+      "interpolated_bands": 0,
+      "edge_filled_bands": 0,
+      "edge_fill_ratio": 0.0,
+      "resampled": false,
+      "method": "exact",
+      "prediction_alignment": {
+        "resampled": false,
+        "bands": 51,
+        "source_band_count": 51,
+        "exact_bands": 51,
+        "interpolated_bands": 0,
+        "edge_filled_bands": 0,
+        "edge_fill_ratio": 0.0,
+        "edge_filled": false,
+        "source_range": [
+          400.0,
+          900.0
+        ],
+        "target_range": [
+          400.0,
+          900.0
+        ],
+        "method": "exact"
+      }
+    },
+    "file_sha256": "37c90b91174fe59327537e0a348be795ddc8bae66fcaded2585bc14619475a23"
+  }
+]

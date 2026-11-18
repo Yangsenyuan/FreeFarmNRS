@@ -1,0 +1,6 @@
+{"time": "2026-10-28T10:11:27+08:00", "level": "info", "source": "project", "message": "创建项目「高光谱试验田」"}
+{"time": "2026-10-28T10:11:28+08:00", "level": "info", "source": "demo", "message": "高光谱示例项目已创建，开始预处理与 PLSR 反演"}
+{"time": "2026-10-28T10:11:30+08:00", "level": "info", "source": "preprocess", "message": "影像「试验田B_20260618_高光谱.dat」预处理完成，有效像元占比 92.3%"}
+{"time": "2026-10-28T10:11:30+08:00", "level": "info", "source": "inversion", "message": "影像「试验田B_20260618_高光谱.dat」反演完成，均值 26.06 mg/g，模型「玉米 Nmass-PLSR 模型」"}
+{"time": "2026-10-28T10:16:42+08:00", "level": "info", "source": "inversion", "message": "开始反演「试验田B_20260618_高光谱.dat」，模型「玉米 Nmass-PLSR 模型」"}
+{"time": "2026-10-28T10:16:43+08:00", "level": "info", "source": "inversion", "message": "反演完成「试验田B_20260618_高光谱.dat」：均值 26.06 mg/g，变异系数 12.71%，模型「玉米 Nmass-PLSR 模型」"}

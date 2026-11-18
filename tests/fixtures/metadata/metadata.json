@@ -1,0 +1,20 @@
+{
+  "schema": "farm-survey-metadata-v1",
+  "sensor": {
+    "manufacturer": "MicaSense",
+    "model": "RedEdge-P",
+    "type": "multispectral"
+  },
+  "acquisition": {
+    "datetime": "2026-06-13T09:20:00+08:00",
+    "field_id": "JSON-FIELD-07"
+  },
+  "processing_level": "reflectance",
+  "bands": [
+    {"band_name": "Blue", "center_wavelength": 475, "wavelength_fwhm": 32},
+    {"band_name": "Green", "center_wavelength": 560, "wavelength_fwhm": 27},
+    {"band_name": "Red", "center_wavelength": 668, "wavelength_fwhm": 16},
+    {"band_name": "Red edge", "center_wavelength": 717, "wavelength_fwhm": 12},
+    {"band_name": "NIR", "center_wavelength": 842, "wavelength_fwhm": 57}
+  ]
+}

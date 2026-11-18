@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+tmp/
+
+# 本地临时测试项目（不作为示例发布）
+data/projects/proj_*/

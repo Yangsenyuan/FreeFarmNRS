@@ -1,0 +1,3284 @@
+{
+  "id": "planet_hengyu_case",
+  "name": "惠州恒福菜场 PlanetScope 监测案例",
+  "description": "用户提供的 PlanetScope PSScene 8 波段地表反射率裁剪影像。仅用于本地平台展示；内置模型结果仅用于流程演示，不代表真实田间标定精度。",
+  "crop": "蔬菜",
+  "field": "广东省惠州市惠城区恒福菜场",
+  "note": "用户提供的 PlanetScope PSScene 地表反射率数据",
+  "created_at": "2026-11-17T22:10:28+08:00",
+  "updated_at": "2026-11-17T22:39:32+08:00",
+  "images": [
+    {
+      "id": "planet_hengyu_img1",
+      "name": "20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif",
+      "file": "source/20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif",
+      "format": "GeoTIFF",
+      "sensor": "PlanetScope",
+      "sensor_name": "PlanetScope",
+      "sensor_type": "卫星光学传感器",
+      "flight_date": "2025-10-11",
+      "field": "广东省惠州市惠城区恒福菜场",
+      "field_id": "广东省惠州市惠城区恒福菜场",
+      "note": "用户提供的 PlanetScope PSScene 地表反射率数据",
+      "imported_at": "2026-11-17T22:10:29+08:00",
+      "status": "inverted",
+      "file_size": 2856150,
+      "data_source": "user_provided_local_planetscope",
+      "scene_id": "20251011_032408_70_24da",
+      "width": 689,
+      "height": 418,
+      "bands": 8,
+      "dtype": "uint16",
+      "driver": "GTiff",
+      "crs": "EPSG:32650",
+      "transform": [
+        3.0,
+        0.0,
+        209559.0,
+        0.0,
+        -3.0,
+        2548575.0
+      ],
+      "nodata": 0.0,
+      "res_x": 3.0,
+      "res_y": 3.0,
+      "bounds": [
+        209559.0,
+        2547321.0,
+        211626.0,
+        2548575.0
+      ],
+      "wavelengths": [
+        442.0,
+        490.0,
+        531.0,
+        565.0,
+        610.0,
+        665.0,
+        705.0,
+        865.0
+      ],
+      "wavelength_unit": "nm",
+      "bandwidths": [
+        21.0,
+        50.0,
+        36.0,
+        36.0,
+        20.0,
+        30.0,
+        16.0,
+        40.0
+      ],
+      "band_names": [
+        "Coastal Blue",
+        "Blue",
+        "Green I",
+        "Green",
+        "Yellow",
+        "Red",
+        "Red Edge",
+        "Near-Infrared"
+      ],
+      "descriptions": [
+        "coastal_blue",
+        "blue",
+        "green_i",
+        "green",
+        "yellow",
+        "red",
+        "rededge",
+        "nir"
+      ],
+      "instrument": "PSB.SD",
+      "acquisition_datetime": "2025-10-11T03:24:08Z",
+      "image_type": "卫星多光谱",
+      "value_type": "surface_reflectance",
+      "processing_level": "L3B",
+      "reflectance_scale": 0.0001,
+      "epsg": 32650,
+      "cloud_observations": [
+        {
+          "source": "json_sidecar",
+          "path": "20251011_032408_70_24da.json:properties.cloud_cover",
+          "value": 0
+        },
+        {
+          "source": "json_sidecar",
+          "path": "20251011_032408_70_24da_metadata.json:properties.cloud_cover",
+          "value": 0.0
+        },
+        {
+          "source": "xml_sidecar",
+          "path": "20251011_032408_70_24da_3B_AnalyticMS_8b_metadata_clip.xml:cloudCoverPercentage",
+          "value": "31.27"
+        }
+      ],
+      "metadata_conflicts": [
+        {
+          "field": "cloud_cover",
+          "values": [
+            {
+              "source": "json_sidecar",
+              "path": "20251011_032408_70_24da.json:properties.cloud_cover",
+              "value": 0.0
+            },
+            {
+              "source": "json_sidecar",
+              "path": "20251011_032408_70_24da_metadata.json:properties.cloud_cover",
+              "value": 0.0
+            },
+            {
+              "source": "xml_sidecar",
+              "path": "20251011_032408_70_24da_3B_AnalyticMS_8b_metadata_clip.xml:cloudCoverPercentage",
+              "value": 31.27
+            }
+          ],
+          "message": "同一 Scene 的云量来源值不一致：json_sidecar 20251011_032408_70_24da.json:properties.cloud_cover=0%；json_sidecar 20251011_032408_70_24da_metadata.json:properties.cloud_cover=0%；xml_sidecar 20251011_032408_70_24da_3B_AnalyticMS_8b_metadata_clip.xml:cloudCoverPercentage=31.27%。请人工确认最终采用值。"
+        }
+      ],
+      "metadata_warnings": [
+        "同一 Scene 的云量来源值不一致：json_sidecar 20251011_032408_70_24da.json:properties.cloud_cover=0%；json_sidecar 20251011_032408_70_24da_metadata.json:properties.cloud_cover=0%；xml_sidecar 20251011_032408_70_24da_3B_AnalyticMS_8b_metadata_clip.xml:cloudCoverPercentage=31.27%。请人工确认最终采用值。"
+      ],
+      "planet_scope": {
+        "scene_id": "20251011_032408_70_24da",
+        "sensor_name": "PlanetScope",
+        "instrument": "PSB.SD",
+        "platform": "24da",
+        "constellation": "planetscope",
+        "acquisition_datetime_utc": "2025-10-11T03:24:08Z",
+        "cloud_observations": [
+          {
+            "source": "json_sidecar",
+            "path": "20251011_032408_70_24da.json:properties.cloud_cover",
+            "value": 0
+          },
+          {
+            "source": "json_sidecar",
+            "path": "20251011_032408_70_24da_metadata.json:properties.cloud_cover",
+            "value": 0.0
+          },
+          {
+            "source": "xml_sidecar",
+            "path": "20251011_032408_70_24da_3B_AnalyticMS_8b_metadata_clip.xml:cloudCoverPercentage",
+            "value": "31.27"
+          }
+        ],
+        "xml": {
+          "platform_short_names": [
+            "PlanetScope",
+            "PSB.SD"
+          ],
+          "acquisition_datetime": "2025-10-11T03:24:08+00:00",
+          "product_type": "L3B",
+          "pixel_format": "16U",
+          "epsg": "32650",
+          "row_gsd": "3.0",
+          "column_gsd": "3.0",
+          "num_rows": "418",
+          "num_columns": "689",
+          "num_bands": "8",
+          "cloud_cover_percentage": "31.27",
+          "sun_azimuth": "1.580740e+02",
+          "sun_elevation": "5.782866e+01",
+          "view_azimuth": "1.149354e+01",
+          "off_nadir": "2.526662e+00",
+          "atmospheric_correction_applied": "false",
+          "instrument": "PSB.SD",
+          "sensor_name": "PlanetScope"
+        },
+        "asset": {
+          "asset.href": "./20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif",
+          "asset.type": "ortho_analytic_8b_sr",
+          "roles": [
+            "data",
+            "reflectance"
+          ],
+          "wavelengths": [
+            442.0,
+            490.0,
+            531.0,
+            565.0,
+            610.0,
+            665.0,
+            705.0,
+            865.0
+          ],
+          "bandwidths": [
+            21.0,
+            50.0,
+            36.0,
+            36.0,
+            20.0,
+            30.0,
+            16.0,
+            40.0
+          ],
+          "band_names": [
+            "Coastal Blue",
+            "Blue",
+            "Green I",
+            "Green",
+            "Yellow",
+            "Red",
+            "Red Edge",
+            "Near-Infrared"
+          ],
+          "reflectance_scale": 0.0001,
+          "reflectance_scales": [
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001,
+            0.0001
+          ],
+          "epsg": 32650,
+          "bbox": [
+            209559.0,
+            2547321.0,
+            211626.0,
+            2548575.0
+          ],
+          "shape": [
+            418,
+            689
+          ],
+          "transform": [
+            3.0,
+            0.0,
+            209559.0,
+            0.0,
+            -3.0,
+            2548575.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "data_type": "uint16",
+          "nodata": 0.0
+        },
+        "bbox": [
+          114.16654457,
+          23.00934249,
+          114.18643831,
+          23.02026345
+        ],
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                114.18643831,
+                23.02026345
+              ],
+              [
+                114.18643831,
+                23.00934249
+              ],
+              [
+                114.16654457,
+                23.00934249
+              ],
+              [
+                114.16654457,
+                23.02026345
+              ],
+              [
+                114.18643831,
+                23.02026345
+              ]
+            ]
+          ]
+        }
+      },
+      "projected_bbox": [
+        209559.0,
+        2547321.0,
+        211626.0,
+        2548575.0
+      ],
+      "projected_shape": [
+        418,
+        689
+      ],
+      "projected_transform": [
+        3.0,
+        0.0,
+        209559.0,
+        0.0,
+        -3.0,
+        2548575.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "metadata": {
+        "sensor_name": "PlanetScope",
+        "sensor_type": "卫星光学传感器",
+        "acquisition_datetime": "2025-10-11T03:24:08Z",
+        "flight_date": "2025-10-11",
+        "field_id": "广东省惠州市惠城区恒福菜场",
+        "image_type": "卫星多光谱",
+        "value_type": "surface_reflectance",
+        "processing_level": "L3B",
+        "wavelengths": [
+          442.0,
+          490.0,
+          531.0,
+          565.0,
+          610.0,
+          665.0,
+          705.0,
+          865.0
+        ],
+        "bandwidths": [
+          21.0,
+          50.0,
+          36.0,
+          36.0,
+          20.0,
+          30.0,
+          16.0,
+          40.0
+        ],
+        "wavelength_unit": "nm",
+        "band_names": [
+          "Coastal Blue",
+          "Blue",
+          "Green I",
+          "Green",
+          "Yellow",
+          "Red",
+          "Red Edge",
+          "Near-Infrared"
+        ],
+        "metadata_sources": {
+          "sensor_name": "xml_sidecar",
+          "sensor_type": "xml_sidecar",
+          "acquisition_datetime": "xml_sidecar",
+          "flight_date": "xml_sidecar",
+          "field_id": "user",
+          "image_type": "xml_sidecar",
+          "value_type": "xml_sidecar",
+          "processing_level": "xml_sidecar",
+          "wavelengths": "json_sidecar",
+          "bandwidths": "json_sidecar",
+          "wavelength_unit": "json_sidecar",
+          "band_names": "json_sidecar"
+        },
+        "metadata_confidence": {
+          "sensor_name": 0.93,
+          "sensor_type": 0.93,
+          "acquisition_datetime": 0.93,
+          "flight_date": 1.0,
+          "field_id": 1.0,
+          "image_type": 0.93,
+          "value_type": 0.93,
+          "processing_level": 0.93,
+          "wavelengths": 0.9,
+          "bandwidths": 0.9,
+          "wavelength_unit": 0.9,
+          "band_names": 0.9
+        },
+        "metadata_fields": {
+          "sensor_name": {
+            "value": "PlanetScope",
+            "source": "xml_sidecar",
+            "confidence": 0.93,
+            "raw_key": "eop:platform/eop:shortName",
+            "raw_value": "PlanetScope"
+          },
+          "sensor_type": {
+            "value": "卫星光学传感器",
+            "source": "xml_sidecar",
+            "confidence": 0.93,
+            "raw_key": "eop:platform",
+            "raw_value": "PlanetScope"
+          },
+          "acquisition_datetime": {
+            "value": "2025-10-11T03:24:08Z",
+            "source": "xml_sidecar",
+            "confidence": 0.93,
+            "raw_key": "ps:acquisitionDateTime",
+            "raw_value": "2025-10-11T03:24:08+00:00"
+          },
+          "flight_date": {
+            "value": "2025-10-11",
+            "source": "xml_sidecar",
+            "confidence": 0.93,
+            "raw_key": "ps:acquisitionDateTime",
+            "raw_value": "2025-10-11T03:24:08Z"
+          },
+          "field_id": {
+            "value": "广东省惠州市惠城区恒福菜场",
+            "source": "user",
+            "confidence": 1.0,
+            "raw_key": "user:location",
+            "raw_value": "广东省惠州市惠城区恒福菜场"
+          },
+          "image_type": {
+            "value": "卫星多光谱",
+            "source": "xml_sidecar",
+            "confidence": 0.93,
+            "raw_key": "eop:instrument",
+            "raw_value": "PSB.SD"
+          },
+          "value_type": {
+            "value": "surface_reflectance",
+            "source": "xml_sidecar",
+            "confidence": 0.93,
+            "raw_key": "eop:productType",
+            "raw_value": "L3B"
+          },
+          "processing_level": {
+            "value": "L3B",
+            "source": "xml_sidecar",
+            "confidence": 0.93,
+            "raw_key": "eop:productType",
+            "raw_value": "L3B"
+          },
+          "wavelengths": {
+            "value": [
+              442.0,
+              490.0,
+              531.0,
+              565.0,
+              610.0,
+              665.0,
+              705.0,
+              865.0
+            ],
+            "source": "json_sidecar",
+            "confidence": 0.9,
+            "raw_key": "assets.eo:bands",
+            "raw_value": {
+              "asset.href": "./20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif",
+              "asset.type": "ortho_analytic_8b_sr",
+              "roles": [
+                "data",
+                "reflectance"
+              ],
+              "wavelengths": [
+                442.0,
+                490.0,
+                531.0,
+                565.0,
+                610.0,
+                665.0,
+                705.0,
+                865.0
+              ],
+              "bandwidths": [
+                21.0,
+                50.0,
+                36.0,
+                36.0,
+                20.0,
+                30.0,
+                16.0,
+                40.0
+              ],
+              "band_names": [
+                "Coastal Blue",
+                "Blue",
+                "Green I",
+                "Green",
+                "Yellow",
+                "Red",
+                "Red Edge",
+                "Near-Infrared"
+              ],
+              "reflectance_scale": 0.0001,
+              "reflectance_scales": [
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001
+              ],
+              "epsg": 32650,
+              "bbox": [
+                209559.0,
+                2547321.0,
+                211626.0,
+                2548575.0
+              ],
+              "shape": [
+                418,
+                689
+              ],
+              "transform": [
+                3.0,
+                0.0,
+                209559.0,
+                0.0,
+                -3.0,
+                2548575.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "data_type": "uint16",
+              "nodata": 0.0
+            }
+          },
+          "bandwidths": {
+            "value": [
+              21.0,
+              50.0,
+              36.0,
+              36.0,
+              20.0,
+              30.0,
+              16.0,
+              40.0
+            ],
+            "source": "json_sidecar",
+            "confidence": 0.9,
+            "raw_key": "assets.eo:bands",
+            "raw_value": {
+              "asset.href": "./20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif",
+              "asset.type": "ortho_analytic_8b_sr",
+              "roles": [
+                "data",
+                "reflectance"
+              ],
+              "wavelengths": [
+                442.0,
+                490.0,
+                531.0,
+                565.0,
+                610.0,
+                665.0,
+                705.0,
+                865.0
+              ],
+              "bandwidths": [
+                21.0,
+                50.0,
+                36.0,
+                36.0,
+                20.0,
+                30.0,
+                16.0,
+                40.0
+              ],
+              "band_names": [
+                "Coastal Blue",
+                "Blue",
+                "Green I",
+                "Green",
+                "Yellow",
+                "Red",
+                "Red Edge",
+                "Near-Infrared"
+              ],
+              "reflectance_scale": 0.0001,
+              "reflectance_scales": [
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001
+              ],
+              "epsg": 32650,
+              "bbox": [
+                209559.0,
+                2547321.0,
+                211626.0,
+                2548575.0
+              ],
+              "shape": [
+                418,
+                689
+              ],
+              "transform": [
+                3.0,
+                0.0,
+                209559.0,
+                0.0,
+                -3.0,
+                2548575.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "data_type": "uint16",
+              "nodata": 0.0
+            }
+          },
+          "wavelength_unit": {
+            "value": "nm",
+            "source": "json_sidecar",
+            "confidence": 0.9,
+            "raw_key": null,
+            "raw_value": null
+          },
+          "band_names": {
+            "value": [
+              "Coastal Blue",
+              "Blue",
+              "Green I",
+              "Green",
+              "Yellow",
+              "Red",
+              "Red Edge",
+              "Near-Infrared"
+            ],
+            "source": "json_sidecar",
+            "confidence": 0.9,
+            "raw_key": "assets.eo:bands",
+            "raw_value": {
+              "asset.href": "./20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif",
+              "asset.type": "ortho_analytic_8b_sr",
+              "roles": [
+                "data",
+                "reflectance"
+              ],
+              "wavelengths": [
+                442.0,
+                490.0,
+                531.0,
+                565.0,
+                610.0,
+                665.0,
+                705.0,
+                865.0
+              ],
+              "bandwidths": [
+                21.0,
+                50.0,
+                36.0,
+                36.0,
+                20.0,
+                30.0,
+                16.0,
+                40.0
+              ],
+              "band_names": [
+                "Coastal Blue",
+                "Blue",
+                "Green I",
+                "Green",
+                "Yellow",
+                "Red",
+                "Red Edge",
+                "Near-Infrared"
+              ],
+              "reflectance_scale": 0.0001,
+              "reflectance_scales": [
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001
+              ],
+              "epsg": 32650,
+              "bbox": [
+                209559.0,
+                2547321.0,
+                211626.0,
+                2548575.0
+              ],
+              "shape": [
+                418,
+                689
+              ],
+              "transform": [
+                3.0,
+                0.0,
+                209559.0,
+                0.0,
+                -3.0,
+                2548575.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "data_type": "uint16",
+              "nodata": 0.0
+            }
+          }
+        },
+        "metadata_candidates": [
+          {
+            "field": "acquisition_datetime",
+            "value": "2025:10:11 03:24:08",
+            "source": "geotiff_tags",
+            "priority": 64,
+            "confidence": 0.84,
+            "raw_key": "TIFFTAG_DATETIME",
+            "raw_value": "2025:10:11 03:24:08"
+          },
+          {
+            "field": "value_type",
+            "value": "uint16",
+            "source": "geotiff_tags",
+            "priority": 64,
+            "confidence": 0.84,
+            "raw_key": "dtype",
+            "raw_value": "uint16"
+          },
+          {
+            "field": "band_names",
+            "value": [
+              "coastal_blue",
+              "blue",
+              "green_i",
+              "green",
+              "yellow",
+              "red",
+              "rededge",
+              "nir"
+            ],
+            "source": "band_tags",
+            "priority": 58,
+            "confidence": 0.78,
+            "raw_key": "descriptions",
+            "raw_value": [
+              "coastal_blue",
+              "blue",
+              "green_i",
+              "green",
+              "yellow",
+              "red",
+              "rededge",
+              "nir"
+            ]
+          },
+          {
+            "field": "sensor_type",
+            "value": "Feature",
+            "source": "json_sidecar",
+            "priority": 76,
+            "confidence": 0.9,
+            "raw_key": "type",
+            "raw_value": "Feature"
+          },
+          {
+            "field": "acquisition_datetime",
+            "value": "2025-10-11T03:24:08.702085Z",
+            "source": "json_sidecar",
+            "priority": 76,
+            "confidence": 0.9,
+            "raw_key": "properties.datetime",
+            "raw_value": "2025-10-11T03:24:08.702085Z"
+          },
+          {
+            "field": "sensor_type",
+            "value": "Feature",
+            "source": "json_sidecar",
+            "priority": 76,
+            "confidence": 0.9,
+            "raw_key": "type",
+            "raw_value": "Feature"
+          },
+          {
+            "field": "sensor_name",
+            "value": "PSB.SD",
+            "source": "json_sidecar",
+            "priority": 76,
+            "confidence": 0.9,
+            "raw_key": "properties.instrument",
+            "raw_value": "PSB.SD"
+          },
+          {
+            "field": "sensor_name",
+            "value": "PlanetScope",
+            "source": "json_sidecar",
+            "priority": 76,
+            "confidence": 0.9,
+            "raw_key": "properties.constellation",
+            "raw_value": "planetscope"
+          },
+          {
+            "field": "sensor_type",
+            "value": "卫星光学传感器",
+            "source": "json_sidecar",
+            "priority": 76,
+            "confidence": 0.9,
+            "raw_key": "properties.constellation",
+            "raw_value": "planetscope"
+          },
+          {
+            "field": "image_type",
+            "value": "卫星多光谱",
+            "source": "json_sidecar",
+            "priority": 76,
+            "confidence": 0.9,
+            "raw_key": "properties.instruments",
+            "raw_value": "PSB.SD"
+          },
+          {
+            "field": "acquisition_datetime",
+            "value": "2025-10-11T03:24:08Z",
+            "source": "json_sidecar",
+            "priority": 76,
+            "confidence": 0.9,
+            "raw_key": "properties.datetime",
+            "raw_value": "2025-10-11T03:24:08.702085Z"
+          },
+          {
+            "field": "flight_date",
+            "value": "2025-10-11",
+            "source": "json_sidecar",
+            "priority": 76,
+            "confidence": 0.9,
+            "raw_key": "properties.datetime",
+            "raw_value": "2025-10-11T03:24:08.702085Z"
+          },
+          {
+            "field": "wavelengths",
+            "value": [
+              442.0,
+              490.0,
+              531.0,
+              565.0,
+              610.0,
+              665.0,
+              705.0,
+              865.0
+            ],
+            "source": "json_sidecar",
+            "priority": 76,
+            "confidence": 0.9,
+            "raw_key": "assets.eo:bands",
+            "raw_value": {
+              "asset.href": "./20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif",
+              "asset.type": "ortho_analytic_8b_sr",
+              "roles": [
+                "data",
+                "reflectance"
+              ],
+              "wavelengths": [
+                442.0,
+                490.0,
+                531.0,
+                565.0,
+                610.0,
+                665.0,
+                705.0,
+                865.0
+              ],
+              "bandwidths": [
+                21.0,
+                50.0,
+                36.0,
+                36.0,
+                20.0,
+                30.0,
+                16.0,
+                40.0
+              ],
+              "band_names": [
+                "Coastal Blue",
+                "Blue",
+                "Green I",
+                "Green",
+                "Yellow",
+                "Red",
+                "Red Edge",
+                "Near-Infrared"
+              ],
+              "reflectance_scale": 0.0001,
+              "reflectance_scales": [
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001
+              ],
+              "epsg": 32650,
+              "bbox": [
+                209559.0,
+                2547321.0,
+                211626.0,
+                2548575.0
+              ],
+              "shape": [
+                418,
+                689
+              ],
+              "transform": [
+                3.0,
+                0.0,
+                209559.0,
+                0.0,
+                -3.0,
+                2548575.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "data_type": "uint16",
+              "nodata": 0.0
+            }
+          },
+          {
+            "field": "bandwidths",
+            "value": [
+              21.0,
+              50.0,
+              36.0,
+              36.0,
+              20.0,
+              30.0,
+              16.0,
+              40.0
+            ],
+            "source": "json_sidecar",
+            "priority": 76,
+            "confidence": 0.9,
+            "raw_key": "assets.eo:bands",
+            "raw_value": {
+              "asset.href": "./20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif",
+              "asset.type": "ortho_analytic_8b_sr",
+              "roles": [
+                "data",
+                "reflectance"
+              ],
+              "wavelengths": [
+                442.0,
+                490.0,
+                531.0,
+                565.0,
+                610.0,
+                665.0,
+                705.0,
+                865.0
+              ],
+              "bandwidths": [
+                21.0,
+                50.0,
+                36.0,
+                36.0,
+                20.0,
+                30.0,
+                16.0,
+                40.0
+              ],
+              "band_names": [
+                "Coastal Blue",
+                "Blue",
+                "Green I",
+                "Green",
+                "Yellow",
+                "Red",
+                "Red Edge",
+                "Near-Infrared"
+              ],
+              "reflectance_scale": 0.0001,
+              "reflectance_scales": [
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001
+              ],
+              "epsg": 32650,
+              "bbox": [
+                209559.0,
+                2547321.0,
+                211626.0,
+                2548575.0
+              ],
+              "shape": [
+                418,
+                689
+              ],
+              "transform": [
+                3.0,
+                0.0,
+                209559.0,
+                0.0,
+                -3.0,
+                2548575.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "data_type": "uint16",
+              "nodata": 0.0
+            }
+          },
+          {
+            "field": "band_names",
+            "value": [
+              "Coastal Blue",
+              "Blue",
+              "Green I",
+              "Green",
+              "Yellow",
+              "Red",
+              "Red Edge",
+              "Near-Infrared"
+            ],
+            "source": "json_sidecar",
+            "priority": 76,
+            "confidence": 0.9,
+            "raw_key": "assets.eo:bands",
+            "raw_value": {
+              "asset.href": "./20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif",
+              "asset.type": "ortho_analytic_8b_sr",
+              "roles": [
+                "data",
+                "reflectance"
+              ],
+              "wavelengths": [
+                442.0,
+                490.0,
+                531.0,
+                565.0,
+                610.0,
+                665.0,
+                705.0,
+                865.0
+              ],
+              "bandwidths": [
+                21.0,
+                50.0,
+                36.0,
+                36.0,
+                20.0,
+                30.0,
+                16.0,
+                40.0
+              ],
+              "band_names": [
+                "Coastal Blue",
+                "Blue",
+                "Green I",
+                "Green",
+                "Yellow",
+                "Red",
+                "Red Edge",
+                "Near-Infrared"
+              ],
+              "reflectance_scale": 0.0001,
+              "reflectance_scales": [
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001,
+                0.0001
+              ],
+              "epsg": 32650,
+              "bbox": [
+                209559.0,
+                2547321.0,
+                211626.0,
+                2548575.0
+              ],
+              "shape": [
+                418,
+                689
+              ],
+              "transform": [
+                3.0,
+                0.0,
+                209559.0,
+                0.0,
+                -3.0,
+                2548575.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "data_type": "uint16",
+              "nodata": 0.0
+            }
+          },
+          {
+            "field": "value_type",
+            "value": "uint16",
+            "source": "json_sidecar",
+            "priority": 76,
+            "confidence": 0.9,
+            "raw_key": "assets.raster:bands.data_type",
+            "raw_value": "uint16"
+          },
+          {
+            "field": "value_type",
+            "value": "surface_reflectance",
+            "source": "json_sidecar",
+            "priority": 76,
+            "confidence": 0.9,
+            "raw_key": "assets.roles",
+            "raw_value": [
+              "data",
+              "reflectance"
+            ]
+          },
+          {
+            "field": "sensor_name",
+            "value": "PlanetScope",
+            "source": "json_sidecar",
+            "priority": 76,
+            "confidence": 0.9,
+            "raw_key": "properties.constellation",
+            "raw_value": null
+          },
+          {
+            "field": "sensor_type",
+            "value": "卫星光学传感器",
+            "source": "json_sidecar",
+            "priority": 76,
+            "confidence": 0.9,
+            "raw_key": "properties.constellation",
+            "raw_value": ""
+          },
+          {
+            "field": "image_type",
+            "value": "卫星多光谱",
+            "source": "json_sidecar",
+            "priority": 76,
+            "confidence": 0.9,
+            "raw_key": "properties.instruments",
+            "raw_value": "PSB.SD"
+          },
+          {
+            "field": "acquisition_datetime",
+            "value": "2025-10-11T03:24:08Z",
+            "source": "json_sidecar",
+            "priority": 76,
+            "confidence": 0.9,
+            "raw_key": "properties.datetime",
+            "raw_value": "2025-10-11T03:24:08.702085Z"
+          },
+          {
+            "field": "flight_date",
+            "value": "2025-10-11",
+            "source": "json_sidecar",
+            "priority": 76,
+            "confidence": 0.9,
+            "raw_key": "properties.datetime",
+            "raw_value": "2025-10-11T03:24:08.702085Z"
+          },
+          {
+            "field": "sensor_name",
+            "value": "PlanetScope",
+            "source": "xml_sidecar",
+            "priority": 80,
+            "confidence": 0.93,
+            "raw_key": "eop:platform/eop:shortName",
+            "raw_value": "PlanetScope"
+          },
+          {
+            "field": "sensor_type",
+            "value": "卫星光学传感器",
+            "source": "xml_sidecar",
+            "priority": 80,
+            "confidence": 0.93,
+            "raw_key": "eop:platform",
+            "raw_value": "PlanetScope"
+          },
+          {
+            "field": "image_type",
+            "value": "卫星多光谱",
+            "source": "xml_sidecar",
+            "priority": 80,
+            "confidence": 0.93,
+            "raw_key": "eop:instrument",
+            "raw_value": "PSB.SD"
+          },
+          {
+            "field": "acquisition_datetime",
+            "value": "2025-10-11T03:24:08Z",
+            "source": "xml_sidecar",
+            "priority": 80,
+            "confidence": 0.93,
+            "raw_key": "ps:acquisitionDateTime",
+            "raw_value": "2025-10-11T03:24:08+00:00"
+          },
+          {
+            "field": "flight_date",
+            "value": "2025-10-11",
+            "source": "xml_sidecar",
+            "priority": 80,
+            "confidence": 0.93,
+            "raw_key": "ps:acquisitionDateTime",
+            "raw_value": "2025-10-11T03:24:08Z"
+          },
+          {
+            "field": "processing_level",
+            "value": "L3B",
+            "source": "xml_sidecar",
+            "priority": 80,
+            "confidence": 0.93,
+            "raw_key": "eop:productType",
+            "raw_value": "L3B"
+          },
+          {
+            "field": "value_type",
+            "value": "surface_reflectance",
+            "source": "xml_sidecar",
+            "priority": 80,
+            "confidence": 0.93,
+            "raw_key": "eop:productType",
+            "raw_value": "L3B"
+          },
+          {
+            "field": "flight_date",
+            "value": "2025-10-11",
+            "source": "filename_rule",
+            "priority": 32,
+            "confidence": 0.52,
+            "raw_key": "filename",
+            "raw_value": "20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif"
+          },
+          {
+            "field": "field_id",
+            "value": "广东省惠州市惠城区恒福菜场",
+            "source": "user",
+            "priority": 100,
+            "confidence": 1.0,
+            "raw_key": "user:field_id",
+            "raw_value": "广东省惠州市惠城区恒福菜场"
+          },
+          {
+            "field": "flight_date",
+            "value": "2025-10-11",
+            "source": "user",
+            "priority": 100,
+            "confidence": 1.0,
+            "raw_key": "user:flight_date",
+            "raw_value": "2025-10-11"
+          },
+          {
+            "field": "wavelength_unit",
+            "value": "nm",
+            "source": "json_sidecar",
+            "priority": 76,
+            "confidence": 0.9,
+            "raw_key": null,
+            "raw_value": null
+          }
+        ],
+        "raw_metadata": {
+          "dataset": "E:\\Postgraduate_2\\CSC_Nmass\\data\\projects\\planet_hengyu_case\\images\\planet_hengyu_img1\\source\\20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif",
+          "envi_header": {},
+          "geotiff_tags": {
+            "TIFFTAG_IMAGEDESCRIPTION": "{\"atmospheric_correction\": {\"aerosol_model\": \"continental\", \"aot_coverage\": 0.0, \"aot_mean_quality\": 127, \"aot_method\": \"fixed\", \"aot_source\": \"modis\", \"aot_status\": \"Missing Data - Using Default AOT\", \"aot_std\": 0.0, \"aot_used\": 0.22554081853895588, \"atmospheric_correction_algorithm\": \"6Sv2.1\", \"atmospheric_model\": \"tropical\", \"luts_version\": 3, \"ozone_coverage\": 0.0, \"ozone_mean_quality\": 0, \"ozone_method\": \"fixed\", \"ozone_source\": \"modis\", \"ozone_status\": \"Missing Data - Using Default AOT\", \"ozone_std\": 0.0, \"ozone_used\": 0.0, \"satellite_azimuth_angle\": 0, \"satellite_zenith_angle\": 0, \"solar_azimuth_angle\": 158.074, \"solar_zenith_angle\": 32.171, \"sr_version\": \"2.1\", \"water_vapor_coverage\": 0.0, \"water_vapor_mean_quality\": 127, \"water_vapor_method\": \"fixed\", \"water_vapor_source\": \"modis\", \"water_vapor_status\": \"Missing Data - Using Default AOT\", \"water_vapor_std\": 0.0, \"water_vapor_used\": 0.0}}",
+            "TIFFTAG_DATETIME": "2025:10:11 03:24:08",
+            "AREA_OR_POINT": "Area"
+          },
+          "band_tags": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ],
+          "aux_xml": {},
+          "json_sidecar": {
+            "documents": [
+              {
+                "path": "E:\\Postgraduate_2\\CSC_Nmass\\data\\projects\\planet_hengyu_case\\images\\planet_hengyu_img1\\source\\20251011_032408_70_24da.json",
+                "encoding": "utf-8",
+                "document": {
+                  "type": "Feature",
+                  "stac_version": "1.0.0",
+                  "id": "20251011_032408_70_24da",
+                  "properties": {
+                    "updated": "2025-10-12T05:47:13Z",
+                    "created": "2025-10-11T05:31:15Z",
+                    "gsd": 3.6,
+                    "constellation": "planetscope",
+                    "platform": "24da",
+                    "instruments": [
+                      "PSB.SD"
+                    ],
+                    "eo:cloud_cover": 0,
+                    "view:off_nadir": 2.5,
+                    "view:azimuth": 276,
+                    "view:sun_azimuth": 158.1,
+                    "view:sun_elevation": 57.8,
+                    "pl:ground_control": true,
+                    "pl:item_type": "PSScene",
+                    "pl:pixel_resolution": 3,
+                    "pl:publishing_stage": "finalized",
+                    "pl:quality_category": "standard",
+                    "pl:strip_id": "8359349",
+                    "published": "2025-10-11T05:31:15Z",
+                    "datetime": "2025-10-11T03:24:08.702085Z"
+                  },
+                  "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                      [
+                        [
+                          114.18643831,
+                          23.02026345
+                        ],
+                        [
+                          114.18643831,
+                          23.00934249
+                        ],
+                        [
+                          114.16654457,
+                          23.00934249
+                        ],
+                        [
+                          114.16654457,
+                          23.02026345
+                        ],
+                        [
+                          114.18643831,
+                          23.02026345
+                        ]
+                      ]
+                    ]
+                  },
+                  "links": [
+                    {
+                      "rel": "root",
+                      "href": "../catalog.json",
+                      "type": "application/json"
+                    },
+                    {
+                      "rel": "collection",
+                      "href": "./PSScene_collection.json",
+                      "type": "application/json"
+                    },
+                    {
+                      "rel": "parent",
+                      "href": "./PSScene_collection.json",
+                      "type": "application/json"
+                    }
+                  ],
+                  "assets": {
+                    "20251011_032408_70_24da_metadata_json": {
+                      "href": "./20251011_032408_70_24da_metadata.json",
+                      "type": "application/json",
+                      "roles": [
+                        "metadata"
+                      ]
+                    },
+                    "20251011_032408_70_24da_3B_AnalyticMS_8b_metadata_clip_xml": {
+                      "href": "./20251011_032408_70_24da_3B_AnalyticMS_8b_metadata_clip.xml",
+                      "type": "text/xml",
+                      "pl:asset_type": "ortho_analytic_8b_xml",
+                      "pl:bundle_type": "analytic_8b_sr_udm2",
+                      "roles": [
+                        "metadata"
+                      ]
+                    },
+                    "20251011_032408_70_24da_3B_udm2_clip_tif": {
+                      "href": "./20251011_032408_70_24da_3B_udm2_clip.tif",
+                      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+                      "pl:asset_type": "ortho_udm2",
+                      "pl:bundle_type": "analytic_8b_sr_udm2",
+                      "raster:bands": [
+                        {
+                          "data_type": "uint8",
+                          "spatial_resolution": 3.0,
+                          "statistics": {
+                            "minimum": 0.0,
+                            "maximum": 1.0
+                          }
+                        },
+                        {
+                          "data_type": "uint8",
+                          "spatial_resolution": 3.0,
+                          "statistics": {
+                            "minimum": 0.0,
+                            "maximum": 0.0
+                          }
+                        },
+                        {
+                          "data_type": "uint8",
+                          "spatial_resolution": 3.0,
+                          "statistics": {
+                            "minimum": 0.0,
+                            "maximum": 0.0
+                          }
+                        },
+                        {
+                          "data_type": "uint8",
+                          "spatial_resolution": 3.0,
+                          "statistics": {
+                            "minimum": 0.0,
+                            "maximum": 0.0
+                          }
+                        },
+                        {
+                          "data_type": "uint8",
+                          "spatial_resolution": 3.0,
+                          "statistics": {
+                            "minimum": 0.0,
+                            "maximum": 0.0
+                          }
+                        },
+                        {
+                          "data_type": "uint8",
+                          "spatial_resolution": 3.0,
+                          "statistics": {
+                            "minimum": 0.0,
+                            "maximum": 0.0
+                          }
+                        },
+                        {
+                          "data_type": "uint8",
+                          "spatial_resolution": 3.0,
+                          "statistics": {
+                            "minimum": 0.0,
+                            "maximum": 99.0
+                          }
+                        },
+                        {
+                          "data_type": "uint8",
+                          "spatial_resolution": 3.0,
+                          "statistics": {
+                            "minimum": 0.0,
+                            "maximum": 1.0
+                          }
+                        }
+                      ],
+                      "eo:bands": [
+                        {
+                          "name": "B1",
+                          "description": "Clear map (0: not clear, 1: clear)"
+                        },
+                        {
+                          "name": "B2",
+                          "description": "Snow map (0: no snow or ice, 1: snow or ice)"
+                        },
+                        {
+                          "name": "B3",
+                          "description": "Shadow map (0: no shadow, 1: shadow)"
+                        },
+                        {
+                          "name": "B4",
+                          "description": "Light haze map (0: no light haze, 1: light haze)"
+                        },
+                        {
+                          "name": "B5",
+                          "description": "Heavy haze map (0: no heavy haze, 1: heavy haze)"
+                        },
+                        {
+                          "name": "B6",
+                          "description": "Cloud map (0: no cloud, 1: cloud)"
+                        },
+                        {
+                          "name": "B7",
+                          "description": "Confidence map (percentage value: per-pixel algorithmic confidence in classification)"
+                        },
+                        {
+                          "name": "B8",
+                          "description": "Unusable pixels"
+                        }
+                      ],
+                      "proj:epsg": 32650,
+                      "proj:bbox": [
+                        209559.0,
+                        2547321.0,
+                        211626.0,
+                        2548575.0
+                      ],
+                      "proj:shape": [
+                        418,
+                        689
+                      ],
+                      "proj:transform": [
+                        3.0,
+                        0.0,
+                        209559.0,
+                        0.0,
+                        -3.0,
+                        2548575.0,
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "roles": [
+                        "data",
+                        "snow-ice",
+                        "cloud",
+                        "cloud-shadow"
+                      ]
+                    },
+                    "20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip_tif": {
+                      "href": "./20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif",
+                      "type": "image/tiff",
+                      "pl:asset_type": "ortho_analytic_8b_sr",
+                      "pl:bundle_type": "analytic_8b_sr_udm2",
+                      "raster:bands": [
+                        {
+                          "nodata": 0.0,
+                          "data_type": "uint16",
+                          "spatial_resolution": 3.0,
+                          "statistics": {
+                            "minimum": 394.0,
+                            "maximum": 2723.0
+                          },
+                          "scale": 0.0001
+                        },
+                        {
+                          "nodata": 0.0,
+                          "data_type": "uint16",
+                          "spatial_resolution": 3.0,
+                          "statistics": {
+                            "minimum": 316.0,
+                            "maximum": 3019.0
+                          },
+                          "scale": 0.0001
+                        },
+                        {
+                          "nodata": 0.0,
+                          "data_type": "uint16",
+                          "spatial_resolution": 3.0,
+                          "statistics": {
+                            "minimum": 393.0,
+                            "maximum": 3708.0
+                          },
+                          "scale": 0.0001
+                        },
+                        {
+                          "nodata": 0.0,
+                          "data_type": "uint16",
+                          "spatial_resolution": 3.0,
+                          "statistics": {
+                            "minimum": 354.0,
+                            "maximum": 3809.0
+                          },
+                          "scale": 0.0001
+                        },
+                        {
+                          "nodata": 0.0,
+                          "data_type": "uint16",
+                          "spatial_resolution": 3.0,
+                          "statistics": {
+                            "minimum": 360.0,
+                            "maximum": 3907.0
+                          },
+                          "scale": 0.0001
+                        },
+                        {
+                          "nodata": 0.0,
+                          "data_type": "uint16",
+                          "spatial_resolution": 3.0,
+                          "statistics": {
+                            "minimum": 278.0,
+                            "maximum": 3927.0
+                          },
+                          "scale": 0.0001
+                        },
+                        {
+                          "nodata": 0.0,
+                          "data_type": "uint16",
+                          "spatial_resolution": 3.0,
+                          "statistics": {
+                            "minimum": 403.0,
+                            "maximum": 3788.0
+                          },
+                          "scale": 0.0001
+                        },
+                        {
+                          "nodata": 0.0,
+                          "data_type": "uint16",
+                          "spatial_resolution": 3.0,
+                          "statistics": {
+                            "minimum": 410.0,
+                            "maximum": 5552.0
+                          },
+                          "scale": 0.0001
+                        }
+                      ],
+                      "eo:bands": [
+                        {
+                          "name": "Coastal Blue",
+                          "common_name": "coastal",
+                          "center_wavelength": 0.442,
+                          "full_width_half_max": 0.021
+                        },
+                        {
+                          "name": "Blue",
+                          "common_name": "blue",
+                          "center_wavelength": 0.49,
+                          "full_width_half_max": 0.05
+                        },
+                        {
+                          "name": "Green I",
+                          "center_wavelength": 0.531,
+                          "full_width_half_max": 0.036
+                        },
+                        {
+                          "name": "Green",
+                          "common_name": "green",
+                          "center_wavelength": 0.565,
+                          "full_width_half_max": 0.036
+                        },
+                        {
+                          "name": "Yellow",
+                          "common_name": "yellow",
+                          "center_wavelength": 0.61,
+                          "full_width_half_max": 0.02
+                        },
+                        {
+                          "name": "Red",
+                          "common_name": "red",
+                          "center_wavelength": 0.665,
+                          "full_width_half_max": 0.03
+                        },
+                        {
+                          "name": "Red Edge",
+                          "common_name": "rededge",
+                          "center_wavelength": 0.705,
+                          "full_width_half_max": 0.016
+                        },
+                        {
+                          "name": "Near-Infrared",
+                          "common_name": "nir",
+                          "center_wavelength": 0.865,
+                          "full_width_half_max": 0.04
+                        }
+                      ],
+                      "proj:epsg": 32650,
+                      "proj:bbox": [
+                        209559.0,
+                        2547321.0,
+                        211626.0,
+                        2548575.0
+                      ],
+                      "proj:shape": [
+                        418,
+                        689
+                      ],
+                      "proj:transform": [
+                        3.0,
+                        0.0,
+                        209559.0,
+                        0.0,
+                        -3.0,
+                        2548575.0,
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "roles": [
+                        "data",
+                        "reflectance"
+                      ]
+                    }
+                  },
+                  "bbox": [
+                    114.16654457,
+                    23.00934249,
+                    114.18643831,
+                    23.02026345
+                  ],
+                  "stac_extensions": [
+                    "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+                    "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+                    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+                    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+                  ],
+                  "collection": "f6aa9a4c-3edb-4c52-83a1-577855c827ee: PSScene"
+                }
+              },
+              {
+                "path": "E:\\Postgraduate_2\\CSC_Nmass\\data\\projects\\planet_hengyu_case\\images\\planet_hengyu_img1\\source\\20251011_032408_70_24da_metadata.json",
+                "encoding": "utf-8",
+                "document": {
+                  "id": "20251011_032408_70_24da",
+                  "type": "Feature",
+                  "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                      [
+                        [
+                          114.18643831,
+                          23.02026345
+                        ],
+                        [
+                          114.18643831,
+                          23.00934249
+                        ],
+                        [
+                          114.16654457,
+                          23.00934249
+                        ],
+                        [
+                          114.16654457,
+                          23.02026345
+                        ],
+                        [
+                          114.18643831,
+                          23.02026345
+                        ]
+                      ]
+                    ]
+                  },
+                  "properties": {
+                    "acquired": "2025-10-11T03:24:08.702085Z",
+                    "anomalous_pixels": 0,
+                    "clear_confidence_percent": 97,
+                    "clear_percent": 100,
+                    "cloud_cover": 0.0,
+                    "cloud_percent": 0,
+                    "ground_control": true,
+                    "gsd": 3.6,
+                    "heavy_haze_percent": 0,
+                    "instrument": "PSB.SD",
+                    "item_type": "PSScene",
+                    "light_haze_percent": 0,
+                    "pixel_resolution": 3,
+                    "provider": "planetscope",
+                    "published": "2025-10-11T05:31:15Z",
+                    "publishing_stage": "finalized",
+                    "quality_category": "standard",
+                    "satellite_azimuth": 276,
+                    "satellite_id": "24da",
+                    "shadow_percent": 0,
+                    "snow_ice_percent": 0,
+                    "strip_id": "8359349",
+                    "sun_azimuth": 158.1,
+                    "sun_elevation": 57.8,
+                    "updated": "2025-10-12T05:47:13Z",
+                    "view_angle": 2.5,
+                    "visible_confidence_percent": 97,
+                    "visible_percent": 100
+                  }
+                }
+              }
+            ]
+          },
+          "xml_sidecar": {
+            "path": "E:\\Postgraduate_2\\CSC_Nmass\\data\\projects\\planet_hengyu_case\\images\\planet_hengyu_img1\\source\\20251011_032408_70_24da_3B_AnalyticMS_8b_metadata_clip.xml",
+            "values": {
+              "platform_short_names": [
+                "PlanetScope",
+                "PSB.SD"
+              ],
+              "acquisition_datetime": "2025-10-11T03:24:08+00:00",
+              "product_type": "L3B",
+              "pixel_format": "16U",
+              "epsg": "32650",
+              "row_gsd": "3.0",
+              "column_gsd": "3.0",
+              "num_rows": "418",
+              "num_columns": "689",
+              "num_bands": "8",
+              "cloud_cover_percentage": "31.27",
+              "sun_azimuth": "1.580740e+02",
+              "sun_elevation": "5.782866e+01",
+              "view_azimuth": "1.149354e+01",
+              "off_nadir": "2.526662e+00",
+              "atmospheric_correction_applied": "false",
+              "instrument": "PSB.SD",
+              "sensor_name": "PlanetScope"
+            },
+            "xml": "<ns0:EarthObservation xmlns:ns0=\"http://schemas.planet.com/ps/v1/planet_product_metadata_geocorrected_level\" xmlns:ns2=\"http://www.opengis.net/gml\" xmlns:ns3=\"http://earth.esa.int/eop\" xmlns:ns4=\"http://www.w3.org/1999/xlink\" xmlns:ns5=\"http://earth.esa.int/opt\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://schemas.planet.com/ps/v1/planet_product_metadata_geocorrected_level http://schemas.planet.com/ps/v1/planet_product_metadata_geocorrected_level.xsd\" version=\"1.2.1\" planet_standard_product_version=\"1.0\">\n  <ns2:metaDataProperty>\n    <ns0:EarthObservationMetaData>\n      <ns3:identifier>20251011_032408_70_24da_3B_AnalyticMS_8b</ns3:identifier>\n      <ns3:acquisitionType>NOMINAL</ns3:acquisitionType>\n      <ns3:productType>L3B</ns3:productType>\n      <ns3:status>ARCHIVED</ns3:status>\n      <ns3:downlinkedTo>\n        <ns3:DownlinkInformation>\n          <ns3:acquisitionStation codeSpace=\"urn:eop:PS:stationLocation\">Planet Ground Station Network</ns3:acquisitionStation>\n          <ns3:acquisitionDate>2025-10-11T03:24:08+00:00</ns3:acquisitionDate>\n        </ns3:DownlinkInformation>\n      </ns3:downlinkedTo>\n      <ns3:archivedIn>\n        <ns3:ArchivingInformation>\n          <ns3:archivingCenter codeSpace=\"urn:eop:PS:stationLocation\">Planet Archive Center</ns3:archivingCenter>\n          <ns3:archivingDate>2025-10-11T03:24:08+00:00</ns3:archivingDate>\n          <ns3:archivingIdentifier codeSpace=\"urn:eop:PS:dmsCatalogueId\">8359349</ns3:archivingIdentifier>\n        </ns3:ArchivingInformation>\n      </ns3:archivedIn>\n      <ns3:processing>\n        <ns3:ProcessingInformation>\n          <ns3:processorName>CMO Processor</ns3:processorName>\n          <ns3:processorVersion>4.1.4</ns3:processorVersion>\n          <ns3:nativeProductFormat>GeoTIFF</ns3:nativeProductFormat>\n        </ns3:ProcessingInformation>\n      </ns3:processing>\n      <ns0:license>\n        <ns0:licenseType>20160101 - Inc - Single User</ns0:licenseType>\n        <ns0:resourceLink ns4:title=\"PL EULA\" ns4:href=\"https://assets.planet.com/docs/20160101_Inc_SingleUser.txt\" />\n      </ns0:license>\n      <ns0:versionIsd>1.0</ns0:versionIsd>\n      <ns0:pixelFormat>16U</ns0:pixelFormat>\n    </ns0:EarthObservationMetaData>\n  </ns2:metaDataProperty>\n  <ns2:validTime>\n    <ns2:TimePeriod>\n      <ns2:beginPosition>2025-10-11T03:24:08+00:00</ns2:beginPosition>\n      <ns2:endPosition>2025-10-11T03:24:08+00:00</ns2:endPosition>\n    </ns2:TimePeriod>\n  </ns2:validTime>\n  <ns2:using>\n    <ns3:EarthObservationEquipment>\n      <ns3:platform>\n        <ns3:Platform>\n          <ns3:shortName>PlanetScope</ns3:shortName>\n          <ns3:serialIdentifier>24da</ns3:serialIdentifier>\n          <ns3:orbitType>LEO-SSO</ns3:orbitType>\n        </ns3:Platform>\n      </ns3:platform>\n      <ns3:instrument>\n        <ns3:Instrument>\n          <ns3:shortName>PSB.SD</ns3:shortName>\n        </ns3:Instrument>\n      </ns3:instrument>\n      <ns3:sensor>\n        <ns0:Sensor>\n          <ns3:sensorType>OPTICAL</ns3:sensorType>\n          <ns3:resolution uom=\"m\">3.0000</ns3:resolution>\n          <ns0:scanType>FRAME</ns0:scanType>\n        </ns0:Sensor>\n      </ns3:sensor>\n      <ns3:acquisitionParameters>\n        <ns0:Acquisition>\n          <ns3:orbitDirection>DESCENDING</ns3:orbitDirection>\n          <ns3:incidenceAngle uom=\"deg\">2.728376e+00</ns3:incidenceAngle>\n          <ns5:illuminationAzimuthAngle uom=\"deg\">1.580740e+02</ns5:illuminationAzimuthAngle>\n          <ns5:illuminationElevationAngle uom=\"deg\">5.782866e+01</ns5:illuminationElevationAngle>\n          <ns0:azimuthAngle uom=\"deg\">1.149354e+01</ns0:azimuthAngle>\n          <ns0:spaceCraftViewAngle uom=\"deg\">2.526662e+00</ns0:spaceCraftViewAngle>\n          <ns0:acquisitionDateTime>2025-10-11T03:24:08+00:00</ns0:acquisitionDateTime>\n        </ns0:Acquisition>\n      </ns3:acquisitionParameters>\n    </ns3:EarthObservationEquipment>\n  </ns2:using>\n  <ns2:target>\n    <ns0:Footprint>\n      <ns2:multiExtentOf>\n        <ns2:MultiSurface srsName=\"EPSG:4326\">\n          <ns2:surfaceMembers>\n            <ns2:Polygon>\n              <ns2:outerBoundaryIs>\n                <ns2:LinearRing>\n                  <ns2:coordinates>114.18643831,23.02026345 114.18643831,23.00934249 114.16654457,23.00934249 114.16654457,23.02026345 114.18643831,23.02026345</ns2:coordinates>\n                </ns2:LinearRing>\n              </ns2:outerBoundaryIs>\n            </ns2:Polygon>\n          </ns2:surfaceMembers>\n        </ns2:MultiSurface>\n      </ns2:multiExtentOf>\n      <ns2:centerOf>\n        <ns2:Point srsName=\"EPSG:4326\">\n          <ns2:pos>114.2952723926 23.0230212397</ns2:pos>\n        </ns2:Point>\n      </ns2:centerOf>\n      <ns0:geographicLocation>\n        <ns0:topLeft>\n          <ns0:latitude>23.1360525557</ns0:latitude>\n          <ns0:longitude>114.1237081401</ns0:longitude>\n        </ns0:topLeft>\n        <ns0:topRight>\n          <ns0:latitude>23.1360525557</ns0:latitude>\n          <ns0:longitude>114.4670159656</ns0:longitude>\n        </ns0:topRight>\n        <ns0:bottomRight>\n          <ns0:latitude>22.9096958632</ns0:latitude>\n          <ns0:longitude>114.4670159656</ns0:longitude>\n        </ns0:bottomRight>\n        <ns0:bottomLeft>\n          <ns0:latitude>22.9096958632</ns0:latitude>\n          <ns0:longitude>114.1237081401</ns0:longitude>\n        </ns0:bottomLeft>\n      </ns0:geographicLocation>\n    </ns0:Footprint>\n  </ns2:target>\n  <ns2:resultOf>\n    <ns0:EarthObservationResult>\n      <ns3:product>\n        <ns0:ProductInformation>\n          <ns3:fileName>/execdir/20251011_032408_70_24da_3B_AnalyticMS_8b_clip.tif</ns3:fileName>\n          <ns0:productFormat>GeoTIFF</ns0:productFormat>\n          <ns0:spatialReferenceSystem>\n            <ns0:epsgCode>32650</ns0:epsgCode>\n            <ns0:geodeticDatum>WGS_1984</ns0:geodeticDatum>\n            <ns0:projection>WGS 84 / UTM zone 50N</ns0:projection>\n            <ns0:projectionZone>50</ns0:projectionZone>\n          </ns0:spatialReferenceSystem>\n          <ns0:resamplingKernel>CC</ns0:resamplingKernel>\n          <ns0:numRows>418</ns0:numRows>\n          <ns0:numColumns>689</ns0:numColumns>\n          <ns0:numBands>8</ns0:numBands>\n          <ns0:rowGsd>3.0</ns0:rowGsd>\n          <ns0:columnGsd>3.0</ns0:columnGsd>\n          <ns0:radiometricCorrectionApplied>true</ns0:radiometricCorrectionApplied>\n          <ns0:geoCorrectionLevel>Precision Geocorrection</ns0:geoCorrectionLevel>\n          <ns0:elevationCorrectionApplied>FineDEM</ns0:elevationCorrectionApplied>\n          <ns0:atmosphericCorrectionApplied>false</ns0:atmosphericCorrectionApplied>\n        </ns0:ProductInformation>\n      </ns3:product>\n      <ns3:mask>\n        <ns3:MaskInformation>\n          <ns3:type>UNUSABLE DATA</ns3:type>\n          <ns3:format>RASTER</ns3:format>\n          <ns3:referenceSystemIdentifier codeSpace=\"EPSG\">32650</ns3:referenceSystemIdentifier>\n          <ns3:fileName>NA</ns3:fileName>\n        </ns3:MaskInformation>\n      </ns3:mask>\n      <ns5:cloudCoverPercentage uom=\"percentage\">31.27</ns5:cloudCoverPercentage>\n      <ns5:cloudCoverPercentageQuotationMode>AUTOMATIC</ns5:cloudCoverPercentageQuotationMode>\n      <ns0:unusableDataPercentage uom=\"percentage\">0.0</ns0:unusableDataPercentage>\n      <ns0:bandSpecificMetadata>\n        <ns0:bandNumber>1</ns0:bandNumber>\n        \n        <ns0:radiometricScaleFactor>0.01</ns0:radiometricScaleFactor>\n        \n        <ns0:reflectanceCoefficient>1.945200004531224e-05</ns0:reflectanceCoefficient>\n      </ns0:bandSpecificMetadata>\n      <ns0:bandSpecificMetadata>\n        <ns0:bandNumber>2</ns0:bandNumber>\n        \n        <ns0:radiometricScaleFactor>0.01</ns0:radiometricScaleFactor>\n        \n        <ns0:reflectanceCoefficient>1.8785982963731072e-05</ns0:reflectanceCoefficient>\n      </ns0:bandSpecificMetadata>\n      <ns0:bandSpecificMetadata>\n        <ns0:bandNumber>3</ns0:bandNumber>\n        \n        <ns0:radiometricScaleFactor>0.01</ns0:radiometricScaleFactor>\n        \n        <ns0:reflectanceCoefficient>2.0077877276500265e-05</ns0:reflectanceCoefficient>\n      </ns0:bandSpecificMetadata>\n      <ns0:bandSpecificMetadata>\n        <ns0:bandNumber>4</ns0:bandNumber>\n        \n        <ns0:radiometricScaleFactor>0.01</ns0:radiometricScaleFactor>\n        \n        <ns0:reflectanceCoefficient>2.0374857615127777e-05</ns0:reflectanceCoefficient>\n      </ns0:bandSpecificMetadata>\n      <ns0:bandSpecificMetadata>\n        <ns0:bandNumber>5</ns0:bandNumber>\n        \n        <ns0:radiometricScaleFactor>0.01</ns0:radiometricScaleFactor>\n        \n        <ns0:reflectanceCoefficient>2.1898188227784033e-05</ns0:reflectanceCoefficient>\n      </ns0:bandSpecificMetadata>\n      <ns0:bandSpecificMetadata>\n        <ns0:bandNumber>6</ns0:bandNumber>\n        \n        <ns0:radiometricScaleFactor>0.01</ns0:radiometricScaleFactor>\n        \n        <ns0:reflectanceCoefficient>2.4523954118286516e-05</ns0:reflectanceCoefficient>\n      </ns0:bandSpecificMetadata>\n      <ns0:bandSpecificMetadata>\n        <ns0:bandNumber>7</ns0:bandNumber>\n        \n        <ns0:radiometricScaleFactor>0.01</ns0:radiometricScaleFactor>\n        \n        <ns0:reflectanceCoefficient>2.621762364287664e-05</ns0:reflectanceCoefficient>\n      </ns0:bandSpecificMetadata>\n      <ns0:bandSpecificMetadata>\n        <ns0:bandNumber>8</ns0:bandNumber>\n        \n        <ns0:radiometricScaleFactor>0.01</ns0:radiometricScaleFactor>\n        \n        <ns0:reflectanceCoefficient>3.881525310645399e-05</ns0:reflectanceCoefficient>\n      </ns0:bandSpecificMetadata>\n    </ns0:EarthObservationResult>\n  </ns2:resultOf>\n</ns0:EarthObservation>"
+          },
+          "xmp_sidecar": {},
+          "filename_rule": {
+            "flight_date": "2025-10-11"
+          },
+          "sidecars": {
+            "aux_xml": null,
+            "json_sidecar": "E:\\Postgraduate_2\\CSC_Nmass\\data\\projects\\planet_hengyu_case\\images\\planet_hengyu_img1\\source\\20251011_032408_70_24da.json",
+            "json_sidecars": [
+              "E:\\Postgraduate_2\\CSC_Nmass\\data\\projects\\planet_hengyu_case\\images\\planet_hengyu_img1\\source\\20251011_032408_70_24da.json",
+              "E:\\Postgraduate_2\\CSC_Nmass\\data\\projects\\planet_hengyu_case\\images\\planet_hengyu_img1\\source\\20251011_032408_70_24da_metadata.json"
+            ],
+            "xml_sidecar": "E:\\Postgraduate_2\\CSC_Nmass\\data\\projects\\planet_hengyu_case\\images\\planet_hengyu_img1\\source\\20251011_032408_70_24da_3B_AnalyticMS_8b_metadata_clip.xml",
+            "xml_sidecars": [
+              "E:\\Postgraduate_2\\CSC_Nmass\\data\\projects\\planet_hengyu_case\\images\\planet_hengyu_img1\\source\\20251011_032408_70_24da_3B_AnalyticMS_8b_metadata_clip.xml"
+            ],
+            "xmp_sidecar": null,
+            "planet_scene_prefix": "20251011_032408_70_24da"
+          }
+        },
+        "raster": {
+          "width": 689,
+          "height": 418,
+          "bands": 8,
+          "dtype": "uint16",
+          "driver": "GTiff",
+          "crs": "EPSG:32650",
+          "transform": [
+            3.0,
+            0.0,
+            209559.0,
+            0.0,
+            -3.0,
+            2548575.0
+          ]
+        },
+        "metadata_warnings": [
+          "同一 Scene 的云量来源值不一致：json_sidecar 20251011_032408_70_24da.json:properties.cloud_cover=0%；json_sidecar 20251011_032408_70_24da_metadata.json:properties.cloud_cover=0%；xml_sidecar 20251011_032408_70_24da_3B_AnalyticMS_8b_metadata_clip.xml:cloudCoverPercentage=31.27%。请人工确认最终采用值。"
+        ],
+        "planet_scope": {
+          "scene_id": "20251011_032408_70_24da",
+          "sensor_name": "PlanetScope",
+          "instrument": "PSB.SD",
+          "platform": "24da",
+          "constellation": "planetscope",
+          "acquisition_datetime_utc": "2025-10-11T03:24:08Z",
+          "cloud_observations": [
+            {
+              "source": "json_sidecar",
+              "path": "20251011_032408_70_24da.json:properties.cloud_cover",
+              "value": 0
+            },
+            {
+              "source": "json_sidecar",
+              "path": "20251011_032408_70_24da_metadata.json:properties.cloud_cover",
+              "value": 0.0
+            },
+            {
+              "source": "xml_sidecar",
+              "path": "20251011_032408_70_24da_3B_AnalyticMS_8b_metadata_clip.xml:cloudCoverPercentage",
+              "value": "31.27"
+            }
+          ],
+          "xml": {
+            "platform_short_names": [
+              "PlanetScope",
+              "PSB.SD"
+            ],
+            "acquisition_datetime": "2025-10-11T03:24:08+00:00",
+            "product_type": "L3B",
+            "pixel_format": "16U",
+            "epsg": "32650",
+            "row_gsd": "3.0",
+            "column_gsd": "3.0",
+            "num_rows": "418",
+            "num_columns": "689",
+            "num_bands": "8",
+            "cloud_cover_percentage": "31.27",
+            "sun_azimuth": "1.580740e+02",
+            "sun_elevation": "5.782866e+01",
+            "view_azimuth": "1.149354e+01",
+            "off_nadir": "2.526662e+00",
+            "atmospheric_correction_applied": "false",
+            "instrument": "PSB.SD",
+            "sensor_name": "PlanetScope"
+          },
+          "asset": {
+            "asset.href": "./20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif",
+            "asset.type": "ortho_analytic_8b_sr",
+            "roles": [
+              "data",
+              "reflectance"
+            ],
+            "wavelengths": [
+              442.0,
+              490.0,
+              531.0,
+              565.0,
+              610.0,
+              665.0,
+              705.0,
+              865.0
+            ],
+            "bandwidths": [
+              21.0,
+              50.0,
+              36.0,
+              36.0,
+              20.0,
+              30.0,
+              16.0,
+              40.0
+            ],
+            "band_names": [
+              "Coastal Blue",
+              "Blue",
+              "Green I",
+              "Green",
+              "Yellow",
+              "Red",
+              "Red Edge",
+              "Near-Infrared"
+            ],
+            "reflectance_scale": 0.0001,
+            "reflectance_scales": [
+              0.0001,
+              0.0001,
+              0.0001,
+              0.0001,
+              0.0001,
+              0.0001,
+              0.0001,
+              0.0001
+            ],
+            "epsg": 32650,
+            "bbox": [
+              209559.0,
+              2547321.0,
+              211626.0,
+              2548575.0
+            ],
+            "shape": [
+              418,
+              689
+            ],
+            "transform": [
+              3.0,
+              0.0,
+              209559.0,
+              0.0,
+              -3.0,
+              2548575.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "data_type": "uint16",
+            "nodata": 0.0
+          },
+          "bbox": [
+            114.16654457,
+            23.00934249,
+            114.18643831,
+            23.02026345
+          ],
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  114.18643831,
+                  23.02026345
+                ],
+                [
+                  114.18643831,
+                  23.00934249
+                ],
+                [
+                  114.16654457,
+                  23.00934249
+                ],
+                [
+                  114.16654457,
+                  23.02026345
+                ],
+                [
+                  114.18643831,
+                  23.02026345
+                ]
+              ]
+            ]
+          }
+        },
+        "scene_id": "20251011_032408_70_24da",
+        "instrument": "PSB.SD",
+        "reflectance_scale": 0.0001,
+        "epsg": 32650,
+        "projected_bbox": [
+          209559.0,
+          2547321.0,
+          211626.0,
+          2548575.0
+        ],
+        "projected_shape": [
+          418,
+          689
+        ],
+        "projected_transform": [
+          3.0,
+          0.0,
+          209559.0,
+          0.0,
+          -3.0,
+          2548575.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "cloud_observations": [
+          {
+            "source": "json_sidecar",
+            "path": "20251011_032408_70_24da.json:properties.cloud_cover",
+            "value": 0
+          },
+          {
+            "source": "json_sidecar",
+            "path": "20251011_032408_70_24da_metadata.json:properties.cloud_cover",
+            "value": 0.0
+          },
+          {
+            "source": "xml_sidecar",
+            "path": "20251011_032408_70_24da_3B_AnalyticMS_8b_metadata_clip.xml:cloudCoverPercentage",
+            "value": "31.27"
+          }
+        ],
+        "metadata_conflicts": [
+          {
+            "field": "cloud_cover",
+            "values": [
+              {
+                "source": "json_sidecar",
+                "path": "20251011_032408_70_24da.json:properties.cloud_cover",
+                "value": 0.0
+              },
+              {
+                "source": "json_sidecar",
+                "path": "20251011_032408_70_24da_metadata.json:properties.cloud_cover",
+                "value": 0.0
+              },
+              {
+                "source": "xml_sidecar",
+                "path": "20251011_032408_70_24da_3B_AnalyticMS_8b_metadata_clip.xml:cloudCoverPercentage",
+                "value": 31.27
+              }
+            ],
+            "message": "同一 Scene 的云量来源值不一致：json_sidecar 20251011_032408_70_24da.json:properties.cloud_cover=0%；json_sidecar 20251011_032408_70_24da_metadata.json:properties.cloud_cover=0%；xml_sidecar 20251011_032408_70_24da_3B_AnalyticMS_8b_metadata_clip.xml:cloudCoverPercentage=31.27%。请人工确认最终采用值。"
+          }
+        ]
+      },
+      "metadata_sources": {
+        "sensor_name": "xml_sidecar",
+        "sensor_type": "xml_sidecar",
+        "acquisition_datetime": "xml_sidecar",
+        "flight_date": "xml_sidecar",
+        "field_id": "user",
+        "image_type": "xml_sidecar",
+        "value_type": "xml_sidecar",
+        "processing_level": "xml_sidecar",
+        "wavelengths": "json_sidecar",
+        "bandwidths": "json_sidecar",
+        "wavelength_unit": "json_sidecar",
+        "band_names": "json_sidecar"
+      },
+      "metadata_confidence": {
+        "sensor_name": 0.93,
+        "sensor_type": 0.93,
+        "acquisition_datetime": 0.93,
+        "flight_date": 1.0,
+        "field_id": 1.0,
+        "image_type": 0.93,
+        "value_type": 0.93,
+        "processing_level": 0.93,
+        "wavelengths": 0.9,
+        "bandwidths": 0.9,
+        "wavelength_unit": 0.9,
+        "band_names": 0.9
+      },
+      "raw_metadata": {
+        "dataset": "E:\\Postgraduate_2\\CSC_Nmass\\data\\projects\\planet_hengyu_case\\images\\planet_hengyu_img1\\source\\20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif",
+        "envi_header": {},
+        "geotiff_tags": {
+          "TIFFTAG_IMAGEDESCRIPTION": "{\"atmospheric_correction\": {\"aerosol_model\": \"continental\", \"aot_coverage\": 0.0, \"aot_mean_quality\": 127, \"aot_method\": \"fixed\", \"aot_source\": \"modis\", \"aot_status\": \"Missing Data - Using Default AOT\", \"aot_std\": 0.0, \"aot_used\": 0.22554081853895588, \"atmospheric_correction_algorithm\": \"6Sv2.1\", \"atmospheric_model\": \"tropical\", \"luts_version\": 3, \"ozone_coverage\": 0.0, \"ozone_mean_quality\": 0, \"ozone_method\": \"fixed\", \"ozone_source\": \"modis\", \"ozone_status\": \"Missing Data - Using Default AOT\", \"ozone_std\": 0.0, \"ozone_used\": 0.0, \"satellite_azimuth_angle\": 0, \"satellite_zenith_angle\": 0, \"solar_azimuth_angle\": 158.074, \"solar_zenith_angle\": 32.171, \"sr_version\": \"2.1\", \"water_vapor_coverage\": 0.0, \"water_vapor_mean_quality\": 127, \"water_vapor_method\": \"fixed\", \"water_vapor_source\": \"modis\", \"water_vapor_status\": \"Missing Data - Using Default AOT\", \"water_vapor_std\": 0.0, \"water_vapor_used\": 0.0}}",
+          "TIFFTAG_DATETIME": "2025:10:11 03:24:08",
+          "AREA_OR_POINT": "Area"
+        },
+        "band_tags": [
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {}
+        ],
+        "aux_xml": {},
+        "json_sidecar": {
+          "documents": [
+            {
+              "path": "E:\\Postgraduate_2\\CSC_Nmass\\data\\projects\\planet_hengyu_case\\images\\planet_hengyu_img1\\source\\20251011_032408_70_24da.json",
+              "encoding": "utf-8",
+              "document": {
+                "type": "Feature",
+                "stac_version": "1.0.0",
+                "id": "20251011_032408_70_24da",
+                "properties": {
+                  "updated": "2025-10-12T05:47:13Z",
+                  "created": "2025-10-11T05:31:15Z",
+                  "gsd": 3.6,
+                  "constellation": "planetscope",
+                  "platform": "24da",
+                  "instruments": [
+                    "PSB.SD"
+                  ],
+                  "eo:cloud_cover": 0,
+                  "view:off_nadir": 2.5,
+                  "view:azimuth": 276,
+                  "view:sun_azimuth": 158.1,
+                  "view:sun_elevation": 57.8,
+                  "pl:ground_control": true,
+                  "pl:item_type": "PSScene",
+                  "pl:pixel_resolution": 3,
+                  "pl:publishing_stage": "finalized",
+                  "pl:quality_category": "standard",
+                  "pl:strip_id": "8359349",
+                  "published": "2025-10-11T05:31:15Z",
+                  "datetime": "2025-10-11T03:24:08.702085Z"
+                },
+                "geometry": {
+                  "type": "Polygon",
+                  "coordinates": [
+                    [
+                      [
+                        114.18643831,
+                        23.02026345
+                      ],
+                      [
+                        114.18643831,
+                        23.00934249
+                      ],
+                      [
+                        114.16654457,
+                        23.00934249
+                      ],
+                      [
+                        114.16654457,
+                        23.02026345
+                      ],
+                      [
+                        114.18643831,
+                        23.02026345
+                      ]
+                    ]
+                  ]
+                },
+                "links": [
+                  {
+                    "rel": "root",
+                    "href": "../catalog.json",
+                    "type": "application/json"
+                  },
+                  {
+                    "rel": "collection",
+                    "href": "./PSScene_collection.json",
+                    "type": "application/json"
+                  },
+                  {
+                    "rel": "parent",
+                    "href": "./PSScene_collection.json",
+                    "type": "application/json"
+                  }
+                ],
+                "assets": {
+                  "20251011_032408_70_24da_metadata_json": {
+                    "href": "./20251011_032408_70_24da_metadata.json",
+                    "type": "application/json",
+                    "roles": [
+                      "metadata"
+                    ]
+                  },
+                  "20251011_032408_70_24da_3B_AnalyticMS_8b_metadata_clip_xml": {
+                    "href": "./20251011_032408_70_24da_3B_AnalyticMS_8b_metadata_clip.xml",
+                    "type": "text/xml",
+                    "pl:asset_type": "ortho_analytic_8b_xml",
+                    "pl:bundle_type": "analytic_8b_sr_udm2",
+                    "roles": [
+                      "metadata"
+                    ]
+                  },
+                  "20251011_032408_70_24da_3B_udm2_clip_tif": {
+                    "href": "./20251011_032408_70_24da_3B_udm2_clip.tif",
+                    "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+                    "pl:asset_type": "ortho_udm2",
+                    "pl:bundle_type": "analytic_8b_sr_udm2",
+                    "raster:bands": [
+                      {
+                        "data_type": "uint8",
+                        "spatial_resolution": 3.0,
+                        "statistics": {
+                          "minimum": 0.0,
+                          "maximum": 1.0
+                        }
+                      },
+                      {
+                        "data_type": "uint8",
+                        "spatial_resolution": 3.0,
+                        "statistics": {
+                          "minimum": 0.0,
+                          "maximum": 0.0
+                        }
+                      },
+                      {
+                        "data_type": "uint8",
+                        "spatial_resolution": 3.0,
+                        "statistics": {
+                          "minimum": 0.0,
+                          "maximum": 0.0
+                        }
+                      },
+                      {
+                        "data_type": "uint8",
+                        "spatial_resolution": 3.0,
+                        "statistics": {
+                          "minimum": 0.0,
+                          "maximum": 0.0
+                        }
+                      },
+                      {
+                        "data_type": "uint8",
+                        "spatial_resolution": 3.0,
+                        "statistics": {
+                          "minimum": 0.0,
+                          "maximum": 0.0
+                        }
+                      },
+                      {
+                        "data_type": "uint8",
+                        "spatial_resolution": 3.0,
+                        "statistics": {
+                          "minimum": 0.0,
+                          "maximum": 0.0
+                        }
+                      },
+                      {
+                        "data_type": "uint8",
+                        "spatial_resolution": 3.0,
+                        "statistics": {
+                          "minimum": 0.0,
+                          "maximum": 99.0
+                        }
+                      },
+                      {
+                        "data_type": "uint8",
+                        "spatial_resolution": 3.0,
+                        "statistics": {
+                          "minimum": 0.0,
+                          "maximum": 1.0
+                        }
+                      }
+                    ],
+                    "eo:bands": [
+                      {
+                        "name": "B1",
+                        "description": "Clear map (0: not clear, 1: clear)"
+                      },
+                      {
+                        "name": "B2",
+                        "description": "Snow map (0: no snow or ice, 1: snow or ice)"
+                      },
+                      {
+                        "name": "B3",
+                        "description": "Shadow map (0: no shadow, 1: shadow)"
+                      },
+                      {
+                        "name": "B4",
+                        "description": "Light haze map (0: no light haze, 1: light haze)"
+                      },
+                      {
+                        "name": "B5",
+                        "description": "Heavy haze map (0: no heavy haze, 1: heavy haze)"
+                      },
+                      {
+                        "name": "B6",
+                        "description": "Cloud map (0: no cloud, 1: cloud)"
+                      },
+                      {
+                        "name": "B7",
+                        "description": "Confidence map (percentage value: per-pixel algorithmic confidence in classification)"
+                      },
+                      {
+                        "name": "B8",
+                        "description": "Unusable pixels"
+                      }
+                    ],
+                    "proj:epsg": 32650,
+                    "proj:bbox": [
+                      209559.0,
+                      2547321.0,
+                      211626.0,
+                      2548575.0
+                    ],
+                    "proj:shape": [
+                      418,
+                      689
+                    ],
+                    "proj:transform": [
+                      3.0,
+                      0.0,
+                      209559.0,
+                      0.0,
+                      -3.0,
+                      2548575.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "roles": [
+                      "data",
+                      "snow-ice",
+                      "cloud",
+                      "cloud-shadow"
+                    ]
+                  },
+                  "20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip_tif": {
+                    "href": "./20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif",
+                    "type": "image/tiff",
+                    "pl:asset_type": "ortho_analytic_8b_sr",
+                    "pl:bundle_type": "analytic_8b_sr_udm2",
+                    "raster:bands": [
+                      {
+                        "nodata": 0.0,
+                        "data_type": "uint16",
+                        "spatial_resolution": 3.0,
+                        "statistics": {
+                          "minimum": 394.0,
+                          "maximum": 2723.0
+                        },
+                        "scale": 0.0001
+                      },
+                      {
+                        "nodata": 0.0,
+                        "data_type": "uint16",
+                        "spatial_resolution": 3.0,
+                        "statistics": {
+                          "minimum": 316.0,
+                          "maximum": 3019.0
+                        },
+                        "scale": 0.0001
+                      },
+                      {
+                        "nodata": 0.0,
+                        "data_type": "uint16",
+                        "spatial_resolution": 3.0,
+                        "statistics": {
+                          "minimum": 393.0,
+                          "maximum": 3708.0
+                        },
+                        "scale": 0.0001
+                      },
+                      {
+                        "nodata": 0.0,
+                        "data_type": "uint16",
+                        "spatial_resolution": 3.0,
+                        "statistics": {
+                          "minimum": 354.0,
+                          "maximum": 3809.0
+                        },
+                        "scale": 0.0001
+                      },
+                      {
+                        "nodata": 0.0,
+                        "data_type": "uint16",
+                        "spatial_resolution": 3.0,
+                        "statistics": {
+                          "minimum": 360.0,
+                          "maximum": 3907.0
+                        },
+                        "scale": 0.0001
+                      },
+                      {
+                        "nodata": 0.0,
+                        "data_type": "uint16",
+                        "spatial_resolution": 3.0,
+                        "statistics": {
+                          "minimum": 278.0,
+                          "maximum": 3927.0
+                        },
+                        "scale": 0.0001
+                      },
+                      {
+                        "nodata": 0.0,
+                        "data_type": "uint16",
+                        "spatial_resolution": 3.0,
+                        "statistics": {
+                          "minimum": 403.0,
+                          "maximum": 3788.0
+                        },
+                        "scale": 0.0001
+                      },
+                      {
+                        "nodata": 0.0,
+                        "data_type": "uint16",
+                        "spatial_resolution": 3.0,
+                        "statistics": {
+                          "minimum": 410.0,
+                          "maximum": 5552.0
+                        },
+                        "scale": 0.0001
+                      }
+                    ],
+                    "eo:bands": [
+                      {
+                        "name": "Coastal Blue",
+                        "common_name": "coastal",
+                        "center_wavelength": 0.442,
+                        "full_width_half_max": 0.021
+                      },
+                      {
+                        "name": "Blue",
+                        "common_name": "blue",
+                        "center_wavelength": 0.49,
+                        "full_width_half_max": 0.05
+                      },
+                      {
+                        "name": "Green I",
+                        "center_wavelength": 0.531,
+                        "full_width_half_max": 0.036
+                      },
+                      {
+                        "name": "Green",
+                        "common_name": "green",
+                        "center_wavelength": 0.565,
+                        "full_width_half_max": 0.036
+                      },
+                      {
+                        "name": "Yellow",
+                        "common_name": "yellow",
+                        "center_wavelength": 0.61,
+                        "full_width_half_max": 0.02
+                      },
+                      {
+                        "name": "Red",
+                        "common_name": "red",
+                        "center_wavelength": 0.665,
+                        "full_width_half_max": 0.03
+                      },
+                      {
+                        "name": "Red Edge",
+                        "common_name": "rededge",
+                        "center_wavelength": 0.705,
+                        "full_width_half_max": 0.016
+                      },
+                      {
+                        "name": "Near-Infrared",
+                        "common_name": "nir",
+                        "center_wavelength": 0.865,
+                        "full_width_half_max": 0.04
+                      }
+                    ],
+                    "proj:epsg": 32650,
+                    "proj:bbox": [
+                      209559.0,
+                      2547321.0,
+                      211626.0,
+                      2548575.0
+                    ],
+                    "proj:shape": [
+                      418,
+                      689
+                    ],
+                    "proj:transform": [
+                      3.0,
+                      0.0,
+                      209559.0,
+                      0.0,
+                      -3.0,
+                      2548575.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "roles": [
+                      "data",
+                      "reflectance"
+                    ]
+                  }
+                },
+                "bbox": [
+                  114.16654457,
+                  23.00934249,
+                  114.18643831,
+                  23.02026345
+                ],
+                "stac_extensions": [
+                  "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+                  "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+                  "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+                  "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+                ],
+                "collection": "f6aa9a4c-3edb-4c52-83a1-577855c827ee: PSScene"
+              }
+            },
+            {
+              "path": "E:\\Postgraduate_2\\CSC_Nmass\\data\\projects\\planet_hengyu_case\\images\\planet_hengyu_img1\\source\\20251011_032408_70_24da_metadata.json",
+              "encoding": "utf-8",
+              "document": {
+                "id": "20251011_032408_70_24da",
+                "type": "Feature",
+                "geometry": {
+                  "type": "Polygon",
+                  "coordinates": [
+                    [
+                      [
+                        114.18643831,
+                        23.02026345
+                      ],
+                      [
+                        114.18643831,
+                        23.00934249
+                      ],
+                      [
+                        114.16654457,
+                        23.00934249
+                      ],
+                      [
+                        114.16654457,
+                        23.02026345
+                      ],
+                      [
+                        114.18643831,
+                        23.02026345
+                      ]
+                    ]
+                  ]
+                },
+                "properties": {
+                  "acquired": "2025-10-11T03:24:08.702085Z",
+                  "anomalous_pixels": 0,
+                  "clear_confidence_percent": 97,
+                  "clear_percent": 100,
+                  "cloud_cover": 0.0,
+                  "cloud_percent": 0,
+                  "ground_control": true,
+                  "gsd": 3.6,
+                  "heavy_haze_percent": 0,
+                  "instrument": "PSB.SD",
+                  "item_type": "PSScene",
+                  "light_haze_percent": 0,
+                  "pixel_resolution": 3,
+                  "provider": "planetscope",
+                  "published": "2025-10-11T05:31:15Z",
+                  "publishing_stage": "finalized",
+                  "quality_category": "standard",
+                  "satellite_azimuth": 276,
+                  "satellite_id": "24da",
+                  "shadow_percent": 0,
+                  "snow_ice_percent": 0,
+                  "strip_id": "8359349",
+                  "sun_azimuth": 158.1,
+                  "sun_elevation": 57.8,
+                  "updated": "2025-10-12T05:47:13Z",
+                  "view_angle": 2.5,
+                  "visible_confidence_percent": 97,
+                  "visible_percent": 100
+                }
+              }
+            }
+          ]
+        },
+        "xml_sidecar": {
+          "path": "E:\\Postgraduate_2\\CSC_Nmass\\data\\projects\\planet_hengyu_case\\images\\planet_hengyu_img1\\source\\20251011_032408_70_24da_3B_AnalyticMS_8b_metadata_clip.xml",
+          "values": {
+            "platform_short_names": [
+              "PlanetScope",
+              "PSB.SD"
+            ],
+            "acquisition_datetime": "2025-10-11T03:24:08+00:00",
+            "product_type": "L3B",
+            "pixel_format": "16U",
+            "epsg": "32650",
+            "row_gsd": "3.0",
+            "column_gsd": "3.0",
+            "num_rows": "418",
+            "num_columns": "689",
+            "num_bands": "8",
+            "cloud_cover_percentage": "31.27",
+            "sun_azimuth": "1.580740e+02",
+            "sun_elevation": "5.782866e+01",
+            "view_azimuth": "1.149354e+01",
+            "off_nadir": "2.526662e+00",
+            "atmospheric_correction_applied": "false",
+            "instrument": "PSB.SD",
+            "sensor_name": "PlanetScope"
+          },
+          "xml": "<ns0:EarthObservation xmlns:ns0=\"http://schemas.planet.com/ps/v1/planet_product_metadata_geocorrected_level\" xmlns:ns2=\"http://www.opengis.net/gml\" xmlns:ns3=\"http://earth.esa.int/eop\" xmlns:ns4=\"http://www.w3.org/1999/xlink\" xmlns:ns5=\"http://earth.esa.int/opt\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://schemas.planet.com/ps/v1/planet_product_metadata_geocorrected_level http://schemas.planet.com/ps/v1/planet_product_metadata_geocorrected_level.xsd\" version=\"1.2.1\" planet_standard_product_version=\"1.0\">\n  <ns2:metaDataProperty>\n    <ns0:EarthObservationMetaData>\n      <ns3:identifier>20251011_032408_70_24da_3B_AnalyticMS_8b</ns3:identifier>\n      <ns3:acquisitionType>NOMINAL</ns3:acquisitionType>\n      <ns3:productType>L3B</ns3:productType>\n      <ns3:status>ARCHIVED</ns3:status>\n      <ns3:downlinkedTo>\n        <ns3:DownlinkInformation>\n          <ns3:acquisitionStation codeSpace=\"urn:eop:PS:stationLocation\">Planet Ground Station Network</ns3:acquisitionStation>\n          <ns3:acquisitionDate>2025-10-11T03:24:08+00:00</ns3:acquisitionDate>\n        </ns3:DownlinkInformation>\n      </ns3:downlinkedTo>\n      <ns3:archivedIn>\n        <ns3:ArchivingInformation>\n          <ns3:archivingCenter codeSpace=\"urn:eop:PS:stationLocation\">Planet Archive Center</ns3:archivingCenter>\n          <ns3:archivingDate>2025-10-11T03:24:08+00:00</ns3:archivingDate>\n          <ns3:archivingIdentifier codeSpace=\"urn:eop:PS:dmsCatalogueId\">8359349</ns3:archivingIdentifier>\n        </ns3:ArchivingInformation>\n      </ns3:archivedIn>\n      <ns3:processing>\n        <ns3:ProcessingInformation>\n          <ns3:processorName>CMO Processor</ns3:processorName>\n          <ns3:processorVersion>4.1.4</ns3:processorVersion>\n          <ns3:nativeProductFormat>GeoTIFF</ns3:nativeProductFormat>\n        </ns3:ProcessingInformation>\n      </ns3:processing>\n      <ns0:license>\n        <ns0:licenseType>20160101 - Inc - Single User</ns0:licenseType>\n        <ns0:resourceLink ns4:title=\"PL EULA\" ns4:href=\"https://assets.planet.com/docs/20160101_Inc_SingleUser.txt\" />\n      </ns0:license>\n      <ns0:versionIsd>1.0</ns0:versionIsd>\n      <ns0:pixelFormat>16U</ns0:pixelFormat>\n    </ns0:EarthObservationMetaData>\n  </ns2:metaDataProperty>\n  <ns2:validTime>\n    <ns2:TimePeriod>\n      <ns2:beginPosition>2025-10-11T03:24:08+00:00</ns2:beginPosition>\n      <ns2:endPosition>2025-10-11T03:24:08+00:00</ns2:endPosition>\n    </ns2:TimePeriod>\n  </ns2:validTime>\n  <ns2:using>\n    <ns3:EarthObservationEquipment>\n      <ns3:platform>\n        <ns3:Platform>\n          <ns3:shortName>PlanetScope</ns3:shortName>\n          <ns3:serialIdentifier>24da</ns3:serialIdentifier>\n          <ns3:orbitType>LEO-SSO</ns3:orbitType>\n        </ns3:Platform>\n      </ns3:platform>\n      <ns3:instrument>\n        <ns3:Instrument>\n          <ns3:shortName>PSB.SD</ns3:shortName>\n        </ns3:Instrument>\n      </ns3:instrument>\n      <ns3:sensor>\n        <ns0:Sensor>\n          <ns3:sensorType>OPTICAL</ns3:sensorType>\n          <ns3:resolution uom=\"m\">3.0000</ns3:resolution>\n          <ns0:scanType>FRAME</ns0:scanType>\n        </ns0:Sensor>\n      </ns3:sensor>\n      <ns3:acquisitionParameters>\n        <ns0:Acquisition>\n          <ns3:orbitDirection>DESCENDING</ns3:orbitDirection>\n          <ns3:incidenceAngle uom=\"deg\">2.728376e+00</ns3:incidenceAngle>\n          <ns5:illuminationAzimuthAngle uom=\"deg\">1.580740e+02</ns5:illuminationAzimuthAngle>\n          <ns5:illuminationElevationAngle uom=\"deg\">5.782866e+01</ns5:illuminationElevationAngle>\n          <ns0:azimuthAngle uom=\"deg\">1.149354e+01</ns0:azimuthAngle>\n          <ns0:spaceCraftViewAngle uom=\"deg\">2.526662e+00</ns0:spaceCraftViewAngle>\n          <ns0:acquisitionDateTime>2025-10-11T03:24:08+00:00</ns0:acquisitionDateTime>\n        </ns0:Acquisition>\n      </ns3:acquisitionParameters>\n    </ns3:EarthObservationEquipment>\n  </ns2:using>\n  <ns2:target>\n    <ns0:Footprint>\n      <ns2:multiExtentOf>\n        <ns2:MultiSurface srsName=\"EPSG:4326\">\n          <ns2:surfaceMembers>\n            <ns2:Polygon>\n              <ns2:outerBoundaryIs>\n                <ns2:LinearRing>\n                  <ns2:coordinates>114.18643831,23.02026345 114.18643831,23.00934249 114.16654457,23.00934249 114.16654457,23.02026345 114.18643831,23.02026345</ns2:coordinates>\n                </ns2:LinearRing>\n              </ns2:outerBoundaryIs>\n            </ns2:Polygon>\n          </ns2:surfaceMembers>\n        </ns2:MultiSurface>\n      </ns2:multiExtentOf>\n      <ns2:centerOf>\n        <ns2:Point srsName=\"EPSG:4326\">\n          <ns2:pos>114.2952723926 23.0230212397</ns2:pos>\n        </ns2:Point>\n      </ns2:centerOf>\n      <ns0:geographicLocation>\n        <ns0:topLeft>\n          <ns0:latitude>23.1360525557</ns0:latitude>\n          <ns0:longitude>114.1237081401</ns0:longitude>\n        </ns0:topLeft>\n        <ns0:topRight>\n          <ns0:latitude>23.1360525557</ns0:latitude>\n          <ns0:longitude>114.4670159656</ns0:longitude>\n        </ns0:topRight>\n        <ns0:bottomRight>\n          <ns0:latitude>22.9096958632</ns0:latitude>\n          <ns0:longitude>114.4670159656</ns0:longitude>\n        </ns0:bottomRight>\n        <ns0:bottomLeft>\n          <ns0:latitude>22.9096958632</ns0:latitude>\n          <ns0:longitude>114.1237081401</ns0:longitude>\n        </ns0:bottomLeft>\n      </ns0:geographicLocation>\n    </ns0:Footprint>\n  </ns2:target>\n  <ns2:resultOf>\n    <ns0:EarthObservationResult>\n      <ns3:product>\n        <ns0:ProductInformation>\n          <ns3:fileName>/execdir/20251011_032408_70_24da_3B_AnalyticMS_8b_clip.tif</ns3:fileName>\n          <ns0:productFormat>GeoTIFF</ns0:productFormat>\n          <ns0:spatialReferenceSystem>\n            <ns0:epsgCode>32650</ns0:epsgCode>\n            <ns0:geodeticDatum>WGS_1984</ns0:geodeticDatum>\n            <ns0:projection>WGS 84 / UTM zone 50N</ns0:projection>\n            <ns0:projectionZone>50</ns0:projectionZone>\n          </ns0:spatialReferenceSystem>\n          <ns0:resamplingKernel>CC</ns0:resamplingKernel>\n          <ns0:numRows>418</ns0:numRows>\n          <ns0:numColumns>689</ns0:numColumns>\n          <ns0:numBands>8</ns0:numBands>\n          <ns0:rowGsd>3.0</ns0:rowGsd>\n          <ns0:columnGsd>3.0</ns0:columnGsd>\n          <ns0:radiometricCorrectionApplied>true</ns0:radiometricCorrectionApplied>\n          <ns0:geoCorrectionLevel>Precision Geocorrection</ns0:geoCorrectionLevel>\n          <ns0:elevationCorrectionApplied>FineDEM</ns0:elevationCorrectionApplied>\n          <ns0:atmosphericCorrectionApplied>false</ns0:atmosphericCorrectionApplied>\n        </ns0:ProductInformation>\n      </ns3:product>\n      <ns3:mask>\n        <ns3:MaskInformation>\n          <ns3:type>UNUSABLE DATA</ns3:type>\n          <ns3:format>RASTER</ns3:format>\n          <ns3:referenceSystemIdentifier codeSpace=\"EPSG\">32650</ns3:referenceSystemIdentifier>\n          <ns3:fileName>NA</ns3:fileName>\n        </ns3:MaskInformation>\n      </ns3:mask>\n      <ns5:cloudCoverPercentage uom=\"percentage\">31.27</ns5:cloudCoverPercentage>\n      <ns5:cloudCoverPercentageQuotationMode>AUTOMATIC</ns5:cloudCoverPercentageQuotationMode>\n      <ns0:unusableDataPercentage uom=\"percentage\">0.0</ns0:unusableDataPercentage>\n      <ns0:bandSpecificMetadata>\n        <ns0:bandNumber>1</ns0:bandNumber>\n        \n        <ns0:radiometricScaleFactor>0.01</ns0:radiometricScaleFactor>\n        \n        <ns0:reflectanceCoefficient>1.945200004531224e-05</ns0:reflectanceCoefficient>\n      </ns0:bandSpecificMetadata>\n      <ns0:bandSpecificMetadata>\n        <ns0:bandNumber>2</ns0:bandNumber>\n        \n        <ns0:radiometricScaleFactor>0.01</ns0:radiometricScaleFactor>\n        \n        <ns0:reflectanceCoefficient>1.8785982963731072e-05</ns0:reflectanceCoefficient>\n      </ns0:bandSpecificMetadata>\n      <ns0:bandSpecificMetadata>\n        <ns0:bandNumber>3</ns0:bandNumber>\n        \n        <ns0:radiometricScaleFactor>0.01</ns0:radiometricScaleFactor>\n        \n        <ns0:reflectanceCoefficient>2.0077877276500265e-05</ns0:reflectanceCoefficient>\n      </ns0:bandSpecificMetadata>\n      <ns0:bandSpecificMetadata>\n        <ns0:bandNumber>4</ns0:bandNumber>\n        \n        <ns0:radiometricScaleFactor>0.01</ns0:radiometricScaleFactor>\n        \n        <ns0:reflectanceCoefficient>2.0374857615127777e-05</ns0:reflectanceCoefficient>\n      </ns0:bandSpecificMetadata>\n      <ns0:bandSpecificMetadata>\n        <ns0:bandNumber>5</ns0:bandNumber>\n        \n        <ns0:radiometricScaleFactor>0.01</ns0:radiometricScaleFactor>\n        \n        <ns0:reflectanceCoefficient>2.1898188227784033e-05</ns0:reflectanceCoefficient>\n      </ns0:bandSpecificMetadata>\n      <ns0:bandSpecificMetadata>\n        <ns0:bandNumber>6</ns0:bandNumber>\n        \n        <ns0:radiometricScaleFactor>0.01</ns0:radiometricScaleFactor>\n        \n        <ns0:reflectanceCoefficient>2.4523954118286516e-05</ns0:reflectanceCoefficient>\n      </ns0:bandSpecificMetadata>\n      <ns0:bandSpecificMetadata>\n        <ns0:bandNumber>7</ns0:bandNumber>\n        \n        <ns0:radiometricScaleFactor>0.01</ns0:radiometricScaleFactor>\n        \n        <ns0:reflectanceCoefficient>2.621762364287664e-05</ns0:reflectanceCoefficient>\n      </ns0:bandSpecificMetadata>\n      <ns0:bandSpecificMetadata>\n        <ns0:bandNumber>8</ns0:bandNumber>\n        \n        <ns0:radiometricScaleFactor>0.01</ns0:radiometricScaleFactor>\n        \n        <ns0:reflectanceCoefficient>3.881525310645399e-05</ns0:reflectanceCoefficient>\n      </ns0:bandSpecificMetadata>\n    </ns0:EarthObservationResult>\n  </ns2:resultOf>\n</ns0:EarthObservation>"
+        },
+        "xmp_sidecar": {},
+        "filename_rule": {
+          "flight_date": "2025-10-11"
+        },
+        "sidecars": {
+          "aux_xml": null,
+          "json_sidecar": "E:\\Postgraduate_2\\CSC_Nmass\\data\\projects\\planet_hengyu_case\\images\\planet_hengyu_img1\\source\\20251011_032408_70_24da.json",
+          "json_sidecars": [
+            "E:\\Postgraduate_2\\CSC_Nmass\\data\\projects\\planet_hengyu_case\\images\\planet_hengyu_img1\\source\\20251011_032408_70_24da.json",
+            "E:\\Postgraduate_2\\CSC_Nmass\\data\\projects\\planet_hengyu_case\\images\\planet_hengyu_img1\\source\\20251011_032408_70_24da_metadata.json"
+          ],
+          "xml_sidecar": "E:\\Postgraduate_2\\CSC_Nmass\\data\\projects\\planet_hengyu_case\\images\\planet_hengyu_img1\\source\\20251011_032408_70_24da_3B_AnalyticMS_8b_metadata_clip.xml",
+          "xml_sidecars": [
+            "E:\\Postgraduate_2\\CSC_Nmass\\data\\projects\\planet_hengyu_case\\images\\planet_hengyu_img1\\source\\20251011_032408_70_24da_3B_AnalyticMS_8b_metadata_clip.xml"
+          ],
+          "xmp_sidecar": null,
+          "planet_scene_prefix": "20251011_032408_70_24da"
+        }
+      },
+      "metadata_fields": {
+        "sensor_name": {
+          "value": "PlanetScope",
+          "source": "xml_sidecar",
+          "confidence": 0.93,
+          "raw_key": "eop:platform/eop:shortName",
+          "raw_value": "PlanetScope"
+        },
+        "sensor_type": {
+          "value": "卫星光学传感器",
+          "source": "xml_sidecar",
+          "confidence": 0.93,
+          "raw_key": "eop:platform",
+          "raw_value": "PlanetScope"
+        },
+        "acquisition_datetime": {
+          "value": "2025-10-11T03:24:08Z",
+          "source": "xml_sidecar",
+          "confidence": 0.93,
+          "raw_key": "ps:acquisitionDateTime",
+          "raw_value": "2025-10-11T03:24:08+00:00"
+        },
+        "flight_date": {
+          "value": "2025-10-11",
+          "source": "xml_sidecar",
+          "confidence": 0.93,
+          "raw_key": "ps:acquisitionDateTime",
+          "raw_value": "2025-10-11T03:24:08Z"
+        },
+        "field_id": {
+          "value": "广东省惠州市惠城区恒福菜场",
+          "source": "user",
+          "confidence": 1.0,
+          "raw_key": "user:location",
+          "raw_value": "广东省惠州市惠城区恒福菜场"
+        },
+        "image_type": {
+          "value": "卫星多光谱",
+          "source": "xml_sidecar",
+          "confidence": 0.93,
+          "raw_key": "eop:instrument",
+          "raw_value": "PSB.SD"
+        },
+        "value_type": {
+          "value": "surface_reflectance",
+          "source": "xml_sidecar",
+          "confidence": 0.93,
+          "raw_key": "eop:productType",
+          "raw_value": "L3B"
+        },
+        "processing_level": {
+          "value": "L3B",
+          "source": "xml_sidecar",
+          "confidence": 0.93,
+          "raw_key": "eop:productType",
+          "raw_value": "L3B"
+        },
+        "wavelengths": {
+          "value": [
+            442.0,
+            490.0,
+            531.0,
+            565.0,
+            610.0,
+            665.0,
+            705.0,
+            865.0
+          ],
+          "source": "json_sidecar",
+          "confidence": 0.9,
+          "raw_key": "assets.eo:bands",
+          "raw_value": {
+            "asset.href": "./20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif",
+            "asset.type": "ortho_analytic_8b_sr",
+            "roles": [
+              "data",
+              "reflectance"
+            ],
+            "wavelengths": [
+              442.0,
+              490.0,
+              531.0,
+              565.0,
+              610.0,
+              665.0,
+              705.0,
+              865.0
+            ],
+            "bandwidths": [
+              21.0,
+              50.0,
+              36.0,
+              36.0,
+              20.0,
+              30.0,
+              16.0,
+              40.0
+            ],
+            "band_names": [
+              "Coastal Blue",
+              "Blue",
+              "Green I",
+              "Green",
+              "Yellow",
+              "Red",
+              "Red Edge",
+              "Near-Infrared"
+            ],
+            "reflectance_scale": 0.0001,
+            "reflectance_scales": [
+              0.0001,
+              0.0001,
+              0.0001,
+              0.0001,
+              0.0001,
+              0.0001,
+              0.0001,
+              0.0001
+            ],
+            "epsg": 32650,
+            "bbox": [
+              209559.0,
+              2547321.0,
+              211626.0,
+              2548575.0
+            ],
+            "shape": [
+              418,
+              689
+            ],
+            "transform": [
+              3.0,
+              0.0,
+              209559.0,
+              0.0,
+              -3.0,
+              2548575.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "data_type": "uint16",
+            "nodata": 0.0
+          }
+        },
+        "bandwidths": {
+          "value": [
+            21.0,
+            50.0,
+            36.0,
+            36.0,
+            20.0,
+            30.0,
+            16.0,
+            40.0
+          ],
+          "source": "json_sidecar",
+          "confidence": 0.9,
+          "raw_key": "assets.eo:bands",
+          "raw_value": {
+            "asset.href": "./20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif",
+            "asset.type": "ortho_analytic_8b_sr",
+            "roles": [
+              "data",
+              "reflectance"
+            ],
+            "wavelengths": [
+              442.0,
+              490.0,
+              531.0,
+              565.0,
+              610.0,
+              665.0,
+              705.0,
+              865.0
+            ],
+            "bandwidths": [
+              21.0,
+              50.0,
+              36.0,
+              36.0,
+              20.0,
+              30.0,
+              16.0,
+              40.0
+            ],
+            "band_names": [
+              "Coastal Blue",
+              "Blue",
+              "Green I",
+              "Green",
+              "Yellow",
+              "Red",
+              "Red Edge",
+              "Near-Infrared"
+            ],
+            "reflectance_scale": 0.0001,
+            "reflectance_scales": [
+              0.0001,
+              0.0001,
+              0.0001,
+              0.0001,
+              0.0001,
+              0.0001,
+              0.0001,
+              0.0001
+            ],
+            "epsg": 32650,
+            "bbox": [
+              209559.0,
+              2547321.0,
+              211626.0,
+              2548575.0
+            ],
+            "shape": [
+              418,
+              689
+            ],
+            "transform": [
+              3.0,
+              0.0,
+              209559.0,
+              0.0,
+              -3.0,
+              2548575.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "data_type": "uint16",
+            "nodata": 0.0
+          }
+        },
+        "wavelength_unit": {
+          "value": "nm",
+          "source": "json_sidecar",
+          "confidence": 0.9,
+          "raw_key": null,
+          "raw_value": null
+        },
+        "band_names": {
+          "value": [
+            "Coastal Blue",
+            "Blue",
+            "Green I",
+            "Green",
+            "Yellow",
+            "Red",
+            "Red Edge",
+            "Near-Infrared"
+          ],
+          "source": "json_sidecar",
+          "confidence": 0.9,
+          "raw_key": "assets.eo:bands",
+          "raw_value": {
+            "asset.href": "./20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif",
+            "asset.type": "ortho_analytic_8b_sr",
+            "roles": [
+              "data",
+              "reflectance"
+            ],
+            "wavelengths": [
+              442.0,
+              490.0,
+              531.0,
+              565.0,
+              610.0,
+              665.0,
+              705.0,
+              865.0
+            ],
+            "bandwidths": [
+              21.0,
+              50.0,
+              36.0,
+              36.0,
+              20.0,
+              30.0,
+              16.0,
+              40.0
+            ],
+            "band_names": [
+              "Coastal Blue",
+              "Blue",
+              "Green I",
+              "Green",
+              "Yellow",
+              "Red",
+              "Red Edge",
+              "Near-Infrared"
+            ],
+            "reflectance_scale": 0.0001,
+            "reflectance_scales": [
+              0.0001,
+              0.0001,
+              0.0001,
+              0.0001,
+              0.0001,
+              0.0001,
+              0.0001,
+              0.0001
+            ],
+            "epsg": 32650,
+            "bbox": [
+              209559.0,
+              2547321.0,
+              211626.0,
+              2548575.0
+            ],
+            "shape": [
+              418,
+              689
+            ],
+            "transform": [
+              3.0,
+              0.0,
+              209559.0,
+              0.0,
+              -3.0,
+              2548575.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "data_type": "uint16",
+            "nodata": 0.0
+          }
+        }
+      },
+      "crs_wkt": "PROJCS[\"WGS 84 / UTM zone 50N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",117],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32650\"]]",
+      "updated_at": "2026-11-17T22:39:32+08:00",
+      "preprocess": {
+        "created_at": "2026-11-17T22:14:16+08:00",
+        "quality": {
+          "level": "notice",
+          "items": [
+            {
+              "key": "reflectance",
+              "title": "反射率转换",
+              "status": "ok",
+              "message": "按比例因子 10000 将 DN 值转换为反射率。反射率 1%–99% 分位：0.041–0.390，中位数 0.084"
+            },
+            {
+              "key": "bad_bands",
+              "title": "坏波段剔除",
+              "status": "ok",
+              "message": "未启用坏波段剔除，保留全部波段"
+            },
+            {
+              "key": "smoothing",
+              "title": "光谱平滑",
+              "status": "ok",
+              "message": "Savitzky-Golay 平滑完成（窗口 5，阶数 2）"
+            },
+            {
+              "key": "alignment",
+              "title": "波段对齐",
+              "status": "notice",
+              "message": "已对齐到 51 个标准波段（400–900 nm）；目标波长超出源影像范围的两端采用最近邻填充"
+            },
+            {
+              "key": "cloud",
+              "title": "云/阴影检测",
+              "status": "ok",
+              "message": "未启用云/阴影检测"
+            },
+            {
+              "key": "mask",
+              "title": "植被掩膜",
+              "status": "ok",
+              "message": "植被像元占比 47.7%（NDVI ≥ 0.35）"
+            }
+          ]
+        },
+        "mask": {
+          "enabled": true,
+          "ndvi_threshold": 0.35,
+          "ratio": 0.47747,
+          "valid_pixels": 137512,
+          "total_pixels": 288002,
+          "cloud_ratio": 0.0
+        },
+        "bands": 51,
+        "wavelengths": [
+          400.0,
+          410.0,
+          420.0,
+          430.0,
+          440.0,
+          450.0,
+          460.0,
+          470.0,
+          480.0,
+          490.0,
+          500.0,
+          510.0,
+          520.0,
+          530.0,
+          540.0,
+          550.0,
+          560.0,
+          570.0,
+          580.0,
+          590.0,
+          600.0,
+          610.0,
+          620.0,
+          630.0,
+          640.0,
+          650.0,
+          660.0,
+          670.0,
+          680.0,
+          690.0,
+          700.0,
+          710.0,
+          720.0,
+          730.0,
+          740.0,
+          750.0,
+          760.0,
+          770.0,
+          780.0,
+          790.0,
+          800.0,
+          810.0,
+          820.0,
+          830.0,
+          840.0,
+          850.0,
+          860.0,
+          870.0,
+          880.0,
+          890.0,
+          900.0
+        ],
+        "config": {
+          "reflectance": {
+            "enabled": true,
+            "method": "scale",
+            "scale": 10000.0,
+            "coefficient": 1.0,
+            "offset": 0.0
+          },
+          "smoothing": {
+            "enabled": true,
+            "window": 5,
+            "polyorder": 2
+          },
+          "bad_bands": {
+            "enabled": false,
+            "ranges": [
+              [
+                1340,
+                1450
+              ],
+              [
+                1800,
+                1960
+              ]
+            ]
+          },
+          "alignment": {
+            "enabled": true,
+            "start": 400.0,
+            "end": 900.0,
+            "step": 10.0,
+            "extrapolate": true
+          },
+          "mask": {
+            "enabled": true,
+            "ndvi_threshold": 0.35,
+            "nir_wavelength": 840.0,
+            "red_wavelength": 670.0
+          },
+          "cloud": {
+            "enabled": false,
+            "blue_threshold": 0.3
+          },
+          "crop": {
+            "enabled": false,
+            "x0": 0,
+            "y0": 0,
+            "width": 0,
+            "height": 0
+          },
+          "indices": [
+            "NDVI",
+            "NDRE",
+            "CIredge"
+          ]
+        },
+        "indices": {
+          "NDVI": {
+            "label": "归一化植被指数",
+            "min": 0.35,
+            "max": 0.79737,
+            "mean": 0.59979,
+            "std": 0.11238,
+            "nir": 840,
+            "red": 670,
+            "nir_band": 45,
+            "red_band": 28
+          },
+          "NDRE": {
+            "label": "红边归一化差值指数",
+            "min": 0.14623,
+            "max": 0.2995,
+            "mean": 0.2394,
+            "std": 0.03724,
+            "nir": 840,
+            "red_edge": 730,
+            "nir_band": 45,
+            "red_edge_band": 34
+          },
+          "CIREDGE": {
+            "label": "红边叶绿素指数",
+            "min": 0.34255,
+            "max": 0.85512,
+            "mean": 0.6356,
+            "std": 0.12462,
+            "nir": 840,
+            "red_edge": 730,
+            "nir_band": 45,
+            "red_edge_band": 34
+          }
+        },
+        "width": 689,
+        "height": 418,
+        "crs": "EPSG:32650"
+      },
+      "preprocess_at": "2026-11-17T22:14:16+08:00",
+      "result": {
+        "id": "res_e6d14f31",
+        "image_id": "planet_hengyu_img1",
+        "image_name": "20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif",
+        "flight_date": "2025-10-11",
+        "created_at": "2026-11-17T22:20:43+08:00",
+        "unit": "mg/g",
+        "model": {
+          "id": "planet_nmass_demo",
+          "name": "PlanetScope Nmass 流程演示模型",
+          "version": "1.0",
+          "file_sha256": "0569cfd0fc9f5b4c90a3339eb51959993e3dc4a2c5e953f149b98c3e79f617a2",
+          "metric_type": "not_applicable_demo_alias"
+        },
+        "thresholds": {
+          "low": 22.0,
+          "high": 28.0,
+          "unit": "mg/g"
+        },
+        "stats": {
+          "count": 137512,
+          "total_count": 288002,
+          "valid_ratio": 0.47747,
+          "mean": 20.944,
+          "std": 4.911,
+          "cv": 23.45,
+          "min": 1.609,
+          "max": 58.491,
+          "p5": 9.766,
+          "p25": 19.733,
+          "p50": 22.824,
+          "p75": 24.095,
+          "p95": 25.223
+        },
+        "class_stats": [
+          {
+            "key": "low",
+            "name": "低氮",
+            "color": "#D55E00",
+            "action": "需追肥",
+            "count": 54732,
+            "ratio": 0.39802,
+            "area_ha": 49.2588,
+            "area_mu": 738.88,
+            "range": {
+              "min": null,
+              "max": 22.0
+            }
+          },
+          {
+            "key": "suitable",
+            "name": "适宜",
+            "color": "#009E73",
+            "action": "保持现状",
+            "count": 82220,
+            "ratio": 0.59791,
+            "area_ha": 73.998,
+            "area_mu": 1109.97,
+            "range": {
+              "min": 22.0,
+              "max": 28.0
+            }
+          },
+          {
+            "key": "high",
+            "name": "高氮",
+            "color": "#0072B2",
+            "action": "控制施肥",
+            "count": 560,
+            "ratio": 0.00407,
+            "area_ha": 0.504,
+            "area_mu": 7.56,
+            "range": {
+              "min": 28.0,
+              "max": null
+            }
+          }
+        ],
+        "area": {
+          "pixel_area_m2": 9.0,
+          "valid_ha": 123.7608,
+          "valid_mu": 1856.41,
+          "total_ha": 259.2018,
+          "total_mu": 3888.03
+        },
+        "trace": {
+          "alignment": {
+            "source_range": [
+              442.0,
+              865.0
+            ],
+            "target_range": [
+              400.0,
+              900.0
+            ],
+            "exact_bands": 2,
+            "interpolated_bands": 40,
+            "edge_filled_bands": 9,
+            "edge_fill_ratio": 0.17647,
+            "resampled": true,
+            "method": "linear_interpolation_with_nearest_edge_fill",
+            "prediction_alignment": {
+              "resampled": false,
+              "bands": 51,
+              "source_band_count": 51,
+              "exact_bands": 51,
+              "interpolated_bands": 0,
+              "edge_filled_bands": 0,
+              "edge_fill_ratio": 0.0,
+              "edge_filled": false,
+              "source_range": [
+                400.0,
+                900.0
+              ],
+              "target_range": [
+                400.0,
+                900.0
+              ],
+              "method": "exact"
+            }
+          },
+          "force_used": false,
+          "ignored_warnings": [],
+          "preprocessing": {
+            "config_sha256": "9aec4f4acbf6e1ba260e2bc8e284e2b0ef314c727a893a5a3e49cf1177065d29",
+            "quality_level": "notice"
+          }
+        }
+      },
+      "result_at": "2026-11-17T22:20:43+08:00"
+    }
+  ]
+}

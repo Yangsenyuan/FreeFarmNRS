@@ -1,0 +1,41 @@
+{
+  "id": "rf_multispectral_demo",
+  "name": "多光谱 Nmass-RF 模型",
+  "type": "ml",
+  "algorithm": "随机森林",
+  "builtin": true,
+  "demo": true,
+  "version": "1.0",
+  "unit": "mg/g",
+  "crops": [
+    "玉米",
+    "小麦"
+  ],
+  "sensors": [
+    "五波段多光谱（475/560/668/717/840 nm）"
+  ],
+  "training_data": "合成多光谱冠层光谱（4000 条，5 波段，Savitzky-Golay 平滑）",
+  "r2": 0.8185,
+  "rmse": 2.4591,
+  "description": "示例模型：基于合成冠层光谱数据训练，仅用于平台功能演示。正式科研应用请导入基于实测氮素数据训练的模型。 针对蓝、绿、红、红边、近红外五波段多光谱传感器训练；随机森林反演速度快，适合大影像与批量处理。",
+  "input": {
+    "type": "spectra",
+    "wavelengths": [
+      475.0,
+      560.0,
+      668.0,
+      717.0,
+      840.0
+    ]
+  },
+  "thresholds": {
+    "low": 22.0,
+    "high": 28.0
+  },
+  "tags": [
+    "多光谱",
+    "随机森林",
+    "零样本"
+  ],
+  "file": "rf_multispectral_demo.pkl"
+}

@@ -1,0 +1,26 @@
+<PAMDataset>
+  <Metadata>
+    <MDI key="SENSOR">AUX-SENSOR</MDI>
+    <MDI key="ACQUISITION_DATE">2026-06-11</MDI>
+    <MDI key="FIELD_ID">AUX-FIELD</MDI>
+    <MDI key="PROCESSING_LEVEL">L2A</MDI>
+  </Metadata>
+  <PAMRasterBand band="1">
+    <Metadata>
+      <MDI key="WAVELENGTH">475</MDI>
+      <MDI key="FWHM">20</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="2">
+    <Metadata>
+      <MDI key="WAVELENGTH">560</MDI>
+      <MDI key="FWHM">20</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="3">
+    <Metadata>
+      <MDI key="WAVELENGTH">668</MDI>
+      <MDI key="FWHM">30</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>

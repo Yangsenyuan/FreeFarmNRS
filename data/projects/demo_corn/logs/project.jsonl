@@ -1,0 +1,16 @@
+{"time": "2026-10-28T10:11:11+08:00", "level": "info", "source": "project", "message": "创建项目「夏玉米氮素监测示范」"}
+{"time": "2026-10-28T10:11:14+08:00", "level": "info", "source": "demo", "message": "示例项目已创建，开始预处理与反演演示"}
+{"time": "2026-10-28T10:11:16+08:00", "level": "info", "source": "preprocess", "message": "影像「田块A_20260610_多光谱.tif」预处理完成，有效像元占比 91.7%"}
+{"time": "2026-10-28T10:11:18+08:00", "level": "info", "source": "inversion", "message": "影像「田块A_20260610_多光谱.tif」反演完成，均值 23.71 mg/g，模型「多光谱 Nmass-RF 模型」"}
+{"time": "2026-10-28T10:11:21+08:00", "level": "info", "source": "preprocess", "message": "影像「田块A_20260702_多光谱.tif」预处理完成，有效像元占比 91.7%"}
+{"time": "2026-10-28T10:11:23+08:00", "level": "info", "source": "inversion", "message": "影像「田块A_20260702_多光谱.tif」反演完成，均值 23.912 mg/g，模型「多光谱 Nmass-RF 模型」"}
+{"time": "2026-10-28T10:11:25+08:00", "level": "info", "source": "preprocess", "message": "影像「田块A_20260715_多光谱.tif」预处理完成，有效像元占比 91.8%"}
+{"time": "2026-10-28T10:11:27+08:00", "level": "info", "source": "inversion", "message": "影像「田块A_20260715_多光谱.tif」反演完成，均值 24.392 mg/g，模型「多光谱 Nmass-RF 模型」"}
+{"time": "2026-10-28T10:24:16+08:00", "level": "info", "source": "inversion", "message": "开始反演「田块A_20260610_多光谱.tif」，模型「多光谱 Nmass-RF 模型」"}
+{"time": "2026-10-28T10:24:20+08:00", "level": "info", "source": "inversion", "message": "反演完成「田块A_20260610_多光谱.tif」：均值 23.71 mg/g，变异系数 14.67%，模型「多光谱 Nmass-RF 模型」"}
+{"time": "2026-10-28T10:24:41+08:00", "level": "info", "source": "preprocess", "message": "开始预处理「田块A_20260702_多光谱.tif」"}
+{"time": "2026-10-28T10:24:46+08:00", "level": "info", "source": "preprocess", "message": "影像「田块A_20260702_多光谱.tif」预处理完成，质量检查：提示，植被像元占比 91.7%"}
+{"time": "2026-10-28T10:24:46+08:00", "level": "info", "source": "inversion", "message": "开始反演「田块A_20260702_多光谱.tif」，模型「多光谱 Nmass-RF 模型」"}
+{"time": "2026-10-28T10:24:48+08:00", "level": "info", "source": "inversion", "message": "反演完成「田块A_20260702_多光谱.tif」：均值 23.912 mg/g，变异系数 14.38%，模型「多光谱 Nmass-RF 模型」"}
+{"time": "2026-10-28T10:25:59+08:00", "level": "info", "source": "result", "message": "导出结果（PNG）「田块A_20260702_多光谱.tif」"}
+{"time": "2026-10-28T10:26:00+08:00", "level": "info", "source": "result", "message": "导出结果（PDF）「田块A_20260702_多光谱.tif」"}

@@ -1,0 +1,407 @@
+[
+  {
+    "id": "res_eebc9613",
+    "image_id": "demo_corn_img1",
+    "image_name": "田块A_20260610_多光谱.tif",
+    "flight_date": "2026-06-10",
+    "created_at": "2026-10-28T10:11:18+08:00",
+    "model": {
+      "id": "rf_multispectral_demo",
+      "name": "多光谱 Nmass-RF 模型"
+    },
+    "thresholds": {
+      "low": 22.0,
+      "high": 28.0
+    },
+    "stats": {
+      "count": 440232,
+      "total_count": 480000,
+      "valid_ratio": 0.91715,
+      "mean": 23.71,
+      "std": 3.478,
+      "cv": 14.67,
+      "min": 16.037,
+      "max": 33.037,
+      "p5": 18.615,
+      "p25": 20.817,
+      "p50": 23.496,
+      "p75": 26.507,
+      "p95": 29.912
+    },
+    "class_stats": [
+      {
+        "key": "low",
+        "name": "低氮",
+        "color": "#D55E00",
+        "action": "需追肥",
+        "count": 138025,
+        "ratio": 0.31353,
+        "area_ha": 0.138,
+        "area_mu": 2.07,
+        "range": {
+          "min": null,
+          "max": 22.0
+        }
+      },
+      {
+        "key": "suitable",
+        "name": "适宜",
+        "color": "#009E73",
+        "action": "保持现状",
+        "count": 240655,
+        "ratio": 0.54665,
+        "area_ha": 0.2407,
+        "area_mu": 3.61,
+        "range": {
+          "min": 22.0,
+          "max": 28.0
+        }
+      },
+      {
+        "key": "high",
+        "name": "高氮",
+        "color": "#0072B2",
+        "action": "控制施肥",
+        "count": 61552,
+        "ratio": 0.13982,
+        "area_ha": 0.0616,
+        "area_mu": 0.92,
+        "range": {
+          "min": 28.0,
+          "max": null
+        }
+      }
+    ],
+    "area": {
+      "pixel_area_m2": 0.01,
+      "valid_ha": 0.4402,
+      "valid_mu": 6.6,
+      "total_ha": 0.48,
+      "total_mu": 7.2
+    }
+  },
+  {
+    "id": "res_2aff272a",
+    "image_id": "demo_corn_img2",
+    "image_name": "田块A_20260702_多光谱.tif",
+    "flight_date": "2026-07-02",
+    "created_at": "2026-10-28T10:11:23+08:00",
+    "model": {
+      "id": "rf_multispectral_demo",
+      "name": "多光谱 Nmass-RF 模型"
+    },
+    "thresholds": {
+      "low": 22.0,
+      "high": 28.0
+    },
+    "stats": {
+      "count": 440272,
+      "total_count": 480000,
+      "valid_ratio": 0.91723,
+      "mean": 23.912,
+      "std": 3.44,
+      "cv": 14.39,
+      "min": 15.974,
+      "max": 33.092,
+      "p5": 18.517,
+      "p25": 20.998,
+      "p50": 23.724,
+      "p75": 26.964,
+      "p95": 29.604
+    },
+    "class_stats": [
+      {
+        "key": "low",
+        "name": "低氮",
+        "color": "#D55E00",
+        "action": "需追肥",
+        "count": 130932,
+        "ratio": 0.29739,
+        "area_ha": 0.1309,
+        "area_mu": 1.96,
+        "range": {
+          "min": null,
+          "max": 22.0
+        }
+      },
+      {
+        "key": "suitable",
+        "name": "适宜",
+        "color": "#009E73",
+        "action": "保持现状",
+        "count": 249452,
+        "ratio": 0.56659,
+        "area_ha": 0.2495,
+        "area_mu": 3.74,
+        "range": {
+          "min": 22.0,
+          "max": 28.0
+        }
+      },
+      {
+        "key": "high",
+        "name": "高氮",
+        "color": "#0072B2",
+        "action": "控制施肥",
+        "count": 59888,
+        "ratio": 0.13603,
+        "area_ha": 0.0599,
+        "area_mu": 0.9,
+        "range": {
+          "min": 28.0,
+          "max": null
+        }
+      }
+    ],
+    "area": {
+      "pixel_area_m2": 0.01,
+      "valid_ha": 0.4403,
+      "valid_mu": 6.6,
+      "total_ha": 0.48,
+      "total_mu": 7.2
+    }
+  },
+  {
+    "id": "res_16b6cf25",
+    "image_id": "demo_corn_img3",
+    "image_name": "田块A_20260715_多光谱.tif",
+    "flight_date": "2026-07-15",
+    "created_at": "2026-10-28T10:11:27+08:00",
+    "model": {
+      "id": "rf_multispectral_demo",
+      "name": "多光谱 Nmass-RF 模型"
+    },
+    "thresholds": {
+      "low": 22.0,
+      "high": 28.0
+    },
+    "stats": {
+      "count": 440399,
+      "total_count": 480000,
+      "valid_ratio": 0.9175,
+      "mean": 24.392,
+      "std": 3.246,
+      "cv": 13.31,
+      "min": 16.128,
+      "max": 32.818,
+      "p5": 19.253,
+      "p25": 22.155,
+      "p50": 24.424,
+      "p75": 27.047,
+      "p95": 29.822
+    },
+    "class_stats": [
+      {
+        "key": "low",
+        "name": "低氮",
+        "color": "#D55E00",
+        "action": "需追肥",
+        "count": 104738,
+        "ratio": 0.23783,
+        "area_ha": 0.1047,
+        "area_mu": 1.57,
+        "range": {
+          "min": null,
+          "max": 22.0
+        }
+      },
+      {
+        "key": "suitable",
+        "name": "适宜",
+        "color": "#009E73",
+        "action": "保持现状",
+        "count": 280454,
+        "ratio": 0.63682,
+        "area_ha": 0.2805,
+        "area_mu": 4.21,
+        "range": {
+          "min": 22.0,
+          "max": 28.0
+        }
+      },
+      {
+        "key": "high",
+        "name": "高氮",
+        "color": "#0072B2",
+        "action": "控制施肥",
+        "count": 55207,
+        "ratio": 0.12536,
+        "area_ha": 0.0552,
+        "area_mu": 0.83,
+        "range": {
+          "min": 28.0,
+          "max": null
+        }
+      }
+    ],
+    "area": {
+      "pixel_area_m2": 0.01,
+      "valid_ha": 0.4404,
+      "valid_mu": 6.61,
+      "total_ha": 0.48,
+      "total_mu": 7.2
+    }
+  },
+  {
+    "id": "res_9b87ff80",
+    "image_id": "demo_corn_img1",
+    "image_name": "田块A_20260610_多光谱.tif",
+    "flight_date": "2026-06-10",
+    "created_at": "2026-10-28T10:24:20+08:00",
+    "model": {
+      "id": "rf_multispectral_demo",
+      "name": "多光谱 Nmass-RF 模型"
+    },
+    "thresholds": {
+      "low": 22.0,
+      "high": 28.0
+    },
+    "stats": {
+      "count": 440232,
+      "total_count": 480000,
+      "valid_ratio": 0.91715,
+      "mean": 23.71,
+      "std": 3.479,
+      "cv": 14.67,
+      "min": 16.038,
+      "max": 33.044,
+      "p5": 18.613,
+      "p25": 20.815,
+      "p50": 23.497,
+      "p75": 26.502,
+      "p95": 29.907
+    },
+    "class_stats": [
+      {
+        "key": "low",
+        "name": "低氮",
+        "color": "#D55E00",
+        "action": "需追肥",
+        "count": 138152,
+        "ratio": 0.31382,
+        "area_ha": 0.1382,
+        "area_mu": 2.07,
+        "range": {
+          "min": null,
+          "max": 22.0
+        }
+      },
+      {
+        "key": "suitable",
+        "name": "适宜",
+        "color": "#009E73",
+        "action": "保持现状",
+        "count": 240531,
+        "ratio": 0.54637,
+        "area_ha": 0.2405,
+        "area_mu": 3.61,
+        "range": {
+          "min": 22.0,
+          "max": 28.0
+        }
+      },
+      {
+        "key": "high",
+        "name": "高氮",
+        "color": "#0072B2",
+        "action": "控制施肥",
+        "count": 61549,
+        "ratio": 0.13981,
+        "area_ha": 0.0615,
+        "area_mu": 0.92,
+        "range": {
+          "min": 28.0,
+          "max": null
+        }
+      }
+    ],
+    "area": {
+      "pixel_area_m2": 0.01,
+      "valid_ha": 0.4402,
+      "valid_mu": 6.6,
+      "total_ha": 0.48,
+      "total_mu": 7.2
+    }
+  },
+  {
+    "id": "res_50c91bbe",
+    "image_id": "demo_corn_img2",
+    "image_name": "田块A_20260702_多光谱.tif",
+    "flight_date": "2026-07-02",
+    "created_at": "2026-10-28T10:24:48+08:00",
+    "model": {
+      "id": "rf_multispectral_demo",
+      "name": "多光谱 Nmass-RF 模型"
+    },
+    "thresholds": {
+      "low": 22.0,
+      "high": 28.0
+    },
+    "stats": {
+      "count": 440272,
+      "total_count": 480000,
+      "valid_ratio": 0.91723,
+      "mean": 23.912,
+      "std": 3.44,
+      "cv": 14.38,
+      "min": 15.983,
+      "max": 33.117,
+      "p5": 18.526,
+      "p25": 20.998,
+      "p50": 23.725,
+      "p75": 26.965,
+      "p95": 29.596
+    },
+    "class_stats": [
+      {
+        "key": "low",
+        "name": "低氮",
+        "color": "#D55E00",
+        "action": "需追肥",
+        "count": 131015,
+        "ratio": 0.29758,
+        "area_ha": 0.131,
+        "area_mu": 1.97,
+        "range": {
+          "min": null,
+          "max": 22.0
+        }
+      },
+      {
+        "key": "suitable",
+        "name": "适宜",
+        "color": "#009E73",
+        "action": "保持现状",
+        "count": 249465,
+        "ratio": 0.56662,
+        "area_ha": 0.2495,
+        "area_mu": 3.74,
+        "range": {
+          "min": 22.0,
+          "max": 28.0
+        }
+      },
+      {
+        "key": "high",
+        "name": "高氮",
+        "color": "#0072B2",
+        "action": "控制施肥",
+        "count": 59792,
+        "ratio": 0.13581,
+        "area_ha": 0.0598,
+        "area_mu": 0.9,
+        "range": {
+          "min": 28.0,
+          "max": null
+        }
+      }
+    ],
+    "area": {
+      "pixel_area_m2": 0.01,
+      "valid_ha": 0.4403,
+      "valid_mu": 6.6,
+      "total_ha": 0.48,
+      "total_mu": 7.2
+    }
+  }
+]

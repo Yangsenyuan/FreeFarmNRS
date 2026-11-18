@@ -1,0 +1,262 @@
+{
+  "created_at": "2026-10-28T10:11:25+08:00",
+  "width": 800,
+  "height": 600,
+  "bands": 51,
+  "shape": [
+    51,
+    600,
+    800
+  ],
+  "crs": "EPSG:32650",
+  "transform": [
+    0.1,
+    0.0,
+    500000.0,
+    0.0,
+    -0.1,
+    3500000.0
+  ],
+  "res_x": 0.1,
+  "res_y": 0.1,
+  "wavelengths": [
+    400.0,
+    410.0,
+    420.0,
+    430.0,
+    440.0,
+    450.0,
+    460.0,
+    470.0,
+    480.0,
+    490.0,
+    500.0,
+    510.0,
+    520.0,
+    530.0,
+    540.0,
+    550.0,
+    560.0,
+    570.0,
+    580.0,
+    590.0,
+    600.0,
+    610.0,
+    620.0,
+    630.0,
+    640.0,
+    650.0,
+    660.0,
+    670.0,
+    680.0,
+    690.0,
+    700.0,
+    710.0,
+    720.0,
+    730.0,
+    740.0,
+    750.0,
+    760.0,
+    770.0,
+    780.0,
+    790.0,
+    800.0,
+    810.0,
+    820.0,
+    830.0,
+    840.0,
+    850.0,
+    860.0,
+    870.0,
+    880.0,
+    890.0,
+    900.0
+  ],
+  "wavelength_unit": "nm",
+  "source_wavelengths": [
+    475.0,
+    560.0,
+    668.0,
+    717.0,
+    840.0
+  ],
+  "source_bands": 5,
+  "source_width": 800,
+  "source_height": 600,
+  "crop": {
+    "enabled": false,
+    "x0": 0,
+    "y0": 0,
+    "width": 800,
+    "height": 600
+  },
+  "config": {
+    "reflectance": {
+      "enabled": true,
+      "method": "scale",
+      "scale": 10000.0,
+      "coefficient": 1.0,
+      "offset": 0.0
+    },
+    "smoothing": {
+      "enabled": true,
+      "window": 5,
+      "polyorder": 2
+    },
+    "bad_bands": {
+      "enabled": false,
+      "ranges": [
+        [
+          1340,
+          1450
+        ],
+        [
+          1800,
+          1960
+        ]
+      ]
+    },
+    "alignment": {
+      "enabled": true,
+      "start": 400.0,
+      "end": 900.0,
+      "step": 10.0,
+      "extrapolate": true
+    },
+    "mask": {
+      "enabled": true,
+      "ndvi_threshold": 0.35,
+      "nir_wavelength": 840.0,
+      "red_wavelength": 670.0
+    },
+    "cloud": {
+      "enabled": false,
+      "blue_threshold": 0.3
+    },
+    "crop": {
+      "enabled": false,
+      "x0": 0,
+      "y0": 0,
+      "width": 0,
+      "height": 0
+    },
+    "indices": [
+      "NDVI",
+      "NDRE",
+      "CIredge"
+    ]
+  },
+  "quality": {
+    "level": "notice",
+    "items": [
+      {
+        "key": "reflectance",
+        "title": "反射率转换",
+        "status": "ok",
+        "message": "按比例因子 10000 将 DN 值转换为反射率。反射率 1%–99% 分位：0.032–0.505，中位数 0.093"
+      },
+      {
+        "key": "bad_bands",
+        "title": "坏波段剔除",
+        "status": "ok",
+        "message": "未启用坏波段剔除，保留全部波段"
+      },
+      {
+        "key": "smoothing",
+        "title": "光谱平滑",
+        "status": "ok",
+        "message": "Savitzky-Golay 平滑完成（窗口 5，阶数 2）"
+      },
+      {
+        "key": "alignment",
+        "title": "波段对齐",
+        "status": "notice",
+        "message": "已对齐到 51 个标准波段（400–900 nm）；目标波长超出源影像范围的两端采用最近邻填充"
+      },
+      {
+        "key": "cloud",
+        "title": "云/阴影检测",
+        "status": "ok",
+        "message": "未启用云/阴影检测"
+      },
+      {
+        "key": "mask",
+        "title": "植被掩膜",
+        "status": "ok",
+        "message": "植被像元占比 91.7%（NDVI ≥ 0.35）"
+      }
+    ]
+  },
+  "mask": {
+    "enabled": true,
+    "ndvi_threshold": 0.35,
+    "ratio": 0.9175,
+    "valid_pixels": 440399,
+    "total_pixels": 480000,
+    "cloud_ratio": 0.0
+  },
+  "indices": {
+    "NDVI": {
+      "label": "归一化植被指数",
+      "min": 0.35004,
+      "max": 0.84679,
+      "mean": 0.77175,
+      "std": 0.03209,
+      "nir": 840,
+      "red": 670,
+      "nir_band": 45,
+      "red_band": 28
+    },
+    "NDRE": {
+      "label": "红边归一化差值指数",
+      "min": 0.16143,
+      "max": 0.36674,
+      "mean": 0.33703,
+      "std": 0.01301,
+      "nir": 840,
+      "red_edge": 730,
+      "nir_band": 45,
+      "red_edge_band": 34
+    },
+    "CIREDGE": {
+      "label": "红边叶绿素指数",
+      "min": 0.385,
+      "max": 1.15824,
+      "mean": 1.01783,
+      "std": 0.05658,
+      "nir": 840,
+      "red_edge": 730,
+      "nir_band": 45,
+      "red_edge_band": 34
+    }
+  },
+  "removed_bands": [],
+  "alignment": {
+    "source_range": [
+      475.0,
+      840.0
+    ],
+    "target_range": [
+      400.0,
+      900.0
+    ],
+    "edge_filled": true,
+    "bands": 51
+  },
+  "smoothing_applied": true,
+  "raw_range": {
+    "min": 232.0,
+    "max": 5203.0
+  },
+  "reflectance_range": {
+    "p1": 0.031700000166893005,
+    "p50": 0.09260000288486481,
+    "p99": 0.5048999786376953,
+    "outside_ratio": 0.0
+  },
+  "previews": {
+    "rgb": "previews/rgb.png",
+    "ndvi": "previews/ndvi.png",
+    "mask": "previews/mask.png"
+  }
+}

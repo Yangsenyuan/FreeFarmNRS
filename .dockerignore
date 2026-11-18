@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+tmp/
+.git/
+.gitignore
+docs/
+README.md
+功能需求文档.md
+启动平台.bat

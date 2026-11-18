@@ -1,0 +1,164 @@
+[
+  {
+    "id": "res_235e307a",
+    "image_id": "demo_hyper_img1",
+    "image_name": "试验田B_20260618_高光谱.dat",
+    "flight_date": "2026-06-18",
+    "created_at": "2026-10-28T10:11:30+08:00",
+    "model": {
+      "id": "plsr_nmass_demo",
+      "name": "玉米 Nmass-PLSR 模型"
+    },
+    "thresholds": {
+      "low": 22.0,
+      "high": 28.0
+    },
+    "stats": {
+      "count": 159471,
+      "total_count": 172800,
+      "valid_ratio": 0.92286,
+      "mean": 26.06,
+      "std": 3.312,
+      "cv": 12.71,
+      "min": 17.725,
+      "max": 33.873,
+      "p5": 20.773,
+      "p25": 23.847,
+      "p50": 25.727,
+      "p75": 28.166,
+      "p95": 32.272
+    },
+    "class_stats": [
+      {
+        "key": "low",
+        "name": "低氮",
+        "color": "#D55E00",
+        "action": "需追肥",
+        "count": 16307,
+        "ratio": 0.10226,
+        "area_ha": 0.0163,
+        "area_mu": 0.24,
+        "range": {
+          "min": null,
+          "max": 22.0
+        }
+      },
+      {
+        "key": "suitable",
+        "name": "适宜",
+        "color": "#009E73",
+        "action": "保持现状",
+        "count": 100944,
+        "ratio": 0.63299,
+        "area_ha": 0.1009,
+        "area_mu": 1.51,
+        "range": {
+          "min": 22.0,
+          "max": 28.0
+        }
+      },
+      {
+        "key": "high",
+        "name": "高氮",
+        "color": "#0072B2",
+        "action": "控制施肥",
+        "count": 42220,
+        "ratio": 0.26475,
+        "area_ha": 0.0422,
+        "area_mu": 0.63,
+        "range": {
+          "min": 28.0,
+          "max": null
+        }
+      }
+    ],
+    "area": {
+      "pixel_area_m2": 0.01,
+      "valid_ha": 0.1595,
+      "valid_mu": 2.39,
+      "total_ha": 0.1728,
+      "total_mu": 2.59
+    }
+  },
+  {
+    "id": "res_44e8a0c9",
+    "image_id": "demo_hyper_img1",
+    "image_name": "试验田B_20260618_高光谱.dat",
+    "flight_date": "2026-06-18",
+    "created_at": "2026-10-28T10:16:43+08:00",
+    "model": {
+      "id": "plsr_nmass_demo",
+      "name": "玉米 Nmass-PLSR 模型"
+    },
+    "thresholds": {
+      "low": 22.0,
+      "high": 28.0
+    },
+    "stats": {
+      "count": 159471,
+      "total_count": 172800,
+      "valid_ratio": 0.92286,
+      "mean": 26.06,
+      "std": 3.312,
+      "cv": 12.71,
+      "min": 17.725,
+      "max": 33.873,
+      "p5": 20.773,
+      "p25": 23.847,
+      "p50": 25.727,
+      "p75": 28.166,
+      "p95": 32.272
+    },
+    "class_stats": [
+      {
+        "key": "low",
+        "name": "低氮",
+        "color": "#D55E00",
+        "action": "需追肥",
+        "count": 16307,
+        "ratio": 0.10226,
+        "area_ha": 0.0163,
+        "area_mu": 0.24,
+        "range": {
+          "min": null,
+          "max": 22.0
+        }
+      },
+      {
+        "key": "suitable",
+        "name": "适宜",
+        "color": "#009E73",
+        "action": "保持现状",
+        "count": 100944,
+        "ratio": 0.63299,
+        "area_ha": 0.1009,
+        "area_mu": 1.51,
+        "range": {
+          "min": 22.0,
+          "max": 28.0
+        }
+      },
+      {
+        "key": "high",
+        "name": "高氮",
+        "color": "#0072B2",
+        "action": "控制施肥",
+        "count": 42220,
+        "ratio": 0.26475,
+        "area_ha": 0.0422,
+        "area_mu": 0.63,
+        "range": {
+          "min": 28.0,
+          "max": null
+        }
+      }
+    ],
+    "area": {
+      "pixel_area_m2": 0.01,
+      "valid_ha": 0.1595,
+      "valid_mu": 2.39,
+      "total_ha": 0.1728,
+      "total_mu": 2.59
+    }
+  }
+]

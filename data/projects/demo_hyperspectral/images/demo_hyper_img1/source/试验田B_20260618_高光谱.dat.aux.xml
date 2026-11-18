@@ -1,0 +1,324 @@
+<PAMDataset>
+  <Metadata>
+    <MDI key="fwhm">5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5</MDI>
+    <MDI key="sensor">DEMO</MDI>
+    <MDI key="wavelength">400, 405, 410, 415, 420, 425, 430, 435, 440, 445, 450, 455, 460, 465, 470, 475, 480, 485, 490, 495, 500, 505, 510, 515, 520, 525, 530, 535, 540, 545, 550, 555, 560, 565, 570, 575, 580, 585, 590, 595, 600, 605, 610, 615, 620, 625, 630, 635, 640, 645, 650, 655, 660, 665, 670, 675, 680, 685, 690, 695, 700, 705, 710, 715, 720, 725, 730, 735, 740, 745, 750, 755, 760, 765, 770, 775, 780, 785, 790, 795, 800, 805, 810, 815, 820, 825, 830, 835, 840, 845, 850, 855, 860, 865, 870, 875, 880, 885, 890, 895, 900</MDI>
+    <MDI key="wavelength_units">nm</MDI>
+  </Metadata>
+  <Metadata domain="ENVI">
+    <MDI key="samples">480</MDI>
+    <MDI key="lines">360</MDI>
+    <MDI key="bands">101</MDI>
+    <MDI key="header_offset">0</MDI>
+    <MDI key="file_type">ENVI Standard</MDI>
+    <MDI key="data_type">12</MDI>
+    <MDI key="interleave">bsq</MDI>
+    <MDI key="byte_order">0</MDI>
+  </Metadata>
+  <Metadata domain="IMAGE_STRUCTURE">
+    <MDI key="INTERLEAVE">BAND</MDI>
+  </Metadata>
+  <PAMRasterBand band="1">
+    <Description>400nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="2">
+    <Description>405nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="3">
+    <Description>410nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="4">
+    <Description>415nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="5">
+    <Description>420nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="6">
+    <Description>425nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="7">
+    <Description>430nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="8">
+    <Description>435nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="9">
+    <Description>440nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="10">
+    <Description>445nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="11">
+    <Description>450nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="12">
+    <Description>455nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="13">
+    <Description>460nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="14">
+    <Description>465nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="15">
+    <Description>470nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="16">
+    <Description>475nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="17">
+    <Description>480nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="18">
+    <Description>485nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="19">
+    <Description>490nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="20">
+    <Description>495nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="21">
+    <Description>500nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="22">
+    <Description>505nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="23">
+    <Description>510nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="24">
+    <Description>515nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="25">
+    <Description>520nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="26">
+    <Description>525nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="27">
+    <Description>530nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="28">
+    <Description>535nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="29">
+    <Description>540nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="30">
+    <Description>545nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="31">
+    <Description>550nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="32">
+    <Description>555nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="33">
+    <Description>560nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="34">
+    <Description>565nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="35">
+    <Description>570nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="36">
+    <Description>575nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="37">
+    <Description>580nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="38">
+    <Description>585nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="39">
+    <Description>590nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="40">
+    <Description>595nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="41">
+    <Description>600nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="42">
+    <Description>605nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="43">
+    <Description>610nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="44">
+    <Description>615nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="45">
+    <Description>620nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="46">
+    <Description>625nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="47">
+    <Description>630nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="48">
+    <Description>635nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="49">
+    <Description>640nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="50">
+    <Description>645nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="51">
+    <Description>650nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="52">
+    <Description>655nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="53">
+    <Description>660nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="54">
+    <Description>665nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="55">
+    <Description>670nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="56">
+    <Description>675nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="57">
+    <Description>680nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="58">
+    <Description>685nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="59">
+    <Description>690nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="60">
+    <Description>695nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="61">
+    <Description>700nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="62">
+    <Description>705nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="63">
+    <Description>710nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="64">
+    <Description>715nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="65">
+    <Description>720nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="66">
+    <Description>725nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="67">
+    <Description>730nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="68">
+    <Description>735nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="69">
+    <Description>740nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="70">
+    <Description>745nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="71">
+    <Description>750nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="72">
+    <Description>755nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="73">
+    <Description>760nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="74">
+    <Description>765nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="75">
+    <Description>770nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="76">
+    <Description>775nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="77">
+    <Description>780nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="78">
+    <Description>785nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="79">
+    <Description>790nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="80">
+    <Description>795nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="81">
+    <Description>800nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="82">
+    <Description>805nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="83">
+    <Description>810nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="84">
+    <Description>815nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="85">
+    <Description>820nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="86">
+    <Description>825nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="87">
+    <Description>830nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="88">
+    <Description>835nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="89">
+    <Description>840nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="90">
+    <Description>845nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="91">
+    <Description>850nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="92">
+    <Description>855nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="93">
+    <Description>860nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="94">
+    <Description>865nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="95">
+    <Description>870nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="96">
+    <Description>875nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="97">
+    <Description>880nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="98">
+    <Description>885nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="99">
+    <Description>890nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="100">
+    <Description>895nm</Description>
+  </PAMRasterBand>
+  <PAMRasterBand band="101">
+    <Description>900nm</Description>
+  </PAMRasterBand>
+</PAMDataset>

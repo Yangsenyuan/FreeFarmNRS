@@ -1,0 +1,25 @@
+<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="XMP Core 6.0.0">
+  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <rdf:Description rdf:about=""
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:exif="http://ns.adobe.com/exif/1.0/"
+      xmlns:Camera="https://micasense.com/schemas/1.0/"
+      Camera:Model="Altum-PT"
+      Camera:SensorType="Multispectral"
+      Camera:CentralWavelength="560"
+      Camera:WavelengthFWHM="20"
+      Camera:BandName="Green 560nm"
+      Camera:FieldId="FIELD-A03"
+      Camera:CaptureId="MS-20260612-101500-A03"
+      exif:DateTimeOriginal="2026-06-12T10:15:00+08:00">
+      <dc:Creator>
+        <rdf:Seq><rdf:li>MicaSense</rdf:li></rdf:Seq>
+      </dc:Creator>
+      <dc:description>
+        <rdf:Alt><rdf:li xml:lang="x-default">脱敏 MicaSense 多光谱侧车样例</rdf:li></rdf:Alt>
+      </dc:description>
+    </rdf:Description>
+  </rdf:RDF>
+</x:xmpmeta>
+<?xpacket end="w"?>

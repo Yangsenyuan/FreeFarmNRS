@@ -1,0 +1,12 @@
+{"time": "2026-11-17T22:10:28+08:00", "level": "info", "source": "project", "message": "创建项目「惠州恒福菜场 PlanetScope 监测案例」"}
+{"time": "2026-11-17T22:10:29+08:00", "level": "info", "source": "import", "message": "导入用户提供的 PlanetScope 案例影像「20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif」"}
+{"time": "2026-11-17T22:14:14+08:00", "level": "info", "source": "preprocess", "message": "开始预处理「20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif」"}
+{"time": "2026-11-17T22:14:16+08:00", "level": "info", "source": "preprocess", "message": "影像「20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif」预处理完成，质量检查：提示，植被像元占比 47.7%"}
+{"time": "2026-11-17T22:14:21+08:00", "level": "info", "source": "inversion", "message": "开始反演「20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif」，模型「PlanetScope Nmass 流程演示模型」"}
+{"time": "2026-11-17T22:14:22+08:00", "level": "info", "source": "inversion", "message": "反演完成「20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif」：均值 11.884 mg/g，变异系数 42.82%，模型「PlanetScope Nmass 流程演示模型」"}
+{"time": "2026-11-17T22:14:55+08:00", "level": "info", "source": "inversion", "message": "开始反演「20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif」，模型「PlanetScope Nmass 流程演示模型」"}
+{"time": "2026-11-17T22:14:55+08:00", "level": "info", "source": "inversion", "message": "反演完成「20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif」：均值 20.944 mg/g，变异系数 23.45%，模型「PlanetScope Nmass 流程演示模型」"}
+{"time": "2026-11-17T22:20:43+08:00", "level": "info", "source": "inversion", "message": "开始反演「20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif」，模型「PlanetScope Nmass 流程演示模型」"}
+{"time": "2026-11-17T22:20:43+08:00", "level": "info", "source": "inversion", "message": "反演完成「20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif」：均值 20.944 mg/g，变异系数 23.45%，模型「PlanetScope Nmass 流程演示模型」"}
+{"time": "2026-11-17T22:20:45+08:00", "level": "info", "source": "result", "message": "导出结果（PDF）「20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif」"}
+{"time": "2026-11-17T22:20:45+08:00", "level": "info", "source": "result", "message": "导出结果（PNG）「20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif」"}

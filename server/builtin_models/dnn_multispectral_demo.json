@@ -1,0 +1,103 @@
+{
+  "id": "dnn_multispectral_demo",
+  "name": "五波段 Nmass-DNN 示例模型",
+  "type": "ml",
+  "algorithm": "DNN / MLP",
+  "builtin": true,
+  "demo": true,
+  "synthetic": true,
+  "version": "1.0",
+  "unit": "mg/g",
+  "crops": [
+    "玉米",
+    "小麦"
+  ],
+  "sensors": [
+    "五波段多光谱（475/560/668/717/840 nm）"
+  ],
+  "training_data": "合成冠层光谱训练的示例数据；不是田间实测数据，不能用于生产精度评价。",
+  "description": "合成数据训练的示例模型：输入标准化光谱后，经两层或多层全连接神经网络回归 Nmass。仅用于平台功能演示和流程验收，不表示对真实田块的预测精度。",
+  "input": {
+    "type": "spectra",
+    "wavelengths": [
+      475.0,
+      560.0,
+      668.0,
+      717.0,
+      840.0
+    ]
+  },
+  "thresholds": {
+    "low": 22.0,
+    "high": 28.0
+  },
+  "tags": [
+    "合成数据示例",
+    "DNN",
+    "MLP",
+    "Nmass"
+  ],
+  "dataset": {
+    "synthetic": true,
+    "generator": "server/services/spectral_sim.py",
+    "sample_count": 7200,
+    "feature_count": 5,
+    "seed": 3102,
+    "split_method": "80% train / 10% validation / 10% held-out test",
+    "train_count": 5760,
+    "validation_count": 720,
+    "test_count": 720
+  },
+  "structure": {
+    "input_dim": 5,
+    "hidden_layers": [
+      64,
+      32
+    ],
+    "output_dim": 1,
+    "activation": "relu",
+    "feature_scaler": "StandardScaler",
+    "target_scaler": "StandardScaler",
+    "optimizer": "adam",
+    "batch_size": 128,
+    "max_iter": 900
+  },
+  "metrics": {
+    "metric_type": "independent_test",
+    "test_set": "held-out 10%，未参与训练或验证",
+    "train": {
+      "r2": 0.8105,
+      "rmse": 2.5201
+    },
+    "validation": {
+      "r2": 0.8082,
+      "rmse": 2.5369
+    },
+    "test": {
+      "r2": 0.7797,
+      "rmse": 2.6417
+    }
+  },
+  "metric_type": "independent_test",
+  "test_metrics": {
+    "r2": 0.7797,
+    "rmse": 2.6417
+  },
+  "r2": 0.7797,
+  "rmse": 2.6417,
+  "limitations": [
+    "训练数据由简化光谱模拟器合成，不代表真实传感器或田间实测分布。",
+    "模型指标仅反映合成数据独立测试集，不是当前影像精度验证结果。",
+    "模型只接受所列训练中心波长；其他波段会先线性重采样。",
+    "正式科研与生产应用必须导入基于实测 Nmass 数据训练的模型。"
+  ],
+  "training_environment": {
+    "python": "3.9.7",
+    "numpy": "2.0.2",
+    "scikit_learn": "1.6.1"
+  },
+  "trained_at": "2026-11-17T13:59:06+00:00",
+  "file": "dnn_multispectral_demo.pkl",
+  "file_sha256": "66d85b833ae87fb7dea3819f33e0c0d1cc6eee93a188f4b572f2001ffaf86cbe",
+  "file_size_bytes": 45262
+}

@@ -1,0 +1,351 @@
+[
+  {
+    "id": "res_61bb4b8b",
+    "image_id": "planet_hengyu_img1",
+    "image_name": "20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif",
+    "flight_date": "2025-10-11",
+    "created_at": "2026-11-17T22:14:22+08:00",
+    "unit": "mg/g",
+    "model": {
+      "id": "planet_nmass_demo",
+      "name": "PlanetScope Nmass 流程演示模型",
+      "version": "1.0",
+      "file_sha256": "37c90b91174fe59327537e0a348be795ddc8bae66fcaded2585bc14619475a23",
+      "metric_type": "not_applicable_demo_alias"
+    },
+    "thresholds": {
+      "low": 22.0,
+      "high": 28.0,
+      "unit": "mg/g"
+    },
+    "stats": {
+      "count": 137512,
+      "total_count": 288002,
+      "valid_ratio": 0.47747,
+      "mean": 11.884,
+      "std": 5.088,
+      "cv": 42.82,
+      "min": 0.0,
+      "max": 46.039,
+      "p5": 0.947,
+      "p25": 9.674,
+      "p50": 12.325,
+      "p75": 14.354,
+      "p95": 20.094
+    },
+    "class_stats": [
+      {
+        "key": "low",
+        "name": "低氮",
+        "color": "#D55E00",
+        "action": "需追肥",
+        "count": 133287,
+        "ratio": 0.96928,
+        "area_ha": 119.9583,
+        "area_mu": 1799.37,
+        "range": {
+          "min": null,
+          "max": 22.0
+        }
+      },
+      {
+        "key": "suitable",
+        "name": "适宜",
+        "color": "#009E73",
+        "action": "保持现状",
+        "count": 3658,
+        "ratio": 0.0266,
+        "area_ha": 3.2922,
+        "area_mu": 49.38,
+        "range": {
+          "min": 22.0,
+          "max": 28.0
+        }
+      },
+      {
+        "key": "high",
+        "name": "高氮",
+        "color": "#0072B2",
+        "action": "控制施肥",
+        "count": 567,
+        "ratio": 0.00412,
+        "area_ha": 0.5103,
+        "area_mu": 7.65,
+        "range": {
+          "min": 28.0,
+          "max": null
+        }
+      }
+    ],
+    "area": {
+      "pixel_area_m2": 9.0,
+      "valid_ha": 123.7608,
+      "valid_mu": 1856.41,
+      "total_ha": 259.2018,
+      "total_mu": 3888.03
+    },
+    "trace": {
+      "alignment": {
+        "source_range": [
+          400.0,
+          900.0
+        ],
+        "target_range": [
+          400.0,
+          900.0
+        ],
+        "exact_bands": 51,
+        "interpolated_bands": 0,
+        "edge_filled_bands": 0,
+        "edge_fill_ratio": 0.0,
+        "resampled": false,
+        "method": "exact"
+      },
+      "force_used": false,
+      "ignored_warnings": [],
+      "preprocessing": {
+        "config_sha256": "9aec4f4acbf6e1ba260e2bc8e284e2b0ef314c727a893a5a3e49cf1177065d29",
+        "quality_level": "notice"
+      }
+    }
+  },
+  {
+    "id": "res_31cffd6a",
+    "image_id": "planet_hengyu_img1",
+    "image_name": "20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif",
+    "flight_date": "2025-10-11",
+    "created_at": "2026-11-17T22:14:55+08:00",
+    "unit": "mg/g",
+    "model": {
+      "id": "planet_nmass_demo",
+      "name": "PlanetScope Nmass 流程演示模型",
+      "version": "1.0",
+      "file_sha256": "0569cfd0fc9f5b4c90a3339eb51959993e3dc4a2c5e953f149b98c3e79f617a2",
+      "metric_type": "not_applicable_demo_alias"
+    },
+    "thresholds": {
+      "low": 22.0,
+      "high": 28.0,
+      "unit": "mg/g"
+    },
+    "stats": {
+      "count": 137512,
+      "total_count": 288002,
+      "valid_ratio": 0.47747,
+      "mean": 20.944,
+      "std": 4.911,
+      "cv": 23.45,
+      "min": 1.609,
+      "max": 58.491,
+      "p5": 9.766,
+      "p25": 19.733,
+      "p50": 22.824,
+      "p75": 24.095,
+      "p95": 25.223
+    },
+    "class_stats": [
+      {
+        "key": "low",
+        "name": "低氮",
+        "color": "#D55E00",
+        "action": "需追肥",
+        "count": 54732,
+        "ratio": 0.39802,
+        "area_ha": 49.2588,
+        "area_mu": 738.88,
+        "range": {
+          "min": null,
+          "max": 22.0
+        }
+      },
+      {
+        "key": "suitable",
+        "name": "适宜",
+        "color": "#009E73",
+        "action": "保持现状",
+        "count": 82220,
+        "ratio": 0.59791,
+        "area_ha": 73.998,
+        "area_mu": 1109.97,
+        "range": {
+          "min": 22.0,
+          "max": 28.0
+        }
+      },
+      {
+        "key": "high",
+        "name": "高氮",
+        "color": "#0072B2",
+        "action": "控制施肥",
+        "count": 560,
+        "ratio": 0.00407,
+        "area_ha": 0.504,
+        "area_mu": 7.56,
+        "range": {
+          "min": 28.0,
+          "max": null
+        }
+      }
+    ],
+    "area": {
+      "pixel_area_m2": 9.0,
+      "valid_ha": 123.7608,
+      "valid_mu": 1856.41,
+      "total_ha": 259.2018,
+      "total_mu": 3888.03
+    },
+    "trace": {
+      "alignment": {
+        "source_range": [
+          400.0,
+          900.0
+        ],
+        "target_range": [
+          400.0,
+          900.0
+        ],
+        "exact_bands": 51,
+        "interpolated_bands": 0,
+        "edge_filled_bands": 0,
+        "edge_fill_ratio": 0.0,
+        "resampled": false,
+        "method": "exact"
+      },
+      "force_used": false,
+      "ignored_warnings": [],
+      "preprocessing": {
+        "config_sha256": "9aec4f4acbf6e1ba260e2bc8e284e2b0ef314c727a893a5a3e49cf1177065d29",
+        "quality_level": "notice"
+      }
+    }
+  },
+  {
+    "id": "res_e6d14f31",
+    "image_id": "planet_hengyu_img1",
+    "image_name": "20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif",
+    "flight_date": "2025-10-11",
+    "created_at": "2026-11-17T22:20:43+08:00",
+    "unit": "mg/g",
+    "model": {
+      "id": "planet_nmass_demo",
+      "name": "PlanetScope Nmass 流程演示模型",
+      "version": "1.0",
+      "file_sha256": "0569cfd0fc9f5b4c90a3339eb51959993e3dc4a2c5e953f149b98c3e79f617a2",
+      "metric_type": "not_applicable_demo_alias"
+    },
+    "thresholds": {
+      "low": 22.0,
+      "high": 28.0,
+      "unit": "mg/g"
+    },
+    "stats": {
+      "count": 137512,
+      "total_count": 288002,
+      "valid_ratio": 0.47747,
+      "mean": 20.944,
+      "std": 4.911,
+      "cv": 23.45,
+      "min": 1.609,
+      "max": 58.491,
+      "p5": 9.766,
+      "p25": 19.733,
+      "p50": 22.824,
+      "p75": 24.095,
+      "p95": 25.223
+    },
+    "class_stats": [
+      {
+        "key": "low",
+        "name": "低氮",
+        "color": "#D55E00",
+        "action": "需追肥",
+        "count": 54732,
+        "ratio": 0.39802,
+        "area_ha": 49.2588,
+        "area_mu": 738.88,
+        "range": {
+          "min": null,
+          "max": 22.0
+        }
+      },
+      {
+        "key": "suitable",
+        "name": "适宜",
+        "color": "#009E73",
+        "action": "保持现状",
+        "count": 82220,
+        "ratio": 0.59791,
+        "area_ha": 73.998,
+        "area_mu": 1109.97,
+        "range": {
+          "min": 22.0,
+          "max": 28.0
+        }
+      },
+      {
+        "key": "high",
+        "name": "高氮",
+        "color": "#0072B2",
+        "action": "控制施肥",
+        "count": 560,
+        "ratio": 0.00407,
+        "area_ha": 0.504,
+        "area_mu": 7.56,
+        "range": {
+          "min": 28.0,
+          "max": null
+        }
+      }
+    ],
+    "area": {
+      "pixel_area_m2": 9.0,
+      "valid_ha": 123.7608,
+      "valid_mu": 1856.41,
+      "total_ha": 259.2018,
+      "total_mu": 3888.03
+    },
+    "trace": {
+      "alignment": {
+        "source_range": [
+          442.0,
+          865.0
+        ],
+        "target_range": [
+          400.0,
+          900.0
+        ],
+        "exact_bands": 2,
+        "interpolated_bands": 40,
+        "edge_filled_bands": 9,
+        "edge_fill_ratio": 0.17647,
+        "resampled": true,
+        "method": "linear_interpolation_with_nearest_edge_fill",
+        "prediction_alignment": {
+          "resampled": false,
+          "bands": 51,
+          "source_band_count": 51,
+          "exact_bands": 51,
+          "interpolated_bands": 0,
+          "edge_filled_bands": 0,
+          "edge_fill_ratio": 0.0,
+          "edge_filled": false,
+          "source_range": [
+            400.0,
+            900.0
+          ],
+          "target_range": [
+            400.0,
+            900.0
+          ],
+          "method": "exact"
+        }
+      },
+      "force_used": false,
+      "ignored_warnings": [],
+      "preprocessing": {
+        "config_sha256": "9aec4f4acbf6e1ba260e2bc8e284e2b0ef314c727a893a5a3e49cf1177065d29",
+        "quality_level": "notice"
+      }
+    }
+  }
+]

@@ -1,0 +1,595 @@
+{
+  "id": "res_e6d14f31",
+  "image_id": "planet_hengyu_img1",
+  "image_name": "20251011_032408_70_24da_3B_AnalyticMS_SR_8b_clip.tif",
+  "flight_date": "2025-10-11",
+  "model": {
+    "id": "planet_nmass_demo",
+    "name": "PlanetScope Nmass 流程演示模型",
+    "algorithm": "DNN / MLP（PlanetScope 流程演示）",
+    "type": "ml",
+    "crops": [
+      "蔬菜",
+      "玉米"
+    ],
+    "sensors": [
+      "PlanetScope 8波段",
+      "PlanetScope"
+    ],
+    "unit": "mg/g",
+    "training_data": "合成冠层光谱示例权重；未使用惠州恒福菜场实测氮素数据训练。",
+    "version": "1.0",
+    "demo": true,
+    "file_sha256": "0569cfd0fc9f5b4c90a3339eb51959993e3dc4a2c5e953f149b98c3e79f617a2",
+    "metric_type": "not_applicable_demo_alias",
+    "limitations": [
+      "未使用 PlanetScope 影像对应的田间实测氮素数据训练或验证。",
+      "输出仅用于验证重采样、反演、统计和报告流程。",
+      "不得将结果作为真实田间施肥或科研精度结论。"
+    ]
+  },
+  "created_at": "2026-11-17T22:20:43+08:00",
+  "thresholds": {
+    "low": 22.0,
+    "high": 28.0,
+    "unit": "mg/g"
+  },
+  "classes": [
+    {
+      "key": "low",
+      "name": "低氮",
+      "color": "#D55E00",
+      "action": "需追肥",
+      "min": null,
+      "max": 22.0
+    },
+    {
+      "key": "suitable",
+      "name": "适宜",
+      "color": "#009E73",
+      "action": "保持现状",
+      "min": 22.0,
+      "max": 28.0
+    },
+    {
+      "key": "high",
+      "name": "高氮",
+      "color": "#0072B2",
+      "action": "控制施肥",
+      "min": 28.0,
+      "max": null
+    }
+  ],
+  "stats": {
+    "count": 137512,
+    "total_count": 288002,
+    "valid_ratio": 0.47747,
+    "mean": 20.944,
+    "std": 4.911,
+    "cv": 23.45,
+    "min": 1.609,
+    "max": 58.491,
+    "p5": 9.766,
+    "p25": 19.733,
+    "p50": 22.824,
+    "p75": 24.095,
+    "p95": 25.223
+  },
+  "class_stats": [
+    {
+      "key": "low",
+      "name": "低氮",
+      "color": "#D55E00",
+      "action": "需追肥",
+      "count": 54732,
+      "ratio": 0.39802,
+      "area_ha": 49.2588,
+      "area_mu": 738.88,
+      "range": {
+        "min": null,
+        "max": 22.0
+      }
+    },
+    {
+      "key": "suitable",
+      "name": "适宜",
+      "color": "#009E73",
+      "action": "保持现状",
+      "count": 82220,
+      "ratio": 0.59791,
+      "area_ha": 73.998,
+      "area_mu": 1109.97,
+      "range": {
+        "min": 22.0,
+        "max": 28.0
+      }
+    },
+    {
+      "key": "high",
+      "name": "高氮",
+      "color": "#0072B2",
+      "action": "控制施肥",
+      "count": 560,
+      "ratio": 0.00407,
+      "area_ha": 0.504,
+      "area_mu": 7.56,
+      "range": {
+        "min": 28.0,
+        "max": null
+      }
+    }
+  ],
+  "histogram": {
+    "counts": [
+      287,
+      1316,
+      2046,
+      2356,
+      3142,
+      4366,
+      5065,
+      5343,
+      6117,
+      9632,
+      22311,
+      49193,
+      25301,
+      489,
+      149,
+      104,
+      89,
+      73,
+      34,
+      35,
+      27,
+      15,
+      12,
+      4,
+      2,
+      0,
+      0,
+      1,
+      1,
+      2
+    ],
+    "edges": [
+      1.609,
+      3.505,
+      5.401,
+      7.297,
+      9.194,
+      11.09,
+      12.986,
+      14.882,
+      16.778,
+      18.674,
+      20.57,
+      22.466,
+      24.362,
+      26.258,
+      28.154,
+      30.05,
+      31.946,
+      33.842,
+      35.738,
+      37.634,
+      39.53,
+      41.426,
+      43.322,
+      45.218,
+      47.114,
+      49.01,
+      50.906,
+      52.802,
+      54.699,
+      56.595,
+      58.491
+    ],
+    "mean": 20.944,
+    "thresholds": [
+      22.0,
+      28.0
+    ]
+  },
+  "display_range": {
+    "min": 6.470097675323487,
+    "max": 25.681981086730957
+  },
+  "area": {
+    "pixel_area_m2": 9.0,
+    "valid_ha": 123.7608,
+    "valid_mu": 1856.41,
+    "total_ha": 259.2018,
+    "total_mu": 3888.03
+  },
+  "width": 689,
+  "height": 418,
+  "crs": "EPSG:32650",
+  "transform": [
+    3.0,
+    0.0,
+    209559.0,
+    0.0,
+    -3.0,
+    2548575.0
+  ],
+  "wavelengths": [
+    400.0,
+    410.0,
+    420.0,
+    430.0,
+    440.0,
+    450.0,
+    460.0,
+    470.0,
+    480.0,
+    490.0,
+    500.0,
+    510.0,
+    520.0,
+    530.0,
+    540.0,
+    550.0,
+    560.0,
+    570.0,
+    580.0,
+    590.0,
+    600.0,
+    610.0,
+    620.0,
+    630.0,
+    640.0,
+    650.0,
+    660.0,
+    670.0,
+    680.0,
+    690.0,
+    700.0,
+    710.0,
+    720.0,
+    730.0,
+    740.0,
+    750.0,
+    760.0,
+    770.0,
+    780.0,
+    790.0,
+    800.0,
+    810.0,
+    820.0,
+    830.0,
+    840.0,
+    850.0,
+    860.0,
+    870.0,
+    880.0,
+    890.0,
+    900.0
+  ],
+  "prediction": {
+    "input_type": "spectra",
+    "alignment": {
+      "resampled": false,
+      "bands": 51,
+      "source_band_count": 51,
+      "exact_bands": 51,
+      "interpolated_bands": 0,
+      "edge_filled_bands": 0,
+      "edge_fill_ratio": 0.0,
+      "edge_filled": false,
+      "source_range": [
+        400.0,
+        900.0
+      ],
+      "target_range": [
+        400.0,
+        900.0
+      ],
+      "method": "exact"
+    },
+    "estimator": "TransformedTargetRegressor",
+    "duration_sec": 0.41
+  },
+  "trace": {
+    "model": {
+      "id": "planet_nmass_demo",
+      "name": "PlanetScope Nmass 流程演示模型",
+      "version": "1.0",
+      "algorithm": "DNN / MLP（PlanetScope 流程演示）",
+      "file": "dnn_nmass_demo.pkl",
+      "file_sha256": "0569cfd0fc9f5b4c90a3339eb51959993e3dc4a2c5e953f149b98c3e79f617a2",
+      "training_wavelengths": [
+        400.0,
+        410.0,
+        420.0,
+        430.0,
+        440.0,
+        450.0,
+        460.0,
+        470.0,
+        480.0,
+        490.0,
+        500.0,
+        510.0,
+        520.0,
+        530.0,
+        540.0,
+        550.0,
+        560.0,
+        570.0,
+        580.0,
+        590.0,
+        600.0,
+        610.0,
+        620.0,
+        630.0,
+        640.0,
+        650.0,
+        660.0,
+        670.0,
+        680.0,
+        690.0,
+        700.0,
+        710.0,
+        720.0,
+        730.0,
+        740.0,
+        750.0,
+        760.0,
+        770.0,
+        780.0,
+        790.0,
+        800.0,
+        810.0,
+        820.0,
+        830.0,
+        840.0,
+        850.0,
+        860.0,
+        870.0,
+        880.0,
+        890.0,
+        900.0
+      ],
+      "input_type": "spectra",
+      "synthetic": true
+    },
+    "alignment": {
+      "source_range": [
+        442.0,
+        865.0
+      ],
+      "target_range": [
+        400.0,
+        900.0
+      ],
+      "exact_bands": 2,
+      "interpolated_bands": 40,
+      "edge_filled_bands": 9,
+      "edge_fill_ratio": 0.17647,
+      "resampled": true,
+      "method": "linear_interpolation_with_nearest_edge_fill",
+      "prediction_alignment": {
+        "resampled": false,
+        "bands": 51,
+        "source_band_count": 51,
+        "exact_bands": 51,
+        "interpolated_bands": 0,
+        "edge_filled_bands": 0,
+        "edge_fill_ratio": 0.0,
+        "edge_filled": false,
+        "source_range": [
+          400.0,
+          900.0
+        ],
+        "target_range": [
+          400.0,
+          900.0
+        ],
+        "method": "exact"
+      }
+    },
+    "preprocessing": {
+      "processed_at": "2026-11-17T22:14:16+08:00",
+      "config": {
+        "reflectance": {
+          "enabled": true,
+          "method": "scale",
+          "scale": 10000.0,
+          "coefficient": 1.0,
+          "offset": 0.0
+        },
+        "smoothing": {
+          "enabled": true,
+          "window": 5,
+          "polyorder": 2
+        },
+        "bad_bands": {
+          "enabled": false,
+          "ranges": [
+            [
+              1340,
+              1450
+            ],
+            [
+              1800,
+              1960
+            ]
+          ]
+        },
+        "alignment": {
+          "enabled": true,
+          "start": 400.0,
+          "end": 900.0,
+          "step": 10.0,
+          "extrapolate": true
+        },
+        "mask": {
+          "enabled": true,
+          "ndvi_threshold": 0.35,
+          "nir_wavelength": 840.0,
+          "red_wavelength": 670.0
+        },
+        "cloud": {
+          "enabled": false,
+          "blue_threshold": 0.3
+        },
+        "crop": {
+          "enabled": false,
+          "x0": 0,
+          "y0": 0,
+          "width": 0,
+          "height": 0
+        },
+        "indices": [
+          "NDVI",
+          "NDRE",
+          "CIredge"
+        ]
+      },
+      "config_sha256": "9aec4f4acbf6e1ba260e2bc8e284e2b0ef314c727a893a5a3e49cf1177065d29",
+      "quality_level": "notice",
+      "mask_ratio": 0.47747,
+      "source_band_count": 8,
+      "source_wavelengths": [
+        442.0,
+        490.0,
+        531.0,
+        565.0,
+        610.0,
+        665.0,
+        705.0,
+        865.0
+      ],
+      "processed_wavelengths": [
+        400.0,
+        410.0,
+        420.0,
+        430.0,
+        440.0,
+        450.0,
+        460.0,
+        470.0,
+        480.0,
+        490.0,
+        500.0,
+        510.0,
+        520.0,
+        530.0,
+        540.0,
+        550.0,
+        560.0,
+        570.0,
+        580.0,
+        590.0,
+        600.0,
+        610.0,
+        620.0,
+        630.0,
+        640.0,
+        650.0,
+        660.0,
+        670.0,
+        680.0,
+        690.0,
+        700.0,
+        710.0,
+        720.0,
+        730.0,
+        740.0,
+        750.0,
+        760.0,
+        770.0,
+        780.0,
+        790.0,
+        800.0,
+        810.0,
+        820.0,
+        830.0,
+        840.0,
+        850.0,
+        860.0,
+        870.0,
+        880.0,
+        890.0,
+        900.0
+      ],
+      "source_range": [
+        442.0,
+        865.0
+      ],
+      "processed_range": [
+        400.0,
+        900.0
+      ],
+      "preprocess_alignment": {
+        "source_range": [
+          442.0,
+          865.0
+        ],
+        "target_range": [
+          400.0,
+          900.0
+        ],
+        "edge_filled": true,
+        "exact_bands": 2,
+        "interpolated_bands": 40,
+        "edge_filled_bands": 9,
+        "edge_fill_ratio": 0.17647,
+        "resampled": true,
+        "source_band_count": 8,
+        "bands": 51,
+        "method": "linear_interpolation_with_nearest_edge_fill"
+      },
+      "removed_bands": [],
+      "smoothing_applied": true,
+      "pipeline": "反射率转换 → 坏波段剔除 → Savitzky-Golay 平滑 → 波段对齐 → 植被/云掩膜 → 植被指数 → 质量检查"
+    },
+    "compatibility": {
+      "status": "compatible",
+      "errors": [],
+      "warnings": [],
+      "notes": [
+        "9 个波段使用最近边缘波段填充",
+        "40 个模型波段通过线性光谱插值获得",
+        "将使用现有预处理结果；执行时仍会再次核对兼容性"
+      ],
+      "crop_match": "match",
+      "sensor_match": "match",
+      "sensor_evidence": "strong",
+      "required_bands": 51,
+      "required_spectral_bands": 51,
+      "exact_bands": 2,
+      "interpolated_bands": 40,
+      "edge_filled_bands": 9,
+      "edge_fill_ratio": 0.17647,
+      "source_range": [
+        442.0,
+        865.0
+      ],
+      "target_range": [
+        400.0,
+        900.0
+      ],
+      "source_origin": "image_metadata",
+      "features": [],
+      "model_input_type": "spectra",
+      "model_id": "planet_nmass_demo",
+      "model_name": "PlanetScope Nmass 流程演示模型",
+      "recommendation": "波段可重采样；可继续执行，并在结果中核对空间分布与统计范围。",
+      "card_status": "resample"
+    },
+    "force_used": false,
+    "ignored_warnings": [],
+    "unit": "mg/g",
+    "threshold_unit": "mg/g"
+  },
+  "files": {
+    "tif": "nmass_20261117_222043.tif",
+    "npy": "nmass_latest.npy",
+    "classified": "previews/classified.png",
+    "continuous": "previews/continuous.png"
+  },
+  "duration_sec": 0.81,
+  "unit": "mg/g"
+}

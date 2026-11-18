@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FreeFarmNRS</title>
+  <meta name="description" content="面向农业应用的植被氮素含量遥感反演工具：影像导入、预处理、零样本反演、专题图与报告导出。">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <div id="app">
+    <div class="boot-splash">
+      <div class="boot-logo">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M18 46C18 29 30 17 50 16c1 20-11 32-32 30Z" fill="#8ccf97"/>
+          <path d="M18 48c7-13 17-21 29-26" fill="none" stroke="#e9f7ea" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="boot-title">FreeFarmNRS</div>
+      <div class="boot-sub">正在启动本地服务…</div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      try {
+        if (new URLSearchParams(location.search).get('welcome') === '1') {
+          localStorage.removeItem('nmass_guide_seen');
+        }
+      } catch (e) { /* ignore */ }
+    })();
+  </script>
+  <script src="/vendor/vue.global.prod.js"></script>
+  <script src="/vendor/echarts.min.js"></script>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

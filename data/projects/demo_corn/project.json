@@ -1,0 +1,1054 @@
+{
+  "id": "demo_corn",
+  "name": "夏玉米氮素监测示范",
+  "description": "三期无人机多光谱影像，展示从数据导入到氮素分级专题图的完整流程。",
+  "crop": "夏玉米",
+  "field": "A区",
+  "note": "演示项目：影像由平台内置光谱模拟器生成，仅用于功能展示。",
+  "created_at": "2026-10-28T10:11:11+08:00",
+  "updated_at": "2026-10-28T10:24:48+08:00",
+  "images": [
+    {
+      "id": "demo_corn_img1",
+      "name": "田块A_20260610_多光谱.tif",
+      "file": "source/田块A_20260610_多光谱.tif",
+      "format": "GeoTIFF",
+      "sensor": "MicaSense RedEdge-P（示例）",
+      "flight_date": "2026-06-10",
+      "field": "A区",
+      "note": "演示数据：由平台光谱模拟器生成。",
+      "imported_at": "2026-10-28T10:11:12+08:00",
+      "status": "inverted",
+      "file_size": 2376811,
+      "width": 800,
+      "height": 600,
+      "bands": 5,
+      "dtype": "uint16",
+      "driver": "GTiff",
+      "crs": "EPSG:32650",
+      "transform": [
+        0.1,
+        0.0,
+        500000.0,
+        0.0,
+        -0.1,
+        3500000.0
+      ],
+      "nodata": 0.0,
+      "res_x": 0.1,
+      "res_y": 0.1,
+      "bounds": [
+        500000.0,
+        3499940.0,
+        500080.0,
+        3500000.0
+      ],
+      "wavelengths": [
+        475.0,
+        560.0,
+        668.0,
+        717.0,
+        840.0
+      ],
+      "wavelength_unit": "nm",
+      "bandwidths": [
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        40.0
+      ],
+      "band_names": [
+        "Band 1",
+        "Band 2",
+        "Band 3",
+        "Band 4",
+        "Band 5"
+      ],
+      "descriptions": [
+        "蓝光 475nm",
+        "绿光 560nm",
+        "红光 668nm",
+        "红边 717nm",
+        "近红外 840nm"
+      ],
+      "crs_wkt": "PROJCS[\"WGS 84 / UTM zone 50N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",117],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32650\"]]",
+      "preprocess": {
+        "created_at": "2026-10-28T10:11:16+08:00",
+        "quality": {
+          "level": "notice",
+          "items": [
+            {
+              "key": "reflectance",
+              "title": "反射率转换",
+              "status": "ok",
+              "message": "按比例因子 10000 将 DN 值转换为反射率。反射率 1%–99% 分位：0.037–0.495，中位数 0.094"
+            },
+            {
+              "key": "bad_bands",
+              "title": "坏波段剔除",
+              "status": "ok",
+              "message": "未启用坏波段剔除，保留全部波段"
+            },
+            {
+              "key": "smoothing",
+              "title": "光谱平滑",
+              "status": "ok",
+              "message": "Savitzky-Golay 平滑完成（窗口 5，阶数 2）"
+            },
+            {
+              "key": "alignment",
+              "title": "波段对齐",
+              "status": "notice",
+              "message": "已对齐到 51 个标准波段（400–900 nm）；目标波长超出源影像范围的两端采用最近邻填充"
+            },
+            {
+              "key": "cloud",
+              "title": "云/阴影检测",
+              "status": "ok",
+              "message": "未启用云/阴影检测"
+            },
+            {
+              "key": "mask",
+              "title": "植被掩膜",
+              "status": "ok",
+              "message": "植被像元占比 91.7%（NDVI ≥ 0.35）"
+            }
+          ]
+        },
+        "mask": {
+          "enabled": true,
+          "ndvi_threshold": 0.35,
+          "ratio": 0.91715,
+          "valid_pixels": 440232,
+          "total_pixels": 480000,
+          "cloud_ratio": 0.0
+        },
+        "bands": 51,
+        "wavelengths": [
+          400.0,
+          410.0,
+          420.0,
+          430.0,
+          440.0,
+          450.0,
+          460.0,
+          470.0,
+          480.0,
+          490.0,
+          500.0,
+          510.0,
+          520.0,
+          530.0,
+          540.0,
+          550.0,
+          560.0,
+          570.0,
+          580.0,
+          590.0,
+          600.0,
+          610.0,
+          620.0,
+          630.0,
+          640.0,
+          650.0,
+          660.0,
+          670.0,
+          680.0,
+          690.0,
+          700.0,
+          710.0,
+          720.0,
+          730.0,
+          740.0,
+          750.0,
+          760.0,
+          770.0,
+          780.0,
+          790.0,
+          800.0,
+          810.0,
+          820.0,
+          830.0,
+          840.0,
+          850.0,
+          860.0,
+          870.0,
+          880.0,
+          890.0,
+          900.0
+        ],
+        "config": {
+          "reflectance": {
+            "enabled": true,
+            "method": "scale",
+            "scale": 10000.0,
+            "coefficient": 1.0,
+            "offset": 0.0
+          },
+          "smoothing": {
+            "enabled": true,
+            "window": 5,
+            "polyorder": 2
+          },
+          "bad_bands": {
+            "enabled": false,
+            "ranges": [
+              [
+                1340,
+                1450
+              ],
+              [
+                1800,
+                1960
+              ]
+            ]
+          },
+          "alignment": {
+            "enabled": true,
+            "start": 400.0,
+            "end": 900.0,
+            "step": 10.0,
+            "extrapolate": true
+          },
+          "mask": {
+            "enabled": true,
+            "ndvi_threshold": 0.35,
+            "nir_wavelength": 840.0,
+            "red_wavelength": 670.0
+          },
+          "cloud": {
+            "enabled": false,
+            "blue_threshold": 0.3
+          },
+          "crop": {
+            "enabled": false,
+            "x0": 0,
+            "y0": 0,
+            "width": 0,
+            "height": 0
+          },
+          "indices": [
+            "NDVI",
+            "NDRE",
+            "CIredge"
+          ]
+        },
+        "indices": {
+          "NDVI": {
+            "label": "归一化植被指数",
+            "min": 0.35004,
+            "max": 0.82008,
+            "mean": 0.75005,
+            "std": 0.03082,
+            "nir": 840,
+            "red": 670,
+            "nir_band": 45,
+            "red_band": 28
+          },
+          "NDRE": {
+            "label": "红边归一化差值指数",
+            "min": 0.16191,
+            "max": 0.35684,
+            "mean": 0.32887,
+            "std": 0.01264,
+            "nir": 840,
+            "red_edge": 730,
+            "nir_band": 45,
+            "red_edge_band": 34
+          },
+          "CIREDGE": {
+            "label": "红边叶绿素指数",
+            "min": 0.38637,
+            "max": 1.10964,
+            "mean": 0.98107,
+            "std": 0.05437,
+            "nir": 840,
+            "red_edge": 730,
+            "nir_band": 45,
+            "red_edge_band": 34
+          }
+        }
+      },
+      "updated_at": "2026-10-28T10:24:20+08:00",
+      "result": {
+        "id": "res_9b87ff80",
+        "image_id": "demo_corn_img1",
+        "image_name": "田块A_20260610_多光谱.tif",
+        "flight_date": "2026-06-10",
+        "created_at": "2026-10-28T10:24:20+08:00",
+        "model": {
+          "id": "rf_multispectral_demo",
+          "name": "多光谱 Nmass-RF 模型"
+        },
+        "thresholds": {
+          "low": 22.0,
+          "high": 28.0
+        },
+        "stats": {
+          "count": 440232,
+          "total_count": 480000,
+          "valid_ratio": 0.91715,
+          "mean": 23.71,
+          "std": 3.479,
+          "cv": 14.67,
+          "min": 16.038,
+          "max": 33.044,
+          "p5": 18.613,
+          "p25": 20.815,
+          "p50": 23.497,
+          "p75": 26.502,
+          "p95": 29.907
+        },
+        "class_stats": [
+          {
+            "key": "low",
+            "name": "低氮",
+            "color": "#D55E00",
+            "action": "需追肥",
+            "count": 138152,
+            "ratio": 0.31382,
+            "area_ha": 0.1382,
+            "area_mu": 2.07,
+            "range": {
+              "min": null,
+              "max": 22.0
+            }
+          },
+          {
+            "key": "suitable",
+            "name": "适宜",
+            "color": "#009E73",
+            "action": "保持现状",
+            "count": 240531,
+            "ratio": 0.54637,
+            "area_ha": 0.2405,
+            "area_mu": 3.61,
+            "range": {
+              "min": 22.0,
+              "max": 28.0
+            }
+          },
+          {
+            "key": "high",
+            "name": "高氮",
+            "color": "#0072B2",
+            "action": "控制施肥",
+            "count": 61549,
+            "ratio": 0.13981,
+            "area_ha": 0.0615,
+            "area_mu": 0.92,
+            "range": {
+              "min": 28.0,
+              "max": null
+            }
+          }
+        ],
+        "area": {
+          "pixel_area_m2": 0.01,
+          "valid_ha": 0.4402,
+          "valid_mu": 6.6,
+          "total_ha": 0.48,
+          "total_mu": 7.2
+        }
+      },
+      "result_at": "2026-10-28T10:24:20+08:00"
+    },
+    {
+      "id": "demo_corn_img2",
+      "name": "田块A_20260702_多光谱.tif",
+      "file": "source/田块A_20260702_多光谱.tif",
+      "format": "GeoTIFF",
+      "sensor": "MicaSense RedEdge-P（示例）",
+      "flight_date": "2026-07-02",
+      "field": "A区",
+      "note": "演示数据：由平台光谱模拟器生成。",
+      "imported_at": "2026-10-28T10:11:13+08:00",
+      "status": "inverted",
+      "file_size": 2376631,
+      "width": 800,
+      "height": 600,
+      "bands": 5,
+      "dtype": "uint16",
+      "driver": "GTiff",
+      "crs": "EPSG:32650",
+      "transform": [
+        0.1,
+        0.0,
+        500000.0,
+        0.0,
+        -0.1,
+        3500000.0
+      ],
+      "nodata": 0.0,
+      "res_x": 0.1,
+      "res_y": 0.1,
+      "bounds": [
+        500000.0,
+        3499940.0,
+        500080.0,
+        3500000.0
+      ],
+      "wavelengths": [
+        475.0,
+        560.0,
+        668.0,
+        717.0,
+        840.0
+      ],
+      "wavelength_unit": "nm",
+      "bandwidths": [
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        40.0
+      ],
+      "band_names": [
+        "Band 1",
+        "Band 2",
+        "Band 3",
+        "Band 4",
+        "Band 5"
+      ],
+      "descriptions": [
+        "蓝光 475nm",
+        "绿光 560nm",
+        "红光 668nm",
+        "红边 717nm",
+        "近红外 840nm"
+      ],
+      "crs_wkt": "PROJCS[\"WGS 84 / UTM zone 50N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",117],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32650\"]]",
+      "preprocess": {
+        "created_at": "2026-10-28T10:24:46+08:00",
+        "quality": {
+          "level": "notice",
+          "items": [
+            {
+              "key": "reflectance",
+              "title": "反射率转换",
+              "status": "ok",
+              "message": "按比例因子 10000 将 DN 值转换为反射率。反射率 1%–99% 分位：0.034–0.499，中位数 0.093"
+            },
+            {
+              "key": "bad_bands",
+              "title": "坏波段剔除",
+              "status": "ok",
+              "message": "未启用坏波段剔除，保留全部波段"
+            },
+            {
+              "key": "smoothing",
+              "title": "光谱平滑",
+              "status": "ok",
+              "message": "Savitzky-Golay 平滑完成（窗口 5，阶数 2）"
+            },
+            {
+              "key": "alignment",
+              "title": "波段对齐",
+              "status": "notice",
+              "message": "已对齐到 51 个标准波段（400–900 nm）；目标波长超出源影像范围的两端采用最近邻填充"
+            },
+            {
+              "key": "cloud",
+              "title": "云/阴影检测",
+              "status": "ok",
+              "message": "未启用云/阴影检测"
+            },
+            {
+              "key": "mask",
+              "title": "植被掩膜",
+              "status": "ok",
+              "message": "植被像元占比 91.7%（NDVI ≥ 0.35）"
+            }
+          ]
+        },
+        "mask": {
+          "enabled": true,
+          "ndvi_threshold": 0.35,
+          "ratio": 0.91723,
+          "valid_pixels": 440272,
+          "total_pixels": 480000,
+          "cloud_ratio": 0.0
+        },
+        "bands": 51,
+        "wavelengths": [
+          400.0,
+          410.0,
+          420.0,
+          430.0,
+          440.0,
+          450.0,
+          460.0,
+          470.0,
+          480.0,
+          490.0,
+          500.0,
+          510.0,
+          520.0,
+          530.0,
+          540.0,
+          550.0,
+          560.0,
+          570.0,
+          580.0,
+          590.0,
+          600.0,
+          610.0,
+          620.0,
+          630.0,
+          640.0,
+          650.0,
+          660.0,
+          670.0,
+          680.0,
+          690.0,
+          700.0,
+          710.0,
+          720.0,
+          730.0,
+          740.0,
+          750.0,
+          760.0,
+          770.0,
+          780.0,
+          790.0,
+          800.0,
+          810.0,
+          820.0,
+          830.0,
+          840.0,
+          850.0,
+          860.0,
+          870.0,
+          880.0,
+          890.0,
+          900.0
+        ],
+        "config": {
+          "reflectance": {
+            "enabled": true,
+            "method": "scale",
+            "scale": 10000.0,
+            "coefficient": 1.0,
+            "offset": 0.0
+          },
+          "smoothing": {
+            "enabled": true,
+            "window": 5,
+            "polyorder": 2
+          },
+          "bad_bands": {
+            "enabled": false,
+            "ranges": [
+              [
+                1340,
+                1450
+              ],
+              [
+                1800,
+                1960
+              ]
+            ]
+          },
+          "alignment": {
+            "enabled": true,
+            "start": 400.0,
+            "end": 900.0,
+            "step": 10.0,
+            "extrapolate": true
+          },
+          "mask": {
+            "enabled": true,
+            "ndvi_threshold": 0.35,
+            "nir_wavelength": 840.0,
+            "red_wavelength": 670.0
+          },
+          "cloud": {
+            "enabled": false,
+            "blue_threshold": 0.3
+          },
+          "crop": {
+            "enabled": false,
+            "x0": 0,
+            "y0": 0,
+            "width": 0,
+            "height": 0
+          },
+          "indices": [
+            "NDVI",
+            "NDRE",
+            "CIredge"
+          ]
+        },
+        "indices": {
+          "NDVI": {
+            "label": "归一化植被指数",
+            "min": 0.35003,
+            "max": 0.8381,
+            "mean": 0.75999,
+            "std": 0.03189,
+            "nir": 840,
+            "red": 670,
+            "nir_band": 45,
+            "red_band": 28
+          },
+          "NDRE": {
+            "label": "红边归一化差值指数",
+            "min": 0.16148,
+            "max": 0.36331,
+            "mean": 0.33258,
+            "std": 0.01301,
+            "nir": 840,
+            "red_edge": 730,
+            "nir_band": 45,
+            "red_edge_band": 34
+          },
+          "CIREDGE": {
+            "label": "红边叶绿素指数",
+            "min": 0.38517,
+            "max": 1.14125,
+            "mean": 0.9977,
+            "std": 0.05647,
+            "nir": 840,
+            "red_edge": 730,
+            "nir_band": 45,
+            "red_edge_band": 34
+          }
+        },
+        "width": 800,
+        "height": 600,
+        "crs": "EPSG:32650"
+      },
+      "updated_at": "2026-10-28T10:24:48+08:00",
+      "result": {
+        "id": "res_50c91bbe",
+        "image_id": "demo_corn_img2",
+        "image_name": "田块A_20260702_多光谱.tif",
+        "flight_date": "2026-07-02",
+        "created_at": "2026-10-28T10:24:48+08:00",
+        "model": {
+          "id": "rf_multispectral_demo",
+          "name": "多光谱 Nmass-RF 模型"
+        },
+        "thresholds": {
+          "low": 22.0,
+          "high": 28.0
+        },
+        "stats": {
+          "count": 440272,
+          "total_count": 480000,
+          "valid_ratio": 0.91723,
+          "mean": 23.912,
+          "std": 3.44,
+          "cv": 14.38,
+          "min": 15.983,
+          "max": 33.117,
+          "p5": 18.526,
+          "p25": 20.998,
+          "p50": 23.725,
+          "p75": 26.965,
+          "p95": 29.596
+        },
+        "class_stats": [
+          {
+            "key": "low",
+            "name": "低氮",
+            "color": "#D55E00",
+            "action": "需追肥",
+            "count": 131015,
+            "ratio": 0.29758,
+            "area_ha": 0.131,
+            "area_mu": 1.97,
+            "range": {
+              "min": null,
+              "max": 22.0
+            }
+          },
+          {
+            "key": "suitable",
+            "name": "适宜",
+            "color": "#009E73",
+            "action": "保持现状",
+            "count": 249465,
+            "ratio": 0.56662,
+            "area_ha": 0.2495,
+            "area_mu": 3.74,
+            "range": {
+              "min": 22.0,
+              "max": 28.0
+            }
+          },
+          {
+            "key": "high",
+            "name": "高氮",
+            "color": "#0072B2",
+            "action": "控制施肥",
+            "count": 59792,
+            "ratio": 0.13581,
+            "area_ha": 0.0598,
+            "area_mu": 0.9,
+            "range": {
+              "min": 28.0,
+              "max": null
+            }
+          }
+        ],
+        "area": {
+          "pixel_area_m2": 0.01,
+          "valid_ha": 0.4403,
+          "valid_mu": 6.6,
+          "total_ha": 0.48,
+          "total_mu": 7.2
+        }
+      },
+      "result_at": "2026-10-28T10:24:48+08:00",
+      "preprocess_at": "2026-10-28T10:24:46+08:00"
+    },
+    {
+      "id": "demo_corn_img3",
+      "name": "田块A_20260715_多光谱.tif",
+      "file": "source/田块A_20260715_多光谱.tif",
+      "format": "GeoTIFF",
+      "sensor": "MicaSense RedEdge-P（示例）",
+      "flight_date": "2026-07-15",
+      "field": "A区",
+      "note": "演示数据：由平台光谱模拟器生成。",
+      "imported_at": "2026-10-28T10:11:13+08:00",
+      "status": "inverted",
+      "file_size": 2374683,
+      "width": 800,
+      "height": 600,
+      "bands": 5,
+      "dtype": "uint16",
+      "driver": "GTiff",
+      "crs": "EPSG:32650",
+      "transform": [
+        0.1,
+        0.0,
+        500000.0,
+        0.0,
+        -0.1,
+        3500000.0
+      ],
+      "nodata": 0.0,
+      "res_x": 0.1,
+      "res_y": 0.1,
+      "bounds": [
+        500000.0,
+        3499940.0,
+        500080.0,
+        3500000.0
+      ],
+      "wavelengths": [
+        475.0,
+        560.0,
+        668.0,
+        717.0,
+        840.0
+      ],
+      "wavelength_unit": "nm",
+      "bandwidths": [
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        40.0
+      ],
+      "band_names": [
+        "Band 1",
+        "Band 2",
+        "Band 3",
+        "Band 4",
+        "Band 5"
+      ],
+      "descriptions": [
+        "蓝光 475nm",
+        "绿光 560nm",
+        "红光 668nm",
+        "红边 717nm",
+        "近红外 840nm"
+      ],
+      "crs_wkt": "PROJCS[\"WGS 84 / UTM zone 50N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",117],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32650\"]]",
+      "preprocess": {
+        "created_at": "2026-10-28T10:11:25+08:00",
+        "quality": {
+          "level": "notice",
+          "items": [
+            {
+              "key": "reflectance",
+              "title": "反射率转换",
+              "status": "ok",
+              "message": "按比例因子 10000 将 DN 值转换为反射率。反射率 1%–99% 分位：0.032–0.505，中位数 0.093"
+            },
+            {
+              "key": "bad_bands",
+              "title": "坏波段剔除",
+              "status": "ok",
+              "message": "未启用坏波段剔除，保留全部波段"
+            },
+            {
+              "key": "smoothing",
+              "title": "光谱平滑",
+              "status": "ok",
+              "message": "Savitzky-Golay 平滑完成（窗口 5，阶数 2）"
+            },
+            {
+              "key": "alignment",
+              "title": "波段对齐",
+              "status": "notice",
+              "message": "已对齐到 51 个标准波段（400–900 nm）；目标波长超出源影像范围的两端采用最近邻填充"
+            },
+            {
+              "key": "cloud",
+              "title": "云/阴影检测",
+              "status": "ok",
+              "message": "未启用云/阴影检测"
+            },
+            {
+              "key": "mask",
+              "title": "植被掩膜",
+              "status": "ok",
+              "message": "植被像元占比 91.7%（NDVI ≥ 0.35）"
+            }
+          ]
+        },
+        "mask": {
+          "enabled": true,
+          "ndvi_threshold": 0.35,
+          "ratio": 0.9175,
+          "valid_pixels": 440399,
+          "total_pixels": 480000,
+          "cloud_ratio": 0.0
+        },
+        "bands": 51,
+        "wavelengths": [
+          400.0,
+          410.0,
+          420.0,
+          430.0,
+          440.0,
+          450.0,
+          460.0,
+          470.0,
+          480.0,
+          490.0,
+          500.0,
+          510.0,
+          520.0,
+          530.0,
+          540.0,
+          550.0,
+          560.0,
+          570.0,
+          580.0,
+          590.0,
+          600.0,
+          610.0,
+          620.0,
+          630.0,
+          640.0,
+          650.0,
+          660.0,
+          670.0,
+          680.0,
+          690.0,
+          700.0,
+          710.0,
+          720.0,
+          730.0,
+          740.0,
+          750.0,
+          760.0,
+          770.0,
+          780.0,
+          790.0,
+          800.0,
+          810.0,
+          820.0,
+          830.0,
+          840.0,
+          850.0,
+          860.0,
+          870.0,
+          880.0,
+          890.0,
+          900.0
+        ],
+        "config": {
+          "reflectance": {
+            "enabled": true,
+            "method": "scale",
+            "scale": 10000.0,
+            "coefficient": 1.0,
+            "offset": 0.0
+          },
+          "smoothing": {
+            "enabled": true,
+            "window": 5,
+            "polyorder": 2
+          },
+          "bad_bands": {
+            "enabled": false,
+            "ranges": [
+              [
+                1340,
+                1450
+              ],
+              [
+                1800,
+                1960
+              ]
+            ]
+          },
+          "alignment": {
+            "enabled": true,
+            "start": 400.0,
+            "end": 900.0,
+            "step": 10.0,
+            "extrapolate": true
+          },
+          "mask": {
+            "enabled": true,
+            "ndvi_threshold": 0.35,
+            "nir_wavelength": 840.0,
+            "red_wavelength": 670.0
+          },
+          "cloud": {
+            "enabled": false,
+            "blue_threshold": 0.3
+          },
+          "crop": {
+            "enabled": false,
+            "x0": 0,
+            "y0": 0,
+            "width": 0,
+            "height": 0
+          },
+          "indices": [
+            "NDVI",
+            "NDRE",
+            "CIredge"
+          ]
+        },
+        "indices": {
+          "NDVI": {
+            "label": "归一化植被指数",
+            "min": 0.35004,
+            "max": 0.84679,
+            "mean": 0.77175,
+            "std": 0.03209,
+            "nir": 840,
+            "red": 670,
+            "nir_band": 45,
+            "red_band": 28
+          },
+          "NDRE": {
+            "label": "红边归一化差值指数",
+            "min": 0.16143,
+            "max": 0.36674,
+            "mean": 0.33703,
+            "std": 0.01301,
+            "nir": 840,
+            "red_edge": 730,
+            "nir_band": 45,
+            "red_edge_band": 34
+          },
+          "CIREDGE": {
+            "label": "红边叶绿素指数",
+            "min": 0.385,
+            "max": 1.15824,
+            "mean": 1.01783,
+            "std": 0.05658,
+            "nir": 840,
+            "red_edge": 730,
+            "nir_band": 45,
+            "red_edge_band": 34
+          }
+        }
+      },
+      "updated_at": "2026-10-28T10:11:27+08:00",
+      "result": {
+        "id": "res_16b6cf25",
+        "image_id": "demo_corn_img3",
+        "image_name": "田块A_20260715_多光谱.tif",
+        "flight_date": "2026-07-15",
+        "created_at": "2026-10-28T10:11:27+08:00",
+        "model": {
+          "id": "rf_multispectral_demo",
+          "name": "多光谱 Nmass-RF 模型"
+        },
+        "thresholds": {
+          "low": 22.0,
+          "high": 28.0
+        },
+        "stats": {
+          "count": 440399,
+          "total_count": 480000,
+          "valid_ratio": 0.9175,
+          "mean": 24.392,
+          "std": 3.246,
+          "cv": 13.31,
+          "min": 16.128,
+          "max": 32.818,
+          "p5": 19.253,
+          "p25": 22.155,
+          "p50": 24.424,
+          "p75": 27.047,
+          "p95": 29.822
+        },
+        "class_stats": [
+          {
+            "key": "low",
+            "name": "低氮",
+            "color": "#D55E00",
+            "action": "需追肥",
+            "count": 104738,
+            "ratio": 0.23783,
+            "area_ha": 0.1047,
+            "area_mu": 1.57,
+            "range": {
+              "min": null,
+              "max": 22.0
+            }
+          },
+          {
+            "key": "suitable",
+            "name": "适宜",
+            "color": "#009E73",
+            "action": "保持现状",
+            "count": 280454,
+            "ratio": 0.63682,
+            "area_ha": 0.2805,
+            "area_mu": 4.21,
+            "range": {
+              "min": 22.0,
+              "max": 28.0
+            }
+          },
+          {
+            "key": "high",
+            "name": "高氮",
+            "color": "#0072B2",
+            "action": "控制施肥",
+            "count": 55207,
+            "ratio": 0.12536,
+            "area_ha": 0.0552,
+            "area_mu": 0.83,
+            "range": {
+              "min": 28.0,
+              "max": null
+            }
+          }
+        ],
+        "area": {
+          "pixel_area_m2": 0.01,
+          "valid_ha": 0.4404,
+          "valid_mu": 6.61,
+          "total_ha": 0.48,
+          "total_mu": 7.2
+        }
+      },
+      "result_at": "2026-10-28T10:11:27+08:00"
+    }
+  ]
+}

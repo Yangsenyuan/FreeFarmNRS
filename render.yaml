@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: freefarmnrs
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NMASS_DATA_DIR
+        value: /app/data
+      # 需要用户上传的数据在重启后仍然保留时：
+      # 1) 把 plan 改为 starter（$7/月，Free 不支持持久磁盘）
+      # 2) 取消下面 disk 段与 NMASS_DATA_DIR=/var/data 的注释
+      # - key: NMASS_DATA_DIR
+      #   value: /var/data
+    # disk:
+    #   name: nmass-data
+    #   mountPath: /var/data
+    #   sizeGB: 1

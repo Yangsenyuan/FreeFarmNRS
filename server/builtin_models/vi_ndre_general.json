@@ -1,0 +1,57 @@
+{
+  "id": "vi_ndre_general",
+  "name": "通用 Nmass-NDRE/NDVI 经验模型",
+  "type": "vi",
+  "algorithm": "植被指数回归",
+  "builtin": true,
+  "demo": true,
+  "version": "1.0",
+  "unit": "mg/g",
+  "crops": [
+    "玉米",
+    "小麦",
+    "水稻",
+    "大豆"
+  ],
+  "sensors": [
+    "多光谱",
+    "高光谱"
+  ],
+  "training_data": "合成冠层光谱数据集（2400 条，400–900 nm）",
+  "r2": 0.9402,
+  "rmse": 1.4276,
+  "description": "示例模型：基于合成冠层光谱数据训练，仅用于平台功能演示。正式科研应用请导入基于实测氮素数据训练的模型。 该模型为线性经验关系，可解释性强，适合快速预览与趋势判断。",
+  "input": {
+    "type": "vi",
+    "features": [
+      {
+        "index": "NDRE",
+        "bands": {
+          "nir": 840.0,
+          "red_edge": 730.0
+        }
+      },
+      {
+        "index": "NDVI",
+        "bands": {
+          "nir": 840.0,
+          "red": 670.0
+        }
+      }
+    ],
+    "intercept": 18.899763107299805,
+    "coef": [
+      91.03317260742188,
+      -27.420045852661133
+    ]
+  },
+  "thresholds": {
+    "low": 22.0,
+    "high": 28.0
+  },
+  "tags": [
+    "NDRE",
+    "经验模型",
+    "零样本"
+  ]
+}
